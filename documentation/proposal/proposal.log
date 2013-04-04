@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 APR 2013 13:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 APR 2013 14:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -302,7 +302,7 @@ LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
 )
-No file proposal.aux.
+(./proposal.aux)
 \openout1 = `proposal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -317,6 +317,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
+
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
@@ -381,19 +382,14 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ­ in font ptmr7t!
+Missing character: There is no Õ in font ptmr7t!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 70.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 70.
+(Font)              <6> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 70.
+(Font)              <5> on input line 51.
 
-[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -405,30 +401,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./proposal.aux)
+
+
+]
+(./proposal.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4583 strings out of 493488
- 70496 string characters out of 3141326
- 140711 words of memory out of 3000000
- 7836 multiletter control sequences out of 15000+200000
- 37650 words of font info for 71 fonts, out of 3000000 for 9000
+ 4576 strings out of 493488
+ 70411 string characters out of 3141326
+ 138711 words of memory out of 3000000
+ 7829 multiletter control sequences out of 15000+200000
+ 35389 words of font info for 69 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,8n,42p,684b,297s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,8n,42p,388b,297s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on proposal.pdf (2 pages, 53645 bytes).
+exlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (1 page, 28042 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 17 PDF objects out of 1000 (max. 8388607)
+ 11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
