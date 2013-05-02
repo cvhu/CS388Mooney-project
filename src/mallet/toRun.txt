@@ -1,0 +1,66 @@
+bin/mallet import-dir --input tm_data/robot_robotic/1981 --output tm_results/rr1981.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1982 --output tm_results/rr1982.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1983 --output tm_results/rr1983.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1984 --output tm_results/rr1984.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1985 --output tm_results/rr1985.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1986 --output tm_results/rr1986.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1987 --output tm_results/rr1987.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1988 --output tm_results/rr1988.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1989 --output tm_results/rr1989.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1990 --output tm_results/rr1990.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1991 --output tm_results/rr1991.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1992 --output tm_results/rr1992.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1993 --output tm_results/rr1993.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1994 --output tm_results/rr1994.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1995 --output tm_results/rr1995.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1996 --output tm_results/rr1996.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1997 --output tm_results/rr1997.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1998 --output tm_results/rr1998.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/1999 --output tm_results/rr1999.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2000 --output tm_results/rr2000.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2001 --output tm_results/rr2001.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2002 --output tm_results/rr2002.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2003 --output tm_results/rr2003.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2004 --output tm_results/rr2004.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2005 --output tm_results/rr2005.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2006 --output tm_results/rr2006.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2007 --output tm_results/rr2007.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2008 --output tm_results/rr2008.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2009 --output tm_results/rr2009.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2010 --output tm_results/rr2010.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2011 --output tm_results/rr2011.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2012 --output tm_results/rr2012.mallet --keep-sequence --remove-stopwords & 
+bin/mallet import-dir --input tm_data/robot_robotic/2013 --output tm_results/rr2013.mallet --keep-sequence --remove-stopwords & 
+bin/mallet train-topics --input tm_results/rr1981.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1981-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1982.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1982-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1983.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1983-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1984.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1984-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1985.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1985-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1986.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1986-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1987.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1987-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1988.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1988-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1989.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1989-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1990.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1990-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1991.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1991-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1992.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1992-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1993.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1993-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1994.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1994-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1995.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1995-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1996.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1996-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1997.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1997-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1998.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1998-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr1999.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr1999-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2000.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2000-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2001.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2001-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2002.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2002-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2003.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2003-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2004.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2004-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2005.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2005-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2006.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2006-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2007.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2007-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2008.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2008-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2009.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2009-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2010.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2010-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2011.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2011-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2012.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2012-topic-phrase-report.xml & 
+bin/mallet train-topics --input tm_results/rr2013.mallet --num-topics 100 --num-iterations 500 --xml-topic-phrase-report tm_results/rr2013-topic-phrase-report.xml & 
