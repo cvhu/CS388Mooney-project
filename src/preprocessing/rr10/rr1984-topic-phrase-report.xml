@@ -1,0 +1,413 @@
+<?xml version='1.0' ?>
+<topics>
+  <topic id="0" alpha="5.0" totalTokens="928" titles="means, control, based, arm, microprocessor, claim, bus, system, robot, lever">
+	<word weight="0.08297413793103449" count="77">means</word>
+	<word weight="0.05387931034482758" count="50">control</word>
+	<word weight="0.03556034482758621" count="33">based</word>
+	<word weight="0.03556034482758621" count="33">arm</word>
+	<word weight="0.03017241379310345" count="28">microprocessor</word>
+	<word weight="0.029094827586206896" count="27">claim</word>
+	<word weight="0.02478448275862069" count="23">bus</word>
+	<word weight="0.020474137931034482" count="19">system</word>
+	<word weight="0.020474137931034482" count="19">robot</word>
+	<word weight="0.01939655172413793" count="18">lever</word>
+	<word weight="0.018318965517241378" count="17">mechanism</word>
+	<word weight="0.016163793103448277" count="15">manipulator</word>
+	<word weight="0.016163793103448277" count="15">apparatus</word>
+	<word weight="0.015086206896551725" count="14">end</word>
+	<word weight="0.015086206896551725" count="14">motor</word>
+	<word weight="0.015086206896551725" count="14">improvement</word>
+	<word weight="0.015086206896551725" count="14">common</word>
+	<word weight="0.014008620689655173" count="13">motion</word>
+	<word weight="0.01293103448275862" count="12">cylinder</word>
+	<phrase weight="0.015503875968992248" count="2">pulse width</phrase>
+	<phrase weight="0.015503875968992248" count="2">robot system</phrase>
+	<phrase weight="0.015503875968992248" count="2">mechanism operate</phrase>
+	<phrase weight="0.015503875968992248" count="2">manipulator means</phrase>
+	<phrase weight="0.015503875968992248" count="2">hydraulic cylinder piston</phrase>
+	<phrase weight="0.015503875968992248" count="2">piston rod</phrase>
+	<phrase weight="0.007751937984496124" count="1">microprocessor based control system direct exclusive access bus respective</phrase>
+	<phrase weight="0.007751937984496124" count="1">lever predetermined arc piston move cylinder</phrase>
+	<phrase weight="0.007751937984496124" count="1">microprocessor based control means direct periodic access bus timing cycle apparatus</phrase>
+	<phrase weight="0.007751937984496124" count="1">arm robot manipulator means bearing control</phrase>
+	<phrase weight="0.007751937984496124" count="1">end position improvement</phrase>
+	<phrase weight="0.007751937984496124" count="1">motor means</phrase>
+	<phrase weight="0.007751937984496124" count="1">communicate servo motors hand</phrase>
+	<phrase weight="0.007751937984496124" count="1">means enable intercommunication microprocess based control means bus common memory means apparatus</phrase>
+	<phrase weight="0.007751937984496124" count="1">system comprises means</phrase>
+	<phrase weight="0.007751937984496124" count="1">accessing means</phrase>
+	<phrase weight="0.007751937984496124" count="1">end position pivotal connection adjustable lever positions</phrase>
+	<phrase weight="0.007751937984496124" count="1">system defined</phrase>
+	<phrase weight="0.007751937984496124" count="1">designated travel arc</phrase>
+	<phrase weight="0.007751937984496124" count="1">bus common</phrase>
+  </topic>
+  <topic id="1" alpha="5.0" totalTokens="673" titles="encoder, tool, housing, jaws, movement, output, sensor, carrier, direction, length">
+	<word weight="0.03714710252600297" count="25">encoder</word>
+	<word weight="0.031203566121842496" count="21">tool</word>
+	<word weight="0.02823179791976226" count="19">housing</word>
+	<word weight="0.02674591381872214" count="18">jaws</word>
+	<word weight="0.022288261515601784" count="15">movement</word>
+	<word weight="0.020802377414561663" count="14">output</word>
+	<word weight="0.019316493313521546" count="13">sensor</word>
+	<word weight="0.017830609212481426" count="12">carrier</word>
+	<word weight="0.017830609212481426" count="12">direction</word>
+	<word weight="0.017830609212481426" count="12">length</word>
+	<word weight="0.017830609212481426" count="12">side</word>
+	<word weight="0.01634472511144131" count="11">frequencies</word>
+	<word weight="0.014858841010401188" count="10">tie</word>
+	<word weight="0.014858841010401188" count="10">outputs</word>
+	<word weight="0.014858841010401188" count="10">rod</word>
+	<word weight="0.014858841010401188" count="10">analog</word>
+	<word weight="0.01337295690936107" count="9">push</word>
+	<word weight="0.01337295690936107" count="9">sliding</word>
+	<word weight="0.01337295690936107" count="9">fastener</word>
+	<phrase weight="0.028037383177570093" count="3">negative velocity</phrase>
+	<phrase weight="0.028037383177570093" count="3">encoder output</phrase>
+	<phrase weight="0.018691588785046728" count="2">velocity sensor</phrase>
+	<phrase weight="0.018691588785046728" count="2">similar fasteners</phrase>
+	<phrase weight="0.018691588785046728" count="2">rate direction</phrase>
+	<phrase weight="0.009345794392523364" count="1">frequency analog</phrase>
+	<phrase weight="0.009345794392523364" count="1">direction rotation</phrase>
+	<phrase weight="0.009345794392523364" count="1">products foregoing</phrase>
+	<phrase weight="0.009345794392523364" count="1">side band frequencies analog voltages summing analog voltages sensor</phrase>
+	<phrase weight="0.009345794392523364" count="1">carrier encoder outputs</phrase>
+	<phrase weight="0.009345794392523364" count="1">difference encoder</phrase>
+	<phrase weight="0.009345794392523364" count="1">deriving continuous output</phrase>
+	<phrase weight="0.009345794392523364" count="1">picking inserting length bolts</phrase>
+	<phrase weight="0.009345794392523364" count="1">band frequencies analog voltages</phrase>
+	<phrase weight="0.009345794392523364" count="1">fastener pair spring loaded jaws</phrase>
+	<phrase weight="0.009345794392523364" count="1">phase shifted outputs</phrase>
+	<phrase weight="0.009345794392523364" count="1">encoder adapted attached</phrase>
+	<phrase weight="0.009345794392523364" count="1">encoder frequency phase relation depend rate direction movement encoder</phrase>
+	<phrase weight="0.009345794392523364" count="1">oscillator frequencies</phrase>
+	<phrase weight="0.009345794392523364" count="1">oscillator outputs</phrase>
+  </topic>
+  <topic id="2" alpha="5.0" totalTokens="1388" titles="manipulator, frame, lead, component, mounted, robotic, spaced, screws, axis, member">
+	<word weight="0.028097982708933718" count="39">manipulator</word>
+	<word weight="0.024495677233429394" count="34">frame</word>
+	<word weight="0.024495677233429394" count="34">lead</word>
+	<word weight="0.021613832853025938" count="30">component</word>
+	<word weight="0.021613832853025938" count="30">mounted</word>
+	<word weight="0.02089337175792507" count="29">robotic</word>
+	<word weight="0.02089337175792507" count="29">spaced</word>
+	<word weight="0.019452449567723344" count="27">screws</word>
+	<word weight="0.019452449567723344" count="27">axis</word>
+	<word weight="0.019452449567723344" count="27">member</word>
+	<word weight="0.01729106628242075" count="24">guide</word>
+	<word weight="0.015129682997118156" count="21">assembly</word>
+	<word weight="0.015129682997118156" count="21">connected</word>
+	<word weight="0.01440922190201729" count="20">called</word>
+	<word weight="0.013688760806916427" count="19">engaging</word>
+	<word weight="0.012968299711815562" count="18">motive</word>
+	<word weight="0.012968299711815562" count="18">screw</word>
+	<word weight="0.012247838616714697" count="17">fixed</word>
+	<word weight="0.012247838616714697" count="17">pair</word>
+	<phrase weight="0.02242152466367713" count="5">robotic manipulator called</phrase>
+	<phrase weight="0.008968609865470852" count="2">forces moments</phrase>
+	<phrase weight="0.008968609865470852" count="2">fixed guide</phrase>
+	<phrase weight="0.008968609865470852" count="2">disposed engaging</phrase>
+	<phrase weight="0.008968609865470852" count="2">planar outer surfaces outer surfaces</phrase>
+	<phrase weight="0.008968609865470852" count="2">tactile feedback</phrase>
+	<phrase weight="0.008968609865470852" count="2">angle ranging degrees</phrase>
+	<phrase weight="0.008968609865470852" count="2">formed base arch strain measuring</phrase>
+	<phrase weight="0.008968609865470852" count="2">multi lead component manipulator</phrase>
+	<phrase weight="0.008968609865470852" count="2">bracket rotating nuts</phrase>
+	<phrase weight="0.008968609865470852" count="2">laterally spaced</phrase>
+	<phrase weight="0.008968609865470852" count="2">arch segments shaped circular</phrase>
+	<phrase weight="0.004484304932735426" count="1">mutually perpendicular axes rotational movement axis</phrase>
+	<phrase weight="0.004484304932735426" count="1">movable axes rotational</phrase>
+	<phrase weight="0.004484304932735426" count="1">component axially drawn frame member movable lead guide</phrase>
+	<phrase weight="0.004484304932735426" count="1">arcuate radial</phrase>
+	<phrase weight="0.004484304932735426" count="1">including electromechanical</phrase>
+	<phrase weight="0.004484304932735426" count="1">component insertion multi lead component manipulator</phrase>
+	<phrase weight="0.004484304932735426" count="1">frame member assemblies radially disposed gripper</phrase>
+	<phrase weight="0.004484304932735426" count="1">fixed guide channel movable guide channel multi lead component manipulator</phrase>
+  </topic>
+  <topic id="3" alpha="5.0" totalTokens="1223" titles="platform, drillhole, probe, centerline, determining, interposer, surface, robot, cavity, central">
+	<word weight="0.053147996729354045" count="65">platform</word>
+	<word weight="0.04251839738348324" count="52">drillhole</word>
+	<word weight="0.03679476696647588" count="45">probe</word>
+	<word weight="0.03515944399018806" count="43">centerline</word>
+	<word weight="0.033524121013900246" count="41">determining</word>
+	<word weight="0.03188879803761243" count="39">interposer</word>
+	<word weight="0.028618152085036794" count="35">surface</word>
+	<word weight="0.024529844644317254" count="30">robot</word>
+	<word weight="0.02125919869174162" count="26">cavity</word>
+	<word weight="0.02044153720359771" count="25">central</word>
+	<word weight="0.019623875715453803" count="24">physical</word>
+	<word weight="0.017988552739165987" count="22">part</word>
+	<word weight="0.017170891251022075" count="21">feature</word>
+	<word weight="0.01553556827473426" count="19">drill</word>
+	<word weight="0.01553556827473426" count="19">coordinates</word>
+	<word weight="0.01553556827473426" count="19">position</word>
+	<word weight="0.014717906786590351" count="18">lifting</word>
+	<word weight="0.014717906786590351" count="18">predetermined</word>
+	<word weight="0.013900245298446443" count="17">locator</word>
+	<phrase weight="0.05" count="8">teaching probe trainable drill robot coordinates part</phrase>
+	<phrase weight="0.025" count="4">probe drill bit</phrase>
+	<phrase weight="0.01875" count="3">locator block</phrase>
+	<phrase weight="0.01875" count="3">steps positioning work envelope drill robot master part centerline determining interposers affixed mounting</phrase>
+	<phrase weight="0.0125" count="2">proximity sensing</phrase>
+	<phrase weight="0.0125" count="2">load predetermined path platform load precisely located</phrase>
+	<phrase weight="0.0125" count="2">interposer planarization platform planarization surface orthogonal related drillhole centerline central physical feature coaxial</phrase>
+	<phrase weight="0.0125" count="2">predetermined position transporter</phrase>
+	<phrase weight="0.0125" count="2">toggle links</phrase>
+	<phrase weight="0.0125" count="2">load arrives predetermined station path</phrase>
+	<phrase weight="0.0125" count="2">probing actions increase accuracy</phrase>
+	<phrase weight="0.0125" count="2">contact sensing</phrase>
+	<phrase weight="0.0125" count="2">tracks position dimensions tracks lacking precision</phrase>
+	<phrase weight="0.0125" count="2">platform supporting wheels roll</phrase>
+	<phrase weight="0.00625" count="1">cavity configuration calculating cavity configuration epicenter cavity</phrase>
+	<phrase weight="0.00625" count="1">interposer drillhole centerline determining interposer</phrase>
+	<phrase weight="0.00625" count="1">planarization platform central physical feature</phrase>
+	<phrase weight="0.00625" count="1">platform firmly</phrase>
+	<phrase weight="0.00625" count="1">lifting block downwardly</phrase>
+	<phrase weight="0.00625" count="1">conical cavity larger platform surface platform surface drillhole centerline determining interposer</phrase>
+  </topic>
+  <topic id="4" alpha="5.0" totalTokens="1618" titles="method claim, means, comprising, plurality, location, comprises, determining, claims, step, including">
+	<word weight="0.33498145859085293" count="542">means</word>
+	<word weight="0.15822002472187885" count="256">claim</word>
+	<word weight="0.08714462299134734" count="141">comprising</word>
+	<word weight="0.08220024721878863" count="133">method</word>
+	<word weight="0.030902348578491966" count="50">plurality</word>
+	<word weight="0.019159456118665017" count="31">location</word>
+	<word weight="0.0173053152039555" count="28">comprises</word>
+	<word weight="0.01668726823238566" count="27">determining</word>
+	<word weight="0.014833127317676144" count="24">step</word>
+	<word weight="0.014833127317676144" count="24">claims</word>
+	<word weight="0.013597033374536464" count="22">including</word>
+	<word weight="0.012978986402966625" count="21">relative</word>
+	<word weight="0.012978986402966625" count="21">generating</word>
+	<word weight="0.012360939431396786" count="20">determine</word>
+	<word weight="0.009270704573547589" count="15">utilizing</word>
+	<word weight="0.009270704573547589" count="15">controlling</word>
+	<word weight="0.00865265760197775" count="14">providing</word>
+	<word weight="0.008034610630407911" count="13">detecting</word>
+	<word weight="0.006798516687268232" count="11">gripping</word>
+	<phrase weight="0.16428571428571428" count="23">method claim</phrase>
+	<phrase weight="0.07857142857142857" count="11">claim comprising</phrase>
+	<phrase weight="0.07142857142857142" count="10">comprising means</phrase>
+	<phrase weight="0.05" count="7">claim step</phrase>
+	<phrase weight="0.02857142857142857" count="4">claim comprising means</phrase>
+	<phrase weight="0.02857142857142857" count="4">means detecting</phrase>
+	<phrase weight="0.02142857142857143" count="3">comprising means generating</phrase>
+	<phrase weight="0.02142857142857143" count="3">means generating</phrase>
+	<phrase weight="0.02142857142857143" count="3">means controlling</phrase>
+	<phrase weight="0.02142857142857143" count="3">determining location</phrase>
+	<phrase weight="0.02142857142857143" count="3">means comprising</phrase>
+	<phrase weight="0.02142857142857143" count="3">means comprises</phrase>
+	<phrase weight="0.02142857142857143" count="3">means stop</phrase>
+	<phrase weight="0.014285714285714285" count="2">claims claim</phrase>
+	<phrase weight="0.014285714285714285" count="2">method claim comprising</phrase>
+	<phrase weight="0.014285714285714285" count="2">providing plurality</phrase>
+	<phrase weight="0.014285714285714285" count="2">capable generating</phrase>
+	<phrase weight="0.014285714285714285" count="2">means placing</phrase>
+	<phrase weight="0.014285714285714285" count="2">substantially scene magnifications</phrase>
+	<phrase weight="0.014285714285714285" count="2">including means</phrase>
+  </topic>
+  <topic id="5" alpha="5.0" totalTokens="1545" titles="signal, object, reference, optical, system, correlation, signals, transform, light, viewed">
+	<word weight="0.11326860841423948" count="175">signal</word>
+	<word weight="0.08996763754045307" count="139">object</word>
+	<word weight="0.045954692556634306" count="71">reference</word>
+	<word weight="0.041423948220064725" count="64">optical</word>
+	<word weight="0.03559870550161812" count="55">system</word>
+	<word weight="0.02912621359223301" count="45">correlation</word>
+	<word weight="0.025889967637540454" count="40">signals</word>
+	<word weight="0.022653721682847898" count="35">transform</word>
+	<word weight="0.022653721682847898" count="35">light</word>
+	<word weight="0.022006472491909384" count="34">viewed</word>
+	<word weight="0.020064724919093852" count="31">coherent</word>
+	<word weight="0.020064724919093852" count="31">desired</word>
+	<word weight="0.018122977346278317" count="28">produce</word>
+	<word weight="0.018122977346278317" count="28">degree</word>
+	<word weight="0.015533980582524271" count="24">fourier</word>
+	<word weight="0.015533980582524271" count="24">optically</word>
+	<word weight="0.01488673139158576" count="23">spatial</word>
+	<word weight="0.01488673139158576" count="23">orientation</word>
+	<word weight="0.013592233009708738" count="21">video</word>
+	<phrase weight="0.016574585635359115" count="3">vision system identifying</phrase>
+	<phrase weight="0.016574585635359115" count="3">orientation object</phrase>
+	<phrase weight="0.011049723756906077" count="2">reference signal</phrase>
+	<phrase weight="0.011049723756906077" count="2">utilize coherent light system</phrase>
+	<phrase weight="0.011049723756906077" count="2">detecting degree correlation present electrical correlated signal system</phrase>
+	<phrase weight="0.011049723756906077" count="2">cross correlates object signal reference signal parallel optical processing system</phrase>
+	<phrase weight="0.011049723756906077" count="2">optical electrical conversion</phrase>
+	<phrase weight="0.011049723756906077" count="2">laser producing coherent light system</phrase>
+	<phrase weight="0.011049723756906077" count="2">diffusing coherent light vision system industrial</phrase>
+	<phrase weight="0.011049723756906077" count="2">includes object transform</phrase>
+	<phrase weight="0.011049723756906077" count="2">effector control processor</phrase>
+	<phrase weight="0.011049723756906077" count="2">receiving optically squaring sum signal produce product signal inverse transform</phrase>
+	<phrase weight="0.011049723756906077" count="2">correlating utilizes parallel optical processing</phrase>
+	<phrase weight="0.011049723756906077" count="2">reference signals indicative</phrase>
+	<phrase weight="0.011049723756906077" count="2">lighting object viewed illumination</phrase>
+	<phrase weight="0.011049723756906077" count="2">optically taking inverse fourier transform optical product signal produce correlated signal system</phrase>
+	<phrase weight="0.011049723756906077" count="2">robotic effector</phrase>
+	<phrase weight="0.011049723756906077" count="2">reference transform</phrase>
+	<phrase weight="0.011049723756906077" count="2">converting optical correlated signal electrical counterpart discrimination</phrase>
+	<phrase weight="0.011049723756906077" count="2">coherent light laser diffusion</phrase>
+  </topic>
+  <topic id="6" alpha="5.0" totalTokens="1586" titles="circuit, system, means, input, binary, information, organizing, signal, claim, output">
+	<word weight="0.05422446406052964" count="86">circuit</word>
+	<word weight="0.0403530895334174" count="64">system</word>
+	<word weight="0.03720050441361917" count="59">means</word>
+	<word weight="0.031525851197982346" count="50">input</word>
+	<word weight="0.0308953341740227" count="49">binary</word>
+	<word weight="0.029634300126103404" count="47">information</word>
+	<word weight="0.02711223203026482" count="43">organizing</word>
+	<word weight="0.02711223203026482" count="43">signal</word>
+	<word weight="0.02648171500630517" count="42">claim</word>
+	<word weight="0.025851197982345524" count="41">output</word>
+	<word weight="0.022068095838587643" count="35">signals</word>
+	<word weight="0.021437578814627996" count="34">operable</word>
+	<word weight="0.01828499369482976" count="29">level</word>
+	<word weight="0.01828499369482976" count="29">connected</word>
+	<word weight="0.01639344262295082" count="26">constituent</word>
+	<word weight="0.015762925598991173" count="25">pattern</word>
+	<word weight="0.015762925598991173" count="25">receive</word>
+	<word weight="0.014501891551071878" count="23">includes</word>
+	<word weight="0.013240857503152586" count="21">elements</word>
+	<phrase weight="0.03278688524590164" count="4">connected receive binary</phrase>
+	<phrase weight="0.03278688524590164" count="4">binary assigned</phrase>
+	<phrase weight="0.02459016393442623" count="3">information information</phrase>
+	<phrase weight="0.02459016393442623" count="3">bits successive iterations stored binary</phrase>
+	<phrase weight="0.02459016393442623" count="3">connected receive information</phrase>
+	<phrase weight="0.01639344262295082" count="2">sensor operable</phrase>
+	<phrase weight="0.01639344262295082" count="2">circuitry operable</phrase>
+	<phrase weight="0.01639344262295082" count="2">pixels pixels</phrase>
+	<phrase weight="0.01639344262295082" count="2">convert analog</phrase>
+	<phrase weight="0.00819672131147541" count="1">signal correct</phrase>
+	<phrase weight="0.00819672131147541" count="1">thereof comprises</phrase>
+	<phrase weight="0.00819672131147541" count="1">varying input information identification pattern constituent elements input information varies</phrase>
+	<phrase weight="0.00819672131147541" count="1">binary applied</phrase>
+	<phrase weight="0.00819672131147541" count="1">levels modifying inputs serve correct errors output</phrase>
+	<phrase weight="0.00819672131147541" count="1">successive iterations stored binary</phrase>
+	<phrase weight="0.00819672131147541" count="1">information turn information inputted organizing circuit means system claim sensor comprises pixels electrical circuitry obey nearest neighbor rule</phrase>
+	<phrase weight="0.00819672131147541" count="1">accurate inaccurate identification input information plurality organizing circuits system</phrase>
+	<phrase weight="0.00819672131147541" count="1">claim strip</phrase>
+	<phrase weight="0.00819672131147541" count="1">electrical means including</phrase>
+	<phrase weight="0.00819672131147541" count="1">receive optical pattern operable convert</phrase>
+  </topic>
+  <topic id="7" alpha="5.0" totalTokens="1273" titles="position, light, sensing, optical, element, gripper, apparatus, sensor, detector, machinery">
+	<word weight="0.07069913589945012" count="90">position</word>
+	<word weight="0.062058130400628436" count="79">light</word>
+	<word weight="0.04870384917517675" count="62">sensing</word>
+	<word weight="0.03220738413197172" count="41">optical</word>
+	<word weight="0.02513747054202671" count="32">element</word>
+	<word weight="0.024351924587588374" count="31">gripper</word>
+	<word weight="0.02356637863315004" count="30">apparatus</word>
+	<word weight="0.022780832678711706" count="29">sensor</word>
+	<word weight="0.018853102906520033" count="24">detector</word>
+	<word weight="0.018067556952081697" count="23">machinery</word>
+	<word weight="0.018067556952081697" count="23">determined</word>
+	<word weight="0.018067556952081697" count="23">arm</word>
+	<word weight="0.018067556952081697" count="23">robot</word>
+	<word weight="0.01728201099764336" count="22">source</word>
+	<word weight="0.01728201099764336" count="22">electro</word>
+	<word weight="0.015710919088766692" count="20">field</word>
+	<word weight="0.015710919088766692" count="20">space</word>
+	<word weight="0.014139827179890024" count="18">axis</word>
+	<word weight="0.014139827179890024" count="18">desired</word>
+	<phrase weight="0.03463203463203463" count="8">optical sensing</phrase>
+	<phrase weight="0.021645021645021644" count="5">correcting position data</phrase>
+	<phrase weight="0.021645021645021644" count="5">light detector</phrase>
+	<phrase weight="0.021645021645021644" count="5">light source</phrase>
+	<phrase weight="0.017316017316017316" count="4">sensing positional</phrase>
+	<phrase weight="0.012987012987012988" count="3">space light sensors</phrase>
+	<phrase weight="0.012987012987012988" count="3">elements space</phrase>
+	<phrase weight="0.012987012987012988" count="3">scanning device</phrase>
+	<phrase weight="0.012987012987012988" count="3">light sensors element</phrase>
+	<phrase weight="0.012987012987012988" count="3">projecting pattern light</phrase>
+	<phrase weight="0.012987012987012988" count="3">light projectors positions</phrase>
+	<phrase weight="0.008658008658008658" count="2">apparatus inspecting</phrase>
+	<phrase weight="0.008658008658008658" count="2">angular position sensor</phrase>
+	<phrase weight="0.008658008658008658" count="2">steps providing</phrase>
+	<phrase weight="0.008658008658008658" count="2">transmitting control</phrase>
+	<phrase weight="0.008658008658008658" count="2">gripped gripper sensing</phrase>
+	<phrase weight="0.008658008658008658" count="2">transmitting sensing</phrase>
+	<phrase weight="0.008658008658008658" count="2">gripper element directing light</phrase>
+	<phrase weight="0.008658008658008658" count="2">machinery sensor</phrase>
+	<phrase weight="0.008658008658008658" count="2">cable apparatus</phrase>
+  </topic>
+  <topic id="8" alpha="5.0" totalTokens="1342" titles="image, object, fiber, bundle, comprises, apparatus, photodetector, end, memory, camera">
+	<word weight="0.07898658718330849" count="106">image</word>
+	<word weight="0.06333830104321908" count="85">object</word>
+	<word weight="0.043219076005961254" count="58">fiber</word>
+	<word weight="0.03502235469448584" count="47">bundle</word>
+	<word weight="0.03129657228017884" count="42">comprises</word>
+	<word weight="0.02459016393442623" count="33">apparatus</word>
+	<word weight="0.022354694485842028" count="30">photodetector</word>
+	<word weight="0.022354694485842028" count="30">end</word>
+	<word weight="0.01788375558867362" count="24">memory</word>
+	<word weight="0.01564828614008942" count="21">camera</word>
+	<word weight="0.01564828614008942" count="21">coherent</word>
+	<word weight="0.01564828614008942" count="21">orientation</word>
+	<word weight="0.014903129657228018" count="20">point</word>
+	<word weight="0.012667660208643815" count="17">imaging</word>
+	<word weight="0.011177347242921014" count="15">grasping</word>
+	<word weight="0.011177347242921014" count="15">interest</word>
+	<word weight="0.011177347242921014" count="15">portion</word>
+	<word weight="0.010432190760059613" count="14">images</word>
+	<word weight="0.009687034277198211" count="13">coupling</word>
+	<phrase weight="0.014545454545454545" count="4">fiber bundle</phrase>
+	<phrase weight="0.014545454545454545" count="4">image rotation</phrase>
+	<phrase weight="0.01090909090909091" count="3">image image coupling</phrase>
+	<phrase weight="0.01090909090909091" count="3">angular orientation</phrase>
+	<phrase weight="0.01090909090909091" count="3">image image produced camera</phrase>
+	<phrase weight="0.01090909090909091" count="3">fiber bundle comprises</phrase>
+	<phrase weight="0.01090909090909091" count="3">memory update real time result memory</phrase>
+	<phrase weight="0.01090909090909091" count="3">analyzing contiguous overlapping groups</phrase>
+	<phrase weight="0.01090909090909091" count="3">discrete photodetector elements</phrase>
+	<phrase weight="0.01090909090909091" count="3">coincidence angular</phrase>
+	<phrase weight="0.01090909090909091" count="3">fiber optic</phrase>
+	<phrase weight="0.01090909090909091" count="3">store manner maintains</phrase>
+	<phrase weight="0.007272727272727273" count="2">presence identity</phrase>
+	<phrase weight="0.007272727272727273" count="2">present iteration</phrase>
+	<phrase weight="0.007272727272727273" count="2">grasping object</phrase>
+	<phrase weight="0.007272727272727273" count="2">photodetector comprises solid state photodetector</phrase>
+	<phrase weight="0.007272727272727273" count="2">area dimension</phrase>
+	<phrase weight="0.007272727272727273" count="2">rows mask algorithm image processor comprises high speed picture memory</phrase>
+	<phrase weight="0.007272727272727273" count="2">orientation presence identity portion object</phrase>
+	<phrase weight="0.007272727272727273" count="2">image object grasped comparison</phrase>
+  </topic>
+  <topic id="9" alpha="5.0" totalTokens="958" titles="machine, motor, time, pressure, variables, portion, characteristic, jack, sleeve, performance">
+	<word weight="0.0709812108559499" count="68">machine</word>
+	<word weight="0.031315240083507306" count="30">motor</word>
+	<word weight="0.025052192066805846" count="24">time</word>
+	<word weight="0.021920668058455117" count="21">pressure</word>
+	<word weight="0.017745302713987474" count="17">variables</word>
+	<word weight="0.017745302713987474" count="17">portion</word>
+	<word weight="0.015657620041753653" count="15">characteristic</word>
+	<word weight="0.013569937369519834" count="13">jack</word>
+	<word weight="0.013569937369519834" count="13">sleeve</word>
+	<word weight="0.013569937369519834" count="13">performance</word>
+	<word weight="0.013569937369519834" count="13">optimizing</word>
+	<word weight="0.012526096033402923" count="12">chamber</word>
+	<word weight="0.011482254697286013" count="11">test</word>
+	<word weight="0.011482254697286013" count="11">analyzing</word>
+	<word weight="0.011482254697286013" count="11">conditions</word>
+	<word weight="0.011482254697286013" count="11">pneumatic</word>
+	<word weight="0.010438413361169102" count="10">extractor</word>
+	<word weight="0.010438413361169102" count="10">collecting</word>
+	<word weight="0.010438413361169102" count="10">pin</word>
+	<phrase weight="0.024193548387096774" count="3">sided sleeve</phrase>
+	<phrase weight="0.016129032258064516" count="2">nut acting spring extractor</phrase>
+	<phrase weight="0.016129032258064516" count="2">locking sleeve</phrase>
+	<phrase weight="0.016129032258064516" count="2">operation condition machine including</phrase>
+	<phrase weight="0.016129032258064516" count="2">body fastened spreader lying tongs</phrase>
+	<phrase weight="0.008064516129032258" count="1">differential body permit supply reference pressure arrangement</phrase>
+	<phrase weight="0.008064516129032258" count="1">clamp pin protective ring</phrase>
+	<phrase weight="0.008064516129032258" count="1">motor stall correlatively operation differential pneumatic device</phrase>
+	<phrase weight="0.008064516129032258" count="1">combination conditions variables optimum specific performance characteristic machine environment time setting conditions levels variables</phrase>
+	<phrase weight="0.008064516129032258" count="1">optimizing cycles</phrase>
+	<phrase weight="0.008064516129032258" count="1">chamber conduit motor pressure</phrase>
+	<phrase weight="0.008064516129032258" count="1">optimizing dynamically real time machine</phrase>
+	<phrase weight="0.008064516129032258" count="1">variables tests</phrase>
+	<phrase weight="0.008064516129032258" count="1">putting abutment</phrase>
+	<phrase weight="0.008064516129032258" count="1">pressure pm inlet pneumatic motor</phrase>
+	<phrase weight="0.008064516129032258" count="1">provoke period</phrase>
+	<phrase weight="0.008064516129032258" count="1">locked pin nut unscrewed pin extracted action jack extractor</phrase>
+	<phrase weight="0.008064516129032258" count="1">setting steps minute</phrase>
+	<phrase weight="0.008064516129032258" count="1">substantially continuously performing designed tests machine relying extrapolations</phrase>
+	<phrase weight="0.008064516129032258" count="1">returning designing</phrase>
+  </topic>
+</topics>

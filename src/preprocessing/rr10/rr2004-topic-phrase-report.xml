@@ -1,0 +1,413 @@
+<?xml version='1.0' ?>
+<topics>
+  <topic id="0" alpha="5.0" totalTokens="33255" titles="load lock, fluid, claim, system, apparatus, pressure, source, comprising, chamber, valve">
+	<word weight="0.042459780484137725" count="1412">fluid</word>
+	<word weight="0.03379942865734476" count="1124">claim</word>
+	<word weight="0.029048263419034732" count="966">system</word>
+	<word weight="0.020267628927980754" count="674">apparatus</word>
+	<word weight="0.01951586227634942" count="649">pressure</word>
+	<word weight="0.01930536761389265" count="642">source</word>
+	<word weight="0.018132611637347768" count="603">comprising</word>
+	<word weight="0.017591339648173207" count="585">chamber</word>
+	<word weight="0.016147947677041048" count="537">valve</word>
+	<word weight="0.014975191700496167" count="498">control</word>
+	<word weight="0.014403849045256352" count="479">configured</word>
+	<word weight="0.01365208239362502" count="454">flow</word>
+	<word weight="0.013561870395429259" count="451">gas</word>
+	<word weight="0.013231093068711472" count="440">housing</word>
+	<word weight="0.011276499774470004" count="375">support</word>
+	<word weight="0.010584874454969178" count="352">comprises</word>
+	<word weight="0.010494662456773418" count="349">interior</word>
+	<word weight="0.009682754473011578" count="322">load</word>
+	<word weight="0.009622613140881071" count="320">method</word>
+	<phrase weight="0.007183170856849667" count="28">load lock</phrase>
+	<phrase weight="0.00513083632632119" count="20">claim comprising</phrase>
+	<phrase weight="0.0048742945100051305" count="19">apparatus claim</phrase>
+	<phrase weight="0.004104669061056952" count="16">vacuum chamber</phrase>
+	<phrase weight="0.004104669061056952" count="16">shutter disk</phrase>
+	<phrase weight="0.0035915854284248334" count="14">system claim</phrase>
+	<phrase weight="0.0028219599794766545" count="11">method claim</phrase>
+	<phrase weight="0.0028219599794766545" count="11">fluid communication</phrase>
+	<phrase weight="0.002565418163160595" count="10">suspect hazardous</phrase>
+	<phrase weight="0.002565418163160595" count="10">catheter portion</phrase>
+	<phrase weight="0.002308876346844536" count="9">catheter apparatus</phrase>
+	<phrase weight="0.002308876346844536" count="9">cpb microlithography</phrase>
+	<phrase weight="0.002308876346844536" count="9">vacuum source</phrase>
+	<phrase weight="0.002308876346844536" count="9">source fluid</phrase>
+	<phrase weight="0.002308876346844536" count="9">optical disc</phrase>
+	<phrase weight="0.002052334530528476" count="8">fluid fluid</phrase>
+	<phrase weight="0.002052334530528476" count="8">powder paint</phrase>
+	<phrase weight="0.002052334530528476" count="8">source gas</phrase>
+	<phrase weight="0.002052334530528476" count="8">supply manifold</phrase>
+	<phrase weight="0.0017957927142124167" count="7">endoscope claim</phrase>
+  </topic>
+  <topic id="1" alpha="5.0" totalTokens="34161" titles="semiconductor substrate, method claim, barrier door, material, surface, container, layer, comprising, chamber, gas">
+	<word weight="0.05482860571997307" count="1873">substrate</word>
+	<word weight="0.04066040221304997" count="1389">claim</word>
+	<word weight="0.03258101343637481" count="1113">material</word>
+	<word weight="0.02842422645707093" count="971">method</word>
+	<word weight="0.02368197652293551" count="809">surface</word>
+	<word weight="0.016480782178507656" count="563">container</word>
+	<word weight="0.0159245923714177" count="544">layer</word>
+	<word weight="0.0159245923714177" count="544">comprising</word>
+	<word weight="0.014929305348204093" count="510">chamber</word>
+	<word weight="0.01249963408565323" count="427">gas</word>
+	<word weight="0.011884897983080121" count="406">tube</word>
+	<word weight="0.011650712801147507" count="398">part</word>
+	<word weight="0.011445800766956471" count="391">process</word>
+	<word weight="0.011153069289540704" count="381">apparatus</word>
+	<word weight="0.010801791516641785" count="369">processing</word>
+	<word weight="0.010450513743742864" count="357">liquid</word>
+	<word weight="0.010421240596001288" count="356">comprises</word>
+	<word weight="0.009630865606978718" count="329">port</word>
+	<word weight="0.009484499868270836" count="324">semiconductor</word>
+	<phrase weight="0.008617234468937876" count="43">semiconductor substrate</phrase>
+	<phrase weight="0.007615230460921844" count="38">method claim</phrase>
+	<phrase weight="0.005811623246492986" count="29">barrier door</phrase>
+	<phrase weight="0.0036072144288577155" count="18">substrate substrate</phrase>
+	<phrase weight="0.0032064128256513026" count="16">process chamber</phrase>
+	<phrase weight="0.003006012024048096" count="15">transport deposition</phrase>
+	<phrase weight="0.003006012024048096" count="15">process chambers</phrase>
+	<phrase weight="0.0028056112224448897" count="14">port door</phrase>
+	<phrase weight="0.0028056112224448897" count="14">container delivery</phrase>
+	<phrase weight="0.0028056112224448897" count="14">substrate drying assembly</phrase>
+	<phrase weight="0.0026052104208416833" count="13">apparatus claim</phrase>
+	<phrase weight="0.002404809619238477" count="12">gas burner</phrase>
+	<phrase weight="0.002404809619238477" count="12">claim comprising</phrase>
+	<phrase weight="0.0022044088176352704" count="11">substrate surface</phrase>
+	<phrase weight="0.0022044088176352704" count="11">front door</phrase>
+	<phrase weight="0.002004008016032064" count="10">trim part</phrase>
+	<phrase weight="0.002004008016032064" count="10">fastener feeder</phrase>
+	<phrase weight="0.002004008016032064" count="10">pill bottle</phrase>
+	<phrase weight="0.0018036072144288577" count="9">substrate transport</phrase>
+	<phrase weight="0.0016032064128256513" count="8">recipient container</phrase>
+  </topic>
+  <topic id="2" alpha="5.0" totalTokens="31695" titles="method claim, group consisting, reaction, comprising, comprises, plurality, phase, reactor, compound, cell">
+	<word weight="0.04918756901719514" count="1559">claim</word>
+	<word weight="0.035084398170058366" count="1112">method</word>
+	<word weight="0.02246411105852658" count="712">reaction</word>
+	<word weight="0.013472156491560182" count="427">comprising</word>
+	<word weight="0.012020823473734028" count="381">comprises</word>
+	<word weight="0.00949676605142767" count="301">group</word>
+	<word weight="0.008707998106956933" count="276">plurality</word>
+	<word weight="0.008108534469159174" count="257">phase</word>
+	<word weight="0.007793027291370879" count="247">reactor</word>
+	<word weight="0.00772992585581322" count="245">compound</word>
+	<word weight="0.007698375138034391" count="244">consisting</word>
+	<word weight="0.007572172266919072" count="240">cell</word>
+	<word weight="0.0074459693958037546" count="236">selected</word>
+	<word weight="0.007382867960246096" count="234">chemical</word>
+	<word weight="0.007162012935794289" count="227">array</word>
+	<word weight="0.0065309985802177" count="207">acid</word>
+	<word weight="0.0063416942735447235" count="201">materials</word>
+	<word weight="0.006120839249092917" count="194">solid</word>
+	<word weight="0.00596308566019877" count="189">vessels</word>
+	<phrase weight="0.010898458266879319" count="41">method claim</phrase>
+	<phrase weight="0.007177033492822967" count="27">group consisting</phrase>
+	<phrase weight="0.005050505050505051" count="19">glazing pane</phrase>
+	<phrase weight="0.004253056884635832" count="16">reaction vessel</phrase>
+	<phrase weight="0.0034556087187666137" count="13">selected group consisting</phrase>
+	<phrase weight="0.0034556087187666137" count="13">reaction vessels</phrase>
+	<phrase weight="0.002658160552897395" count="10">functional blocks</phrase>
+	<phrase weight="0.0023923444976076554" count="9">throughput screening</phrase>
+	<phrase weight="0.0023923444976076554" count="9">reactor vessels</phrase>
+	<phrase weight="0.0023923444976076554" count="9">claim comprising</phrase>
+	<phrase weight="0.002126528442317916" count="8">mass spectrometer</phrase>
+	<phrase weight="0.002126528442317916" count="8">reactor claim</phrase>
+	<phrase weight="0.0018607123870281765" count="7">reaction containers</phrase>
+	<phrase weight="0.0018607123870281765" count="7">reaction products produced reaction</phrase>
+	<phrase weight="0.0018607123870281765" count="7">reaction sections reaction</phrase>
+	<phrase weight="0.0018607123870281765" count="7">solution phase</phrase>
+	<phrase weight="0.0018607123870281765" count="7">removes reaction containers reaction</phrase>
+	<phrase weight="0.001594896331738437" count="6">microsystem claim</phrase>
+	<phrase weight="0.001594896331738437" count="6">shaking shaking</phrase>
+	<phrase weight="0.001594896331738437" count="6">separates solution reaction solutions reaction</phrase>
+  </topic>
+  <topic id="3" alpha="5.0" totalTokens="42286" titles="end effector, frame member, propelled endoscopic, longitudinal axis, claim, drive, system, actuator, coupled, comprising">
+	<word weight="0.031665326585631176" count="1339">member</word>
+	<word weight="0.030506550631414654" count="1290">claim</word>
+	<word weight="0.019297166911034384" count="816">end</word>
+	<word weight="0.016293808825616044" count="689">drive</word>
+	<word weight="0.015489760204322944" count="655">system</word>
+	<word weight="0.015087735893676395" count="638">axis</word>
+	<word weight="0.015064087404814833" count="637">actuator</word>
+	<word weight="0.013408693184505511" count="567">frame</word>
+	<word weight="0.013101262829305207" count="554">coupled</word>
+	<word weight="0.012770183985243343" count="540">comprising</word>
+	<word weight="0.011753298964196187" count="497">apparatus</word>
+	<word weight="0.01165870500874994" count="493">effector</word>
+	<word weight="0.010760062432010595" count="455">movement</word>
+	<word weight="0.010736413943149033" count="454">surgical</word>
+	<word weight="0.01068911696542591" count="452">position</word>
+	<word weight="0.010452632076810292" count="442">robotic</word>
+	<word weight="0.01042898358794873" count="441">base</word>
+	<word weight="0.009790474388686563" count="414">assembly</word>
+	<word weight="0.009459395544624698" count="400">arm</word>
+	<phrase weight="0.012717411632691229" count="68">end effector</phrase>
+	<phrase weight="0.004862539741911353" count="26">frame member</phrase>
+	<phrase weight="0.004301477463998503" count="23">propelled endoscopic</phrase>
+	<phrase weight="0.004114456704694221" count="22">longitudinal axis</phrase>
+	<phrase weight="0.003553394426781373" count="19">claim comprising</phrase>
+	<phrase weight="0.0031793529081728072" count="17">apparatus claim</phrase>
+	<phrase weight="0.0031793529081728072" count="17">degree freedom</phrase>
+	<phrase weight="0.0024312698709556763" count="13">robotic manipulator</phrase>
+	<phrase weight="0.0024312698709556763" count="13">system claim</phrase>
+	<phrase weight="0.0022442491116513932" count="12">wall climbing</phrase>
+	<phrase weight="0.0020572283523471106" count="11">outer structure</phrase>
+	<phrase weight="0.0020572283523471106" count="11">surgical instrument</phrase>
+	<phrase weight="0.0018702075930428278" count="10">crash protection</phrase>
+	<phrase weight="0.001683186833738545" count="9">linear actuator</phrase>
+	<phrase weight="0.0014961660744342623" count="8">robotic surgical</phrase>
+	<phrase weight="0.0014961660744342623" count="8">actuator band</phrase>
+	<phrase weight="0.0014961660744342623" count="8">planetary gears</phrase>
+	<phrase weight="0.0013091453151299795" count="7">robotic crash protection</phrase>
+	<phrase weight="0.0013091453151299795" count="7">sensor system</phrase>
+	<phrase weight="0.0013091453151299795" count="7">recited claim</phrase>
+  </topic>
+  <topic id="4" alpha="5.0" totalTokens="44497" titles="low resolution, mobile robot, robot bus, control, claim, means, system, information, unit, comprising">
+	<word weight="0.042946715508910716" count="1911">robot</word>
+	<word weight="0.026069173202687822" count="1160">control</word>
+	<word weight="0.02472076769220397" count="1100">claim</word>
+	<word weight="0.02370946355934108" count="1055">means</word>
+	<word weight="0.020990179113198643" count="934">system</word>
+	<word weight="0.017776479313212128" count="791">information</word>
+	<word weight="0.012944692900644988" count="576">unit</word>
+	<word weight="0.012630064948198755" count="562">comprising</word>
+	<word weight="0.011663707665685327" count="519">signal</word>
+	<word weight="0.010270355304852012" count="457">sensor</word>
+	<word weight="0.009034316920241814" count="402">platform</word>
+	<word weight="0.007843225385981078" count="349">controller</word>
+	<word weight="0.007303863181787536" count="325">robotic</word>
+	<word weight="0.00714654920556442" count="318">action</word>
+	<word weight="0.007124075780389689" count="317">method</word>
+	<word weight="0.007056655504865497" count="314">body</word>
+	<word weight="0.006921814953817111" count="308">medical</word>
+	<word weight="0.006742027552419264" count="300">position</word>
+	<word weight="0.0067195541272445335" count="299">switch</word>
+	<phrase weight="0.0037429819089207735" count="24">low resolution</phrase>
+	<phrase weight="0.0037429819089207735" count="24">mobile robot</phrase>
+	<phrase weight="0.0032751091703056767" count="21">robot bus</phrase>
+	<phrase weight="0.0031191515907673115" count="20">claim comprising</phrase>
+	<phrase weight="0.002963194011228946" count="19">transmitter coil</phrase>
+	<phrase weight="0.0026512788521522146" count="17">emitted confinement</phrase>
+	<phrase weight="0.0026512788521522146" count="17">independent reference</phrase>
+	<phrase weight="0.0026512788521522146" count="17">medical instrument</phrase>
+	<phrase weight="0.002495321272613849" count="16">maximally populated angular</phrase>
+	<phrase weight="0.0023393636930754834" count="15">minimally populated angular</phrase>
+	<phrase weight="0.002183406113537118" count="14">system claim</phrase>
+	<phrase weight="0.0015595757953836558" count="10">switch times</phrase>
+	<phrase weight="0.0014036182158452901" count="9">industrial robot</phrase>
+	<phrase weight="0.0014036182158452901" count="9">claims claimed</phrase>
+	<phrase weight="0.0014036182158452901" count="9">projectile launchers</phrase>
+	<phrase weight="0.0014036182158452901" count="9">robot reference</phrase>
+	<phrase weight="0.0014036182158452901" count="9">control system</phrase>
+	<phrase weight="0.0012476606363069245" count="8">processing system</phrase>
+	<phrase weight="0.0012476606363069245" count="8">portion environment greatest</phrase>
+	<phrase weight="0.0012476606363069245" count="8">robot claim</phrase>
+  </topic>
+  <topic id="5" alpha="5.0" totalTokens="40634" titles="storage library, data storage library, claim, device, method, system, object, interface, media, transfer">
+	<word weight="0.057095043559580644" count="2320">data</word>
+	<word weight="0.036841069055470785" count="1497">storage</word>
+	<word weight="0.03438007579859231" count="1397">claim</word>
+	<word weight="0.031574543485750846" count="1283">device</word>
+	<word weight="0.01973716592016538" count="802">method</word>
+	<word weight="0.016193335630260375" count="658">system</word>
+	<word weight="0.015135108529802628" count="615">object</word>
+	<word weight="0.014519860215583009" count="590">interface</word>
+	<word weight="0.014126101294482453" count="574">media</word>
+	<word weight="0.013781562238519467" count="560">transfer</word>
+	<word weight="0.012846384800905646" count="522">library</word>
+	<word weight="0.012747945070630507" count="518">comprising</word>
+	<word weight="0.010410001476595954" count="423">controller</word>
+	<word weight="0.010114682285770537" count="411">computer</word>
+	<word weight="0.00878574592705616" count="357">unit</word>
+	<word weight="0.008391987005955604" count="341">memory</word>
+	<word weight="0.008244327410542896" count="335">set</word>
+	<word weight="0.007555249298616922" count="307">including</word>
+	<word weight="0.00718610031008515" count="292">objects</word>
+	<phrase weight="0.01186402007757244" count="52">storage library</phrase>
+	<phrase weight="0.01026694045174538" count="45">data storage library</phrase>
+	<phrase weight="0.007529089664613279" count="33">data storage</phrase>
+	<phrase weight="0.004334930412959161" count="19">media storage</phrase>
+	<phrase weight="0.0038786219484371436" count="17">interface device</phrase>
+	<phrase weight="0.003650467716176135" count="16">method claim</phrase>
+	<phrase weight="0.0034223134839151265" count="15">set claim</phrase>
+	<phrase weight="0.0034223134839151265" count="15">system claim</phrase>
+	<phrase weight="0.0031941592516541184" count="14">emissions data</phrase>
+	<phrase weight="0.0027378507871321013" count="12">change parameter</phrase>
+	<phrase weight="0.0025096965548710927" count="11">data library</phrase>
+	<phrase weight="0.0022815423226100846" count="10">digital data</phrase>
+	<phrase weight="0.0022815423226100846" count="10">bi directional transfer interface</phrase>
+	<phrase weight="0.0022815423226100846" count="10">storing data media</phrase>
+	<phrase weight="0.0022815423226100846" count="10">input data</phrase>
+	<phrase weight="0.002053388090349076" count="9">data processing</phrase>
+	<phrase weight="0.002053388090349076" count="9">media storage library</phrase>
+	<phrase weight="0.002053388090349076" count="9">normalized version</phrase>
+	<phrase weight="0.0018252338580880675" count="8">graphic display device</phrase>
+	<phrase weight="0.0018252338580880675" count="8">monitoring module</phrase>
+  </topic>
+  <topic id="6" alpha="5.0" totalTokens="32355" titles="plurality wells, pressing plate, object, device, sample, robotic, claim, apparatus, method, wrapping">
+	<word weight="0.02256220058723536" count="730">object</word>
+	<word weight="0.02231494359449853" count="722">device</word>
+	<word weight="0.021758615360840675" count="704">plurality</word>
+	<word weight="0.021696801112656466" count="702">sample</word>
+	<word weight="0.021202287127182817" count="686">robotic</word>
+	<word weight="0.02058414464534075" count="666">claim</word>
+	<word weight="0.016535311389275227" count="535">apparatus</word>
+	<word weight="0.015669911914696338" count="507">plate</word>
+	<word weight="0.015608097666512132" count="505">method</word>
+	<word weight="0.013815484469170143" count="447">wrapping</word>
+	<word weight="0.01350641322824911" count="437">means</word>
+	<word weight="0.013166434863235975" count="426">comprising</word>
+	<word weight="0.012455571009117601" count="403">material</word>
+	<word weight="0.011621078658630815" count="376">probe</word>
+	<word weight="0.011033843300880853" count="357">annular</word>
+	<word weight="0.010786586308144027" count="349">surface</word>
+	<word weight="0.009704836964920414" count="314">arm</word>
+	<word weight="0.00927213722763097" count="300">mold</word>
+	<word weight="0.009055787358986246" count="293">rotating</word>
+	<phrase weight="0.0085305448541552" count="31">plurality wells</phrase>
+	<phrase weight="0.005778756191524491" count="21">pressing plate</phrase>
+	<phrase weight="0.00550357732526142" count="20">robotic arm</phrase>
+	<phrase weight="0.003577325261419923" count="13">multiwell plate</phrase>
+	<phrase weight="0.003577325261419923" count="13">material handling</phrase>
+	<phrase weight="0.003302146395156852" count="12">robotic device</phrase>
+	<phrase weight="0.003026967528893781" count="11">mold accordance</phrase>
+	<phrase weight="0.003026967528893781" count="11">portion leg</phrase>
+	<phrase weight="0.003026967528893781" count="11">sample tray</phrase>
+	<phrase weight="0.00275178866263071" count="10">method claim</phrase>
+	<phrase weight="0.00275178866263071" count="10">apparatus claim</phrase>
+	<phrase weight="0.00275178866263071" count="10">sample plate</phrase>
+	<phrase weight="0.0024766097963676388" count="9">robotic excision</phrase>
+	<phrase weight="0.0024766097963676388" count="9">dispensing device</phrase>
+	<phrase weight="0.0024766097963676388" count="9">linear array</phrase>
+	<phrase weight="0.002201430930104568" count="8">injection molding</phrase>
+	<phrase weight="0.002201430930104568" count="8">multiwell plates</phrase>
+	<phrase weight="0.002201430930104568" count="8">including step</phrase>
+	<phrase weight="0.001926252063841497" count="7">plate object</phrase>
+	<phrase weight="0.001926252063841497" count="7">sample sample</phrase>
+  </topic>
+  <topic id="7" alpha="5.0" totalTokens="46305" titles="method claim, system, image, device, configured, measurement, comprises, optical, specimen, light">
+	<word weight="0.0436885865457294" count="2023">system</word>
+	<word weight="0.035849260339056256" count="1660">claim</word>
+	<word weight="0.02531044163697225" count="1172">image</word>
+	<word weight="0.01852931648850016" count="858">device</word>
+	<word weight="0.01706079257099665" count="790">method</word>
+	<word weight="0.014447683835438938" count="669">configured</word>
+	<word weight="0.013195119317568298" count="611">measurement</word>
+	<word weight="0.012331281719036821" count="571">comprises</word>
+	<word weight="0.011834575099881223" count="548">optical</word>
+	<word weight="0.011424252240578772" count="529">specimen</word>
+	<word weight="0.011381060360652197" count="527">light</word>
+	<word weight="0.011208292840945901" count="519">comprising</word>
+	<word weight="0.011078717201166181" count="513">beam</word>
+	<word weight="0.01101392938127632" count="510">object</word>
+	<word weight="0.010884353741496598" count="504">process</word>
+	<word weight="0.010754778101716878" count="498">processor</word>
+	<word weight="0.010646798401900442" count="493">tool</word>
+	<word weight="0.010128495842781558" count="469">apparatus</word>
+	<word weight="0.009329446064139942" count="432">target</word>
+	<phrase weight="0.0053035844915874176" count="29">method claim</phrase>
+	<phrase weight="0.0036576444769568397" count="20">apparatus claim</phrase>
+	<phrase weight="0.003474762253108998" count="19">system claim</phrase>
+	<phrase weight="0.0032918800292611556" count="18">claim comprising</phrase>
+	<phrase weight="0.002560351133869788" count="14">recited claim</phrase>
+	<phrase weight="0.002377468910021946" count="13">ion beam</phrase>
+	<phrase weight="0.002377468910021946" count="13">laser based</phrase>
+	<phrase weight="0.0021945866861741038" count="12">light beam</phrase>
+	<phrase weight="0.0021945866861741038" count="12">laser beam</phrase>
+	<phrase weight="0.0016459400146305778" count="9">process recited</phrase>
+	<phrase weight="0.0016459400146305778" count="9">system recited</phrase>
+	<phrase weight="0.001463057790782736" count="8">dimensional geometry</phrase>
+	<phrase weight="0.001463057790782736" count="8">cutting tool</phrase>
+	<phrase weight="0.001463057790782736" count="8">detection system</phrase>
+	<phrase weight="0.001463057790782736" count="8">target device</phrase>
+	<phrase weight="0.001463057790782736" count="8">field view</phrase>
+	<phrase weight="0.001280175566934894" count="7">measurement system</phrase>
+	<phrase weight="0.001280175566934894" count="7">acquired image</phrase>
+	<phrase weight="0.001280175566934894" count="7">light sources</phrase>
+	<phrase weight="0.001280175566934894" count="7">optical system</phrase>
+  </topic>
+  <topic id="8" alpha="5.0" totalTokens="41481" titles="wafer processing, surface, tool, position, claim, workpiece, support, arm, device, gripping">
+	<word weight="0.03121911236469709" count="1295">wafer</word>
+	<word weight="0.022685084737590705" count="941">surface</word>
+	<word weight="0.01906897133627444" count="791">tool</word>
+	<word weight="0.018225211542633978" count="756">position</word>
+	<word weight="0.017935922470528675" count="744">claim</word>
+	<word weight="0.017694848243774257" count="734">workpiece</word>
+	<word weight="0.016826981027458353" count="698">support</word>
+	<word weight="0.015621609893686265" count="648">arm</word>
+	<word weight="0.015501072780309056" count="643">device</word>
+	<word weight="0.013596586388949157" count="564">processing</word>
+	<word weight="0.012294785564475302" count="510">gripping</word>
+	<word weight="0.009715291338203032" count="403">end</word>
+	<word weight="0.009715291338203032" count="403">comprising</word>
+	<word weight="0.009305465152720523" count="386">portion</word>
+	<word weight="0.009257250307369638" count="384">upper</word>
+	<word weight="0.008895638967238013" count="369">carrier</word>
+	<word weight="0.008702779585834479" count="361">comprises</word>
+	<word weight="0.00858224247245727" count="356">includes</word>
+	<word weight="0.008220631132325643" count="341">moveable</word>
+	<phrase weight="0.00394782011671816" count="23">wafer processing</phrase>
+	<phrase weight="0.0025746652935118436" count="15">top surface</phrase>
+	<phrase weight="0.002403020940611054" count="14">semiconductor wafer</phrase>
+	<phrase weight="0.0022313765877102643" count="13">engaging tool</phrase>
+	<phrase weight="0.0020597322348094747" count="12">processing stations</phrase>
+	<phrase weight="0.0020597322348094747" count="12">workpiece holder</phrase>
+	<phrase weight="0.0018880878819086853" count="11">contact surface</phrase>
+	<phrase weight="0.0017164435290078957" count="10">upper lower</phrase>
+	<phrase weight="0.001544799176107106" count="9">holding position</phrase>
+	<phrase weight="0.001544799176107106" count="9">arm tool</phrase>
+	<phrase weight="0.0013731548232063166" count="8">support surface</phrase>
+	<phrase weight="0.0013731548232063166" count="8">wafer wafer</phrase>
+	<phrase weight="0.0013731548232063166" count="8">upper surface</phrase>
+	<phrase weight="0.0013731548232063166" count="8">device claim</phrase>
+	<phrase weight="0.0013731548232063166" count="8">working line</phrase>
+	<phrase weight="0.0013731548232063166" count="8">wafer edge</phrase>
+	<phrase weight="0.0013731548232063166" count="8">disk handling</phrase>
+	<phrase weight="0.001201510470305527" count="7">surface workpiece</phrase>
+	<phrase weight="0.001201510470305527" count="7">wafer edge clamping</phrase>
+	<phrase weight="0.001201510470305527" count="7">claim comprising</phrase>
+  </topic>
+  <topic id="9" alpha="5.0" totalTokens="31937" titles="electroactive polymer, claim, means, electrical, assembly, signal, plurality, comprising, sensor, test">
+	<word weight="0.02404734320693866" count="768">claim</word>
+	<word weight="0.021166671885274133" count="676">means</word>
+	<word weight="0.01878698688042083" count="600">electrical</word>
+	<word weight="0.0181294423396061" count="579">assembly</word>
+	<word weight="0.016720418323574536" count="534">signal</word>
+	<word weight="0.012900397657888968" count="412">plurality</word>
+	<word weight="0.012117606537871434" count="387">comprising</word>
+	<word weight="0.010833829101042677" count="346">sensor</word>
+	<word weight="0.01064595923223847" count="340">test</word>
+	<word weight="0.010614647587437768" count="339">power</word>
+	<word weight="0.010082349625825845" count="322">claimed</word>
+	<word weight="0.009957103046623039" count="318">robotic</word>
+	<word weight="0.008548079030591477" count="273">dispensing</word>
+	<word weight="0.00839152080658797" count="268">body</word>
+	<word weight="0.008360209161787268" count="267">contact</word>
+	<word weight="0.008234962582584463" count="263">component</word>
+	<word weight="0.008015781068979554" count="256">spray</word>
+	<word weight="0.007953157779378151" count="254">signals</word>
+	<word weight="0.007859222844976047" count="251">welding</word>
+	<phrase weight="0.006233517142172141" count="26">electroactive polymer</phrase>
+	<phrase weight="0.004315511867657636" count="18">fire protection</phrase>
+	<phrase weight="0.003356509230400384" count="14">wire feed</phrase>
+	<phrase weight="0.0026372572524574443" count="11">travel path</phrase>
+	<phrase weight="0.002397506593143131" count="10">spray heads</phrase>
+	<phrase weight="0.002397506593143131" count="10">robotic welding</phrase>
+	<phrase weight="0.002157755933828818" count="9">electrical conductors</phrase>
+	<phrase weight="0.002157755933828818" count="9">dispensing assembly claimed claim droplet receiving</phrase>
+	<phrase weight="0.002157755933828818" count="9">sensing electronics</phrase>
+	<phrase weight="0.002157755933828818" count="9">robotic device</phrase>
+	<phrase weight="0.002157755933828818" count="9">automated robotic</phrase>
+	<phrase weight="0.002157755933828818" count="9">detecting apparatuses</phrase>
+	<phrase weight="0.002157755933828818" count="9">electrical current</phrase>
+	<phrase weight="0.0019180052745145048" count="8">cell environment mold</phrase>
+	<phrase weight="0.0019180052745145048" count="8">cells holding</phrase>
+	<phrase weight="0.0019180052745145048" count="8">assembly line</phrase>
+	<phrase weight="0.001678254615200192" count="7">sensor comprising</phrase>
+	<phrase weight="0.001678254615200192" count="7">spray forming</phrase>
+	<phrase weight="0.001678254615200192" count="7">welding gun</phrase>
+	<phrase weight="0.001678254615200192" count="7">major portion case</phrase>
+  </topic>
+</topics>
