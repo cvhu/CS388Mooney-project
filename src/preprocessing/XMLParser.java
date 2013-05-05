@@ -5,35 +5,88 @@ import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 import org.jsoup.*;
 
+class Topic{
+	HashMap<Integer, Double> weights;
+	public Topic(){
+		weights = new HashMap<Integer, Double>();
+	}
+
+	public void add(int ind, double weight){
+		weights.put(ind, weight);
+	}
+
+	public double get(int ind){
+		Double weight = weights.get(ind);
+		if(weight==null){
+			return 0.0;
+		}else{
+			return weight;
+		}	
+	}
+}
+
 
 public class XMLParser{
-	static HashMap<String, Integer> wordMap = new HashMap<String, Integer>();	
+	static LinkedList<String> vocab = new LinkedList<String>();
+	static LinkedList<String> years = new LinkedList<String>();
+	static LinkedList<LinkedList<Topic>> yearTopics = new LinkedList<LinkedList<Topic>>();
+
 
 	public static void parse(File xmlFile){
 		String name = xmlFile.getName();
 		String year = name.substring(2,6);
+		LinkedList<Topic> topics = new LinkedList<Topic>();
 		try{
 			Document doc = Jsoup.parse(xmlFile, "utf-8");
 			// System.out.println(doc.select("topic").size());
 			int count = 0;
-			for(Element topic : doc.select("topic")){
+			for(Element topicE : doc.select("topic")){
 				// System.out.println(topic.attr("id"));
-				for(Element wordE : topic.getElementsByTag("word")){
+				Topic topic = new Topic();
+				for(Element wordE : topicE.getElementsByTag("word")){
 					// System.out.printf("%s: %s\n", word.text(), word.attr("weight"));
 					String word = wordE.text();
-					Integer ind = wordMap.get(word);
-					if(ind == null){
+					Integer ind = vocab.indexOf(word);
+					if(ind == -1){
 						count++;
-						ind = 0;
+						ind = vocab.size();
+						vocab.add(word);						
 					}
-					wordMap.put(word,ind);
+					topic.add(ind, Double.parseDouble(wordE.attr("weight")));
 
 				}
+				topics.add(topic);
 				// System.out.println("");
 			}
-			System.out.printf("%d, %d\n", count, wordMap.size());
+			years.add(year);
+			yearTopics.add(topics);
+			System.out.printf("%d, %d\n", count, vocab.size());
 		}catch(Exception e){
 			e.printStackTrace();
+		}
+	}
+
+	public static void printCSV(){
+		for(int i = 0; i < years.size(); i++){
+			System.out.printf("Year %s: \n", years.get(i));
+			try{
+				FileOutputStream fos = new FileOutputStream(new File(years.get(i)+".csv"));			
+				StringBuffer sb = new StringBuffer();
+				for(Topic topic : yearTopics.get(i)){
+					for(int j = 0; j < vocab.size(); j++){
+						sb.append(topic.get(j));
+						if(j==vocab.size()){
+							sb.append("\n");
+						}else{
+							sb.append(", ");
+						}
+					}
+				}
+				fos.write(sb.toString().getBytes());
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+			
 		}
 	}
 
@@ -41,8 +94,9 @@ public class XMLParser{
 		 try { 
 			File dir = new File(args[0]);
 			for(File xmlFile : dir.listFiles()){				
-				parse(xmlFile);
-			}			
+				parse(xmlFile);				
+			}
+			printCSV();
 	    } catch (Exception e) {
 			e.printStackTrace();
 	    }
