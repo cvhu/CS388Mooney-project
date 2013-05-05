@@ -66,16 +66,16 @@ public class XMLParser{
 		}
 	}
 
-	public static void printCSV(){
+	public static void printCSVs(){
 		for(int i = 0; i < years.size(); i++){
 			System.out.printf("Year %s: \n", years.get(i));
 			try{
-				FileOutputStream fos = new FileOutputStream(new File(years.get(i)+".csv"));			
+				FileOutputStream fos = new FileOutputStream(new File("csv/"+years.get(i)+".csv"));			
 				StringBuffer sb = new StringBuffer();
 				for(Topic topic : yearTopics.get(i)){
 					for(int j = 0; j < vocab.size(); j++){
 						sb.append(topic.get(j));
-						if(j==vocab.size()){
+						if(j==(vocab.size()-1)){
 							sb.append("\n");
 						}else{
 							sb.append(", ");
@@ -90,6 +90,48 @@ public class XMLParser{
 		}
 	}
 
+	public static void printCSV(){
+		try{				
+			FileOutputStream fos = new FileOutputStream(new File("csv/all.csv"));
+			StringBuffer sb = new StringBuffer();
+			for(int i = 0; i < years.size(); i++){
+				// System.out.printf("Year %s: \n", years.get(i));								
+				for(Topic topic : yearTopics.get(i)){
+					for(int j = 0; j < vocab.size(); j++){
+						sb.append(topic.get(j));
+						if(j==(vocab.size()-1)){
+							sb.append("\n");
+						}else{
+							sb.append(", ");
+						}
+					}
+				}				
+				
+			}
+			fos.write(sb.toString().getBytes());
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	public static void printVocab(){
+		try{				
+			FileOutputStream fos = new FileOutputStream(new File("csv/vocab.csv"));
+			StringBuffer sb = new StringBuffer();
+			for(int i = 0; i < vocab.size(); i++){
+				sb.append(vocab.get(i));
+				if(i==(vocab.size()-1)){
+					sb.append("\n");
+				}else{
+					sb.append(", ");
+				}					
+			}
+			fos.write(sb.toString().getBytes());
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
 	public static void main(String[] args){
 		 try { 
 			File dir = new File(args[0]);
@@ -97,6 +139,7 @@ public class XMLParser{
 				parse(xmlFile);				
 			}
 			printCSV();
+			printVocab();
 	    } catch (Exception e) {
 			e.printStackTrace();
 	    }
