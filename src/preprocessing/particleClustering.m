@@ -2,9 +2,27 @@ function particleClustering()
 close all
 clear all
 all = dlmread('rr10.mat');
-run(all, 10, 500);
+K = 10;
+N = 100;
+Y = size(all,1)/K;
 
-function run(yearTopics, K, N)
+dists = ['cosine', 'sqEuclidean', 'cityblock', 'correlation'];
+D = length(dists);
+dss = zeros(D,Y);
+for d = 1:D
+    dss(d,:) = run(all, K, N, dists(d), 'kmeans');
+end
+plot(dss')
+
+% kmeans:
+% dist = cosine, sqEuclidean, cityblock, correlation
+% link = kmeans
+% 
+% hac:
+% dist = euclidean, cityblock, chebychev, cosine, correlation, jaccard
+% link = single, complete, average, weighted
+
+function [ds, Z] = run(yearTopics, K, N, dist, link)
 
 [h, w] = size(yearTopics);
 yn = h/K;  % number of years
@@ -25,15 +43,16 @@ ds(1) = err/N;
 
 
 for i = 1:(yn-1)
-    topics = yearTopics((i*K+1):((i+1)*K),:);
-    
-    Z = linkage(X, 'complete', 'cosine');    
-    dendrogram(Z);
-    C = cluster(Z, 'maxclust', 10);
-    Xc = X;% centroids(X, C, K);
-    
-%     [C, Xc] = kmeans(X, K);
-
+    topics = yearTopics((i*K+1):((i+1)*K),:);    
+    if(strcmp(link, 'kmeans'))
+        [C, Xc] = kmeans(X, K, 'distance', dist);
+        Z = C;
+    else
+        Z = linkage(X, link, dist);
+%         dendrogram(Z);
+        C = cluster(Z, 'maxclust', 10);
+        Xc = centroids(X, C, K);
+    end
     C = classifyTopic(Xc, C, topics, K);
     err = 0.0;
     for j = 1:N
@@ -45,8 +64,8 @@ for i = 1:(yn-1)
     ds(i+1) = err/N;
 end
 
-figure
-plot(ds);
+% figure
+% plot(ds);
 
 function Cout = classifyTopic(Xc,Cin,topics, K)
 Cout = Cin;
@@ -65,7 +84,12 @@ for k = 1:K
     Cout(ind) = mk;
 end
 
-% function Xout = centroids(Xin, C, K)
+function Xout = centroids(Xin, C, K)
+V = size(Xin,2);
+Xout = zeros(K,V);
+for k = 1:K
+    Xout(k,:) = mean(Xin(C==k,:));
+end
 
 
 function d = dist(x, y)
