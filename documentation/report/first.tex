@@ -39,6 +39,13 @@
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
 \subsection{Algorithm Definition}
+\begin{enumerate}
+    \item Assign K topics to N particles uniformly
+    \item Add Gaussian noise to particles
+    \item Cluster particles into K groups (TF-IDF weights with cosine/Euclidean distances)
+    \item Compare the clusters with topics from the next year, apply discounts to current weights, and adjust to new weights
+    \item repeat
+\end{enumerate}
 
 \section{Experimental Evaluation}
 %What are criteria you are using to evaluate your method? What specific hypotheses does your experiment test? Describe the experimental methodology that you used. What are the dependent and independent variables? What is the training/test data that was used, and why is it realistic or interesting? Exactly what performance data did you collect and how are you presenting and analyzing it? Comparisons to competing methods that address the same problem are particularly useful. 
