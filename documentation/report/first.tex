@@ -11,6 +11,8 @@
 \usepackage[font=footnotesize]{subfig}
 \usepackage{fixltx2e}
 \usepackage{setspace}
+\usepackage{algorithm2e}
+\usepackage{amssymb}
 
 \begin{document}
 
@@ -30,7 +32,11 @@ The main contribution of this paper has two folds. First, we formalized an illus
 
 %Motivate and abstractly describe the problem you are addressing and how you are addressing it. What is the problem? Why is it important? What is your basic approach? A short discussion of how it fits into related work in the area is also desirable. Summarize the basic results and conclusions that you will present. 
 \section{Introduction}
+In this paper we address two problems. The first problem that we encountered was that it is hard to understand topics as they changed over time. Topics intrinsically create an twisted structure over the course of time. To solve this we made an visualization technique for topics that shows topics converge from year to year and new topics forming. To do this topics from year to year are superimposed onto each other to create a tree structure. This allows us to see what topics converged and how fast they converged over time. We found this style of visualization novel and immensely useful in understanding topic relationships from year to year as they progresses. 
 
+The second problem we solved was current topic modeling over time does not add Gaussian noise to topics. Allowing noise allows a topic to take a new path over time. We are able to do this by representing topics as vectors in an N dimensional word space. Once each topic looks like a vector we can add noise an perform  ***CLUSTERING?** 
+
+We evaluate our approach to this second problem by allowing
 
 
 \section{Background}
@@ -155,15 +161,57 @@ Many other extensions of LDA are available, including the correlated topic model
 
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
-\subsection{Algorithm Definition}
+\subsection{Maximum Path Branching Model}
 
-\begin{enumerate}
-    \item Assign K topics to N particles uniformly
-    \item Add Gaussian noise to particles
-    \item Cluster particles into K groups (TF-IDF weights with cosine/Euclidean distances)
-    \item Compare the clusters with topics from the next year, apply discounts to current weights, and adjust to new weights
-    \item repeat
-\end{enumerate}
+\subsection{Thematic Particle Clustering}
+
+Built on top the results obtained from the LDA topic models, our Thematic Particle Clustering (TPC) algorithm aims to make topic predictions for the upcoming year based on what it has seen in the past. Our goal is to formalize a set of particles $\mathbf{w}_{1:N}$ inferred from the topics from previous years, cluster them and use the results to describe what we think the upcoming topics $\mathbf{\beta}_{1:K}$ will be. Before jumping into the details of TPC, let's go over some of the fundamental concepts and definitions we will use.
+
+\subsubsection{Distance Functions}
+The idea of a particle is essentially a sampled instance of the topic distribution over a time sequence, represented by a vector $\mathbf{w}_i\in \mathbb{R}^{|V|},\; i \in \{1,\cdots,N\}$, where $|V|$ is the total vocabulary size of all the topic words appeared. Since one of our intermediate objectives is to formalize clusters between these particles, we need to first define how we will measure the similarity or distance between any pair of particles $\mathbf{w}_i,\; \mathbf{w}_j$. 
+
+\textbf{Minkowski}: 
+\begin{equation*}
+	d = \sqrt[p]{\sum_{k=1}^{|V|}|w_{ik} - w_{jk}|^p}
+\end{equation*}
+ Note that when $p=1$, the Minkowski reduces to the city block distance, while $p=2$ gives the Euclidean distance and $p=\infty$ yields the Chebychev distance.
+
+\textbf{Cosine}: 
+\begin{equation*}
+d = 1 - \frac{\mathbf{w}_i\,\mathbf{w}_j^T}{|\mathbf{w}_i|_2|\mathbf{w}_j|_2}
+\end{equation*}
+
+\textbf{Correlation}: 
+\begin{equation*}
+d = 1 - \frac{(\mathbf{w}_i - \overline{\mathbf{w}}_i)(\mathbf{w}_j - \overline{\mathbf{w}}_j)^T}{|(\mathbf{w}_i - \overline{\mathbf{w}}_i)|_2|(\mathbf{w}_j - \overline{\mathbf{w}}_j)|_2}
+\end{equation*}
+
+where 
+\begin{equation*}
+	\overline{\mathbf{w}}_i = \frac{1}{|V|}\sum_{k=1}^{|V|}w_{ik},\;
+	\overline{\mathbf{w}}_j = \frac{1}{|V|}\sum_{k=1}^{|V|}w_{jk}
+\end{equation*}
+
+\textbf{Jaccard}: 
+\begin{equation*}
+	d = \frac{\# \left[(w_{ik} \neq w_{jk})\cap((w_{ik} \neq 0)\cup(w_{jk} \neq 0))\right]}{\#\left[(w_{ik} \neq 0)\cup(w_{jk} \neq 0)\right]}
+\end{equation*}
+
+\-\\
+
+\subsubsection{Clustering Algorithms}
+
+\textbf{Hierarchical a
+
+\subsubsection{Putting It Together}
+
+\begin{algorithm}[h]
+Assign K topics to N particles uniformly\;
+Add Gaussian noise to particles\;
+Cluster particles into K groups (TF-IDF weights with cosine/Euclidean distances)\;
+Compare the clusters with topics from the next year, apply discounts to current weights, and adjust to new weights\;
+repeat\;
+\end{algorithm}
 
 \section{Experimental Evaluation}
 %What are criteria you are using to evaluate your method? What specific hypotheses does your experiment test? Describe the experimental methodology that you used. What are the dependent and independent variables? What is the training/test data that was used, and why is it realistic or interesting? Exactly what performance data did you collect and how are you presenting and analyzing it? Comparisons to competing methods that address the same problem are particularly useful. 
@@ -171,6 +219,8 @@ Many other extensions of LDA are available, including the correlated topic model
 
 \subsection{Methodology}
 %Present the quantitative results of your experiments. Graphical data presentation such as graphs and histograms are frequently better than tables. What are the basic differences revealed in the data. Are they statistically significant? 
+
+add the baseline method (comparing bigram errors)
 
 
 \subsection{Results}

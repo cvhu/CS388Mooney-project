@@ -76,5 +76,5 @@ sigma = 0.5*std(topic);
 X = topic + sigma*randn(size(topic));
 
 function Xout = shift2topic(Xin, topic)
-sigma = 0.5*std(Xin);
-Xout = 0.1*Xin + topic + sigma*randn(size(Xin));
+sigma = std(Xin);
+Xout = 0.5*Xin + topic + sigma*randn(size(Xin));
