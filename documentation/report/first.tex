@@ -10,6 +10,7 @@
 \usepackage{eqparbox}
 \usepackage[font=footnotesize]{subfig}
 \usepackage{fixltx2e}
+\usepackage{setspace}
 
 \begin{document}
 
@@ -22,13 +23,116 @@
 \IEEEauthorblockA{aliunwala@gmail.com}
 }
 \maketitle
-
+\onehalfspace
 \begin{abstract}
-
+The main contribution of this paper has two folds. First, we formalized an illustration method to visualize topic trending on a bidirectional spanning tree, which gives a meaningful intuition to discover how hidden thematic structures in large archive of text documents change, merge and split over time. Second, we proposed an algorithm, Thematic Particle Clustering, that combines probabilistic sampling, clustering and gradient descent methods to predict upcoming topics based on a sequence of history topics. The effectiveness of our methods is demonstrated through a collection of 10,000 patent data in the field of robotics spanning over 30 years.
 \end{abstract}
 
 %Motivate and abstractly describe the problem you are addressing and how you are addressing it. What is the problem? Why is it important? What is your basic approach? A short discussion of how it fits into related work in the area is also desirable. Summarize the basic results and conclusions that you will present. 
 \section{Introduction}
+
+
+
+\section{Background}
+
+Given a collection of text-based patent documents, one intuitive idea to find out knowledge spillovers is to look at some underlying thematic structures hidden in the text. Based on the word usages and terminology distributions, we need to know what are the intrinsic topics implied in the relevant context, and one common way to do exactly that is called Probabilistic Topic Models formalized by  Blei et al. \cite{blei2011}
+
+\subsection{Probabilistic Topic Models}
+%Originally designed to facilitate text data visualization and browsing, 
+
+The main objective of topic modeling is to automatically discover the unobserved hidden structures--the topics, per-document topic distributions, and the per-document per-word topic assignments, with a collection of text documents as the only observable variables. 
+
+\begin{figure}[h]
+	\center	
+	\includegraphics[width=0.5\textwidth]{fig/pat007.png}
+	\caption{A sample patent document (partial)}
+	\label{sample_patent}
+\end{figure}
+
+For example, given a sample patent text, we assume that there exists a set of topics associated with this patent. In Fig.~\ref{sample_patent}, we have annotated a selection of words, with topics distinguished by colors. For the orange topic, we get words like flange, surface and extending, which could be interpreted as having something to do with attachment of hardware components such as pipes and cylinders. Similarly, the blue and green topics could be interpreted as installation and mounting respectively. By looking at the text, any human being with common comprehensive ability can easily tell what a document similar to Fig.~\ref{sample_patent} is about, and highlight the associated keywords that defines such topics. 
+
+Nonetheless, when we scale up the size and complexity of these patent documents, using human labor to do such tasks suddenly becomes erroneous and expensive. The goal of probabilistic topic modeling is to automate this process and to provide hidden insights and meaningful intelligence of big data. If we can successfully construct a reasonable thematic structure from our patent data, we can presumably infer influences or spillovers of patent authors within the same topics.
+
+
+
+
+\subsection{Latent Dirichlet Allocation}
+Latent Dirichlet allocation, or LDA, is the simplest topic model \cite{lda2003} that assigns each word in the documents a distribution over a fixed number of topics. Instead of having a hard boundary between topic collections, LDA provides a distribution of topics per document, giving the likelihood of a mixed proportion of topic assignments. Namely, all patent documents share the same set of topic collection but with different proportions to each topic. For instance in Fig.~\ref{topic_proportion}, although there are $K=100$ topics overall, only a few topics were actually activated.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.5\textwidth]{fig/pat8_topics.png}
+	\caption{A sample topic proportion of a patent}
+	\label{topic_proportion}
+\end{figure}
+
+
+To build the generative probabilistic model, we compute the joint distribution and use it to estimate the posterior probability. Before jumping into the actual calculation, let's formalize our notations:
+
+\begin{description}
+	\item [$\beta_k,\; k = 1 \cdots K$]: the K topics, represented by a distribution over words
+	\item [$\theta_d,\; d = 1 \cdots D$]: topic proportions for document d, where $\theta_{d,k}$ is the topic proportion of topic k for document d
+	\item [$z_d,\; d = 1 \cdots D$]: topic assignments for document d, where $z_{d,n}$ is the topic assignment for the n-th word in document d
+	\item [$w_d,\; d = 1 \cdots D$]: observed words for document d, where $w_{d,n}$ is the n-th word in document d
+\end{description}
+
+With the above notation, the LDA generative process can be formalized as the following joint probability of both hidden and observed random variables:
+
+\begin{align*}
+	&p(\beta_{1:K}, \theta_{1:D}, z_{1:D}, w_{1:D})\\
+	=& \prod_{i=1}^K p(\beta_i)\prod_{d=1}^D p(\theta_d) \left( \prod_{n=1}^N p(z_{d,n} | \theta_d) p(w_{d,n} | \beta_{1:K}, z_{d,n})\right)
+\end{align*}
+
+which can alternatively be expressed as a graphical model:
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.45\textwidth]{fig/gm.png}
+	\caption{LDA graphical model. Nodes represent variables, while edges indicate the dependency relations. The shaded node is the only observed variable (document words), and all others are the hidden variables. The $D$ plate denotes the replicated variables product over $D$ documents, while the $N$ plate denotes replication over $N$ words in each document.}
+	\label{graphical_model}
+\end{figure}
+
+Note that there are several conditional dependencies implied in the graphical models, which reflects the main principles of how LDA ``think'' the documents are generated:
+
+\begin{enumerate}
+\item Randomly pick a distribution $\theta_d$ over topics.
+\item For each word in the document
+	\begin{enumerate}
+	\item Randomly choose a topic from the previously-chosen distribution $\theta_{d,n}$.
+	\item Randomly choose a word from the corresponding distribution $Z_{d,n}$.
+	\end{enumerate}
+\end{enumerate}
+
+Assuming this generative process is how our documents are created, now LDA uses the graphical model in Fig.~\ref{graphical_model} to infer the posterior probability of the hidden structures given our observable:
+
+\begin{equation*}
+p(\beta_{1:K}, \theta_{1:D}, z_{1:D} | w_{1:D}) = \frac{p(\beta_{1:K}, \theta_{1:D}, z_{1:D}, w_{1:D})}{p(w_{1:D})}
+\end{equation*}
+
+The computation of possible topic structures is often intractable and the posterior distribution can only be approximated in most cases. To form an approximation algorithm, topic modeling can generally be categorized as sampling-based algorithms and variational algorithms. The most popular sampling method for topic modeling is Gibbs sampling, which introduces a sequence of random variables to construct a Markov chain and collects samples from the limiting distribution to estimate the posterior. Instead of using samples to approximate the posterior, variational methods find the closest parameterized distribution candidate by solving optimization problems \cite{lda2003} \cite{bach2010}.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.3\textwidth]{fig/topics.png}
+	\caption{The top 3 topics of a sample patent}
+	\label{top3topics}
+\end{figure}
+
+
+
+
+
+\subsection{Limitations \& Potential Improvements}
+Although LDA provides a powerful perspective to browsing and interpreting the implicit topic structures in our patent corpus, there are a few limitations it imposes against further discoveries. An extensive amount of research has been focused on relaxing some of the assumptions made by LDA to make it more flexible and suitable for various adaptations in more sophisticated context. 
+
+\begin{description}
+	\item[Bag of Words] LDA is essentially a bag-of-words probabilistic model. Namely, it constructs a word-frequency vector for each document but disregards the word ordering and the neighboring context. Although this assumption looses the syntactic information and sometimes seems unrealistic when processing natural language, it is usually good enough when capturing the document semantics and simplifying hidden structural inferences. Nonetheless, for more sophisticated tasks such as language generation or writing style modeling, the bag-of-words assumption is apparently insufficient and needs to be relaxed. In these cases, there are variants of topic models that generate topic words conditioned on the previous word \cite{wallach2006}, or switches between LDA and hidden Markov models (HMM) \cite{griffiths2005}.
+	\item[Document Ordering] The LDA graphical model in Fig.~\ref{graphical_model} is invariant to the ordering of our patent documents, which could be inappropriate if the hidden thematic structure is actually dependent on sequential information such as years published, which is typical in document collections spanning years, decades or centuries. To discover how the topics change over time, the dynamic topic model \cite{blei2006} treats topics as a sequence of distributions over words and tracks how they change over time.
+	\item[Fixed Number of Topics] In either LDA or more sophisticated dynamic topic models \cite{blei2006}, the number of topics $\beta_{1:K}$ is determined manually and assumed to be fixed. One elegant approach provided by the Bayesian nonparametric topic model \cite{teh2006} is to find a hierarchical tree of topics, in which new documents can now imply previously undiscovered topics.
+	\item[Meta-data] To include additional attribute information associated with the documents such as authorships, titles, geolocation, citations and many others, an active branch of research has been performed to incorporate meta-data in topic models. The author-topic model \cite{rosen-zvi2004} associates author similarity based on their topic proportions, the relational topic model \cite{blei2010} assumes document links are dependent on their topic proportion distances, and more general purpose methods such as Dirichlet-multinomial regression models \cite{mimno2008} and supervised topic models \cite{blei2007}.
+	\item[Others] Many other extensions of LDA are available, including the correlated topic model \cite{blei2007a}, pachinko allocation machine,  \cite{li2006}, spherical topic model \cite{reisinger2010}, sparse topic models \cite{wang2009} and bursty topic models \cite{doyle2009}.
+\end{description}
+
+
 
 \section{Problem Definition and Algorithm}
 %Precisely define the problem you are addressing (i.e. formally specify the inputs and outputs). Elaborate on why this is an interesting and important problem. 
@@ -39,6 +143,7 @@
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
 \subsection{Algorithm Definition}
+
 \begin{enumerate}
     \item Assign K topics to N particles uniformly
     \item Add Gaussian noise to particles
@@ -49,10 +154,15 @@
 
 \section{Experimental Evaluation}
 %What are criteria you are using to evaluate your method? What specific hypotheses does your experiment test? Describe the experimental methodology that you used. What are the dependent and independent variables? What is the training/test data that was used, and why is it realistic or interesting? Exactly what performance data did you collect and how are you presenting and analyzing it? Comparisons to competing methods that address the same problem are particularly useful. 
+
+
 \subsection{Methodology}
 %Present the quantitative results of your experiments. Graphical data presentation such as graphs and histograms are frequently better than tables. What are the basic differences revealed in the data. Are they statistically significant? 
+
+
 \subsection{Results}
 %Is your hypothesis supported? What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? How can the results be explained in terms of the underlying properties of the algorithm and/or the data. 
+
 \subsection{Discussion}
 
 %Answer the following questions for each piece of related work that addresses the same or a similar problem. What is their problem and method? How is your problem and method different? Why is your problem and method better? 
@@ -67,9 +177,54 @@
 %Be sure to include a standard, well-formated, comprehensive bibliography with citations from the text referring to previously published papers in the scientific literature that you utilized or are related to your work.
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
 \bibitem{blei2011}
 Blei, D. Introduction to Probabilistic Topic Models. Princeton University. 2011.
+
+\bibitem{lda2003}
+Blei, D., Ng, A. and Jordan, M. Latent Dirichlet allocation. Journal of Machine Learning Research, 3:993-1022, January 2003.
+
+\bibitem{bach2010}
+Hoffman, M., Blei, D. and Bach, F. On-line learning for latent Dirichlet allocation. In Neural Information Processing Systems, 2010.
+
+\bibitem{wallach2006}
+Wallach, H. Topic modeling: Beyond bag of words. In Proceedings of the 23rd International Conference on Machine Learning, 2006.
+
+\bibitem{griffiths2005}
+Griffiths, T., Steyvers, M., Blei, D. and Tenenbaum, J. Integrating topics and syntax. In L. K. Saul, Y. Weiss, and L. Bottou, editors, Advances in Neural Information Processing Systems 17, pages 537-544, Cambridge, MA, 2005. MIT Press.
+
+\bibitem{blei2006}
+Blei, D. and Lafferty, J. Dynamic topic models. In International Conference on Machine Learning, pages 113-120, New York, NY, USA, 2006. ACM
+
+\bibitem{teh2006}
+Teh, Y., Jordan, M., Beal, M. and Blei, D. Hierarchical Dirichlet process. Journal of the American Statistical Association, 101(476):1566-1581, 2006.
+
+\bibitem{rosen-zvi2004}
+Rosen-Zvi, M., Griffiths, T., Steyvers, M. and Smith, P. The author-topic model for authors and documents. In Proceedings of the 20th Conference on Uncertainty in Artificial Intelligence, pages 487-494. AUAI Press, 2004.
+
+\bibitem{blei2010}
+Chang, J. and Blei, D. Hierarchical relational models for document networks. Annals of APplied Statistics, 4(1), 2010.
+
+\bibitem{mimno2008}
+Mimno, D. and McCallum, A. Topic models conditioned on arbitrary features with Dirichlet-multinomial regression. In Uncertainty in Artificial Intelligence, 2008.
+
+\bibitem{blei2007}
+Blei, D. and McAuliffe, J. Supervised topic models. In Neural Information Processing Systems, 2007.
+
+\bibitem{blei2007a}
+Blei, D. and Lafferty, J. A correlated topic model of Science. Annals of Applied Statistics, 1(1):17-35, 2007.
+
+\bibitem{li2006}
+Li, W. and McCallum, A. Pachinko allocation: DAG-structured mixture models of topic correlations. In International Conference on Machine Learning, pages 577-584, 2006.
+
+\bibitem{reisinger2010}
+Reisinger, J., Waters, A. ,Silverthorn, B. and Mooney, R. Spherical topic models. In International Conference on Machine Learning, 2010.
+
+\bibitem{wang2009}
+Wang, C. and Blei, D. Decoupling sparsity and smoothness in the discrete hierarchical dirichlet process. In Y. Bengio, D. Schuurmans, J. Lafferty, C. K. I. Williams, and A. Culotta, editors, Advances in Neural Information Processing Systems 22, pages 1982-1989. 2009.
+
+\bibitem{doyle2009}
+Doyle, G. and Elkan, C. Accounting for burstiness in topic models. In International Conference on Machine Learning, pages 281-288. ACM, 2009.
+
 \end{thebibliography}
 
 
