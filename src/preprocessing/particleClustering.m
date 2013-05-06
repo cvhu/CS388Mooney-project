@@ -5,31 +5,74 @@ all = dlmread('rr10.mat');
 K = 10;
 N = 100;
 Y = size(all,1)/K;
-gamma(K,N,Y,all,0.5);
-alpha(K,N,Y,all,0.5);
+% gamma(K,N,Y,all,0.5, 'kmeans');
+% alpha(K,N,Y,all,0.75, 'kmeans');
+kmeansRun(K,N,Y,all,0.25,0.75);
+% HACRunDist(K,N,Y,all,0.1,0.75, 'single');
+% HACRunLink(K,N,Y,all,0.1,0.75, 'euclidean');
 
-% dists = {'cosine', 'sqEuclidean', 'cityblock', 'correlation'};
+function kmeansRun(K,N,Y,all, alpha, gamma)
+dists = {'sqEuclidean', 'cityblock', 'cosine', 'correlation'};
+ps = 0:0.25:1;
+L = length(dists);
+dss = zeros(L+1,Y);
+dss(1,:) = baseline(all, K);
+for l = 1:L
+    dss(l+1,:) = run(all, K, N, dists{1,l}, 'kmeans', alpha, gamma);
+end
+figure
+plot(dss(:,2:Y)');
+ylabel('Avg Error');
+xlabel('Year');
+title('Learning Curve of K-Means');
+legend('baseline', 'sqEuclidean', 'cityblock', 'cosine', 'correlation');
+
+
+function HACRunLink(K,N,Y,all, alpha, gamma, dist)
+links = {'single', 'complete', 'average', 'weighted'};
+
+ps = 0:0.25:1;
 % D = length(dists);
-% dss = zeros(D,Y);
-% for d = 1:D
-%     dss(d,:) = run(all, K, N, dists{1,d}, 'kmeans');
-% end
-% plot(dss')
+L = length(links);
+dss = zeros(L+1,Y);
+dss(1,:) = baseline(all, K);
+for l = 1:L
+    dss(l+1,:) = run(all, K, N, dist, links{1,l}, alpha, gamma);
+end
+figure
+plot(dss(:,2:Y)');
+ylabel('Avg Error');
+xlabel('Year');
+title('Learning Curve of HAC with various linkage functions');
+legend('baseline', 'single', 'complete', 'average', 'weighted');
 
 
-% dss = zeros(L,Y);
-% for l = 1:L
-%     dss(l,:) = run(all, K, N, dists{1,1}, links{1,l}, alpha, gamma);
-% end
-% semilogy(dss')
+function HACRunDist(K,N,Y,all, alpha, gamma, link)
+dists = {'euclidean', 'cityblock', 'chebychev', 'cosine', 'correlation', 'jaccard'};
+% links = {'single', 'complete', 'average', 'weighted'};
 
-function alpha(K,N,Y,all,gamma)
+ps = 0:0.25:1;
+D = length(dists);
+% L = length(links);
+dss = zeros(D+1,Y);
+dss(1,:) = baseline(all, K);
+for d = 1:D
+    dss(d+1,:) = run(all, K, N, dists{1,d}, link, alpha, gamma);
+end
+figure
+plot(dss(:,2:Y)');
+ylabel('Avg Error');
+xlabel('Year');
+title('Learning Curve of HAC with various distance functions');
+legend('baseline', 'euclidean', 'cityblock', 'chebychev', 'cosine', 'correlation', 'jaccard');
+
+function alpha(K,N,Y,all,gamma, link)
 ps = 0:0.25:1;
 L = length(ps);
 dss = zeros(L+1,Y);
 dss(1,:) = baseline(all, K);
 for l = 1:L
-    dss(l+1,:) = run(all, K, N, 'cosine', 'single', ps(l), gamma);
+    dss(l+1,:) = run(all, K, N, 'cosine', link, ps(l), gamma);
 end
 figure
 plot(dss(:,2:Y)');
@@ -39,13 +82,13 @@ title('Learning Curve of various \alpha');
 legend('baseline', '0.0', '0.25', '0.5', '0.75', '1.0');
 
 
-function gamma(K,N,Y,all,alpha)
+function gamma(K,N,Y,all,alpha, link)
 ps = 0:0.25:1;
 L = length(ps);
 dss = zeros(L+1,Y);
 dss(1,:) = baseline(all, K);
 for l = 1:L
-    dss(l+1,:) = run(all, K, N, 'cosine', 'single', alpha, ps(l));
+    dss(l+1,:) = run(all, K, N, 'cosine',link, alpha, ps(l));
 end
 figure
 plot(dss(:,2:Y)');
@@ -103,7 +146,7 @@ ds(1) = err/N;
 for i = 1:(yn-1)
     topics = yearTopics((i*K+1):((i+1)*K),:);    
     if(strcmp(link, 'kmeans'))
-        [C, Xc] = kmeans(X, K, 'distance', dist);
+        [C, Xc] = kmeans(X, K, 'distance', dist, 'emptyaction', 'singleton');
         Z = C;
     else
         Z = linkage(X, link, dist);
