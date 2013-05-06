@@ -1,6 +1,6 @@
 function particleClustering()
 all = dlmread('rr10.mat');
-run(all, 10, 100);
+run(all, 10, 1000);
 
 function run(yearTopics, K, N)
 
@@ -17,18 +17,23 @@ for i = 1:N
    X(i,:) = sampleTopic(yearTopics(yi,:)); 
 end
 
+% ds = zeros(1,yn);
+% ds(1) = dist(mean(X), topic);
+
 for i = 1:(yn-1)
-    Z = linkage(X);
     topics = yearTopics((i*K+1):((i+1)*K),:);
-    % dendrogram(Z);
+    Z = linkage(X);    
+    dendrogram(Z);
     C = cluster(Z, 'maxclust', 10);
     C = classifyTopic(X, C, topics, K);
+    err = 0.0;
     for j = 1:N
         yi = i*K + C(j);
         topic = yearTopics(yi,:);        
-        X(j,:) = shift2topic(X(j,:), topic);
+        err = err + dist(X(j,:), topic);
+        X(j,:) = shift2topic(X(j,:), topic);        
     end
-    display(dist(mean(X), topic));
+    display(err/N);
 end
 
 function Cout = classifyTopic(X,Cin,topics, K)
@@ -49,7 +54,7 @@ for k = 1:K
 end
 
 function d = dist(x, y)
-d = (x*y')/(norm(x,2)*norm(y,2));
+d = 1 - (x*y')/(norm(x,2)*norm(y,2));
 
 function X = sampleTopic(topic)
 sigma = std(topic);
