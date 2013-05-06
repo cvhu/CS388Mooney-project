@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2013 12:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 MAY 2013 15:01
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -501,10 +501,22 @@ Package pdftex.def Info: fig/topics.png used on input line 132.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2 <./fig/pat8_topics.png (PNG copy)> <./fig/gm.png>] [3 <./fig/topics.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 214.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+<fig/dendrogram.png, id=30, 801.99625pt x 500.87125pt>
+File: fig/dendrogram.png Graphic file (type png)
+
+<use fig/dendrogram.png>
+Package pdftex.def Info: fig/dendrogram.png used on input line 229.
+(pdftex.def)             Requested size: 180.60315pt x 112.79051pt.
+ [4 <./fig/dendrogram.png (PNG copy)>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -516,19 +528,19 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (./first.aux) )
+[5] (./first.aux) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 28 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6039 strings out of 493488
- 89453 string characters out of 3141326
- 177331 words of memory out of 3000000
- 9253 multiletter control sequences out of 15000+200000
- 37818 words of font info for 75 fonts, out of 3000000 for 9000
+ 6080 strings out of 493488
+ 90074 string characters out of 3141326
+ 177352 words of memory out of 3000000
+ 9288 multiletter control sequences out of 15000+200000
+ 38333 words of font info for 77 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,12n,42p,826b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,42p,826b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -540,14 +552,15 @@ cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
 /texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on first.pdf (4 pages, 289924 bytes).
+l/texlive/2012/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/tex
+mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on first.pdf (5 pages, 313345 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
