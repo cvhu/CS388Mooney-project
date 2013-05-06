@@ -32,12 +32,13 @@ The main contribution of this paper has two folds. First, we formalized an illus
 
 %Motivate and abstractly describe the problem you are addressing and how you are addressing it. What is the problem? Why is it important? What is your basic approach? A short discussion of how it fits into related work in the area is also desirable. Summarize the basic results and conclusions that you will present. 
 \section{Introduction}
-In this paper we address two problems. The first problem that we encountered was that it is hard to understand topics as they changed over time. Topics intrinsically create an twisted structure over the course of time. To solve this we made an visualization technique for topics that shows topics converge from year to year and new topics forming. To do this topics from year to year are superimposed onto each other to create a tree structure. This allows us to see what topics converged and how fast they converged over time. We found this style of visualization novel and immensely useful in understanding topic relationships from year to year as they progresses. 
+In this paper we descibe a data visualizaion technique and and topic modeling method. We started by choosing to work with US Patent dataset. We parsed 10,000 patents using the words "robot" and "robotic" over 31 years. These patents were then passed to Mallet \cite{mallet} one year at a time. Mallet took in the patent data and returned the topic information for each year.
 
-The second problem we solved was current topic modeling over time does not add Gaussian noise to topics. Allowing noise allows a topic to take a new path over time. We are able to do this by representing topics as vectors in an N dimensional word space. Once each topic looks like a vector we can add noise an perform  ***CLUSTERING?** 
+In this paper we have two contributions. The first contribution is visualizing topics as they changed over time. Topics intrinsically create an twisted structure over the course of time. To solve this we made an visualization technique for topics we call a Tree Convergence Graph (TCG). A TCG shows topics converging from year to year and new topics forming over large periods of time. Our visualization technique superimposes topics from year to year until they converge creating an easily parseable tree structure. We found this style of visualization novel and immensely useful in understanding topic relationships from year to year as they progressed. 
 
-We evaluate our approach to this second problem by allowing
+The second contribution of this paper was a new topic modeling method called Thematic Particle Clustering (TPC). TPC treats each set of words in a topic as a vector. This vector is replicated into particles which are biased by the words counts for that year. We then choose the most relevant particles for a year and then perform error analysis.   The intuition for this idea is that we are interested in the topics that have the highest word counts for a year and these topics will have lower error from year to year.
 
+GIVE A OVERVIEW OF ALL SECTIONS
 
 \section{Background}
 
@@ -161,7 +162,28 @@ Many other extensions of LDA are available, including the correlated topic model
 
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
-\subsection{Maximum Path Branching Model}
+%\subsection{Maximum Path Branching Model}
+
+
+\subsection{Tree Convergence Graph}
+Before we were able to parse the topic models we needed to be able to understand the data we were looking at. Our TCG algorithm followed the following steps 
+\begin{verbatim}
+    array paths;
+    foreach year:
+        foreach topic node:
+            paths = print out path 
+            thorough remaining years 
+            of current topic
+        end foreach topic node
+    end foreach year
+    
+    foreach path in paths:
+        path = merge topics with
+        same converged nodes
+    end foreach path in paths
+    
+    plot(paths)
+\end{verbatim}   
 
 \subsection{Thematic Particle Clustering}
 
@@ -289,19 +311,36 @@ Now we have gone through all the necessary concepts we used, the intuition behin
 \subsection{Methodology}
 %Present the quantitative results of your experiments. Graphical data presentation such as graphs and histograms are frequently better than tables. What are the basic differences revealed in the data. Are they statistically significant? 
 
+\subsubsection{Tree Convergence Graph}
+The TCG was created out of nessecity to gain intuition about the underlying data structure. TCG helped us formalize our ideas which led to TPC method. TCG very quicky shows when large groups of topics appear. This gave us the intuition that topics could be word biased. Since topics with the most popular words for an year may be more important over time than just an random topics.     
+
 add the baseline method (comparing bigram errors)
 
 
 \subsection{Results}
 %Is your hypothesis supported? What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? How can the results be explained in terms of the underlying properties of the algorithm and/or the data. 
+\subsubsection{Tree Convergence Graph}
+Here we present an example of a TCG that we used to gain intuition about the topic structure. As you can see below the X axis is the number of years and the Y axis is a listing of 10 different topics each year. New topics (unrelated with past topics in our dataset) show up as unconnected lines to years before. Converging topics all join and begin to follow the same line. In this way we are able to summarize 30 years of data in a single graph. 
+
 
 \subsection{Discussion}
 
+\subsubsection{Tree Convergence Graph}
+TCGs are a great tool to visualize data but they are not without their tradeoffs. For example a TCG will not directly show you why two topics decided to merge. Nor does it tell you what words a topic is made up of. These issues could be added to the TCG graph but would make the data less parseable. Some other features like word counts for the entire year would just not make sense in the TCG graph. Regardless of some of these drawbacks we still believe visualizing data this way provides an important starting point for building intuition of the data.
+
+
 %Answer the following questions for each piece of related work that addresses the same or a similar problem. What is their problem and method? How is your problem and method different? Why is your problem and method better? 
 \section{Related Work}
-
+viterbi score
 %What are the major shortcomings of your current method? For each shortcoming, propose additions or enhancements that would help overcome it. 
 \section{Future Work}
+Building on this work there are many paths that could lead additional research.
+
+First, our implementation of TPC biases particles with respect to word counts. There could be better features to try and bias results by, for example authors or document length. Finding a better set of features to bias words by could be done by creating an large set of features for each document and seeing which set of features are most correlated from year to year. Correlations could be found through tools like Weka. 
+
+Another way to modify TPC's could be through using multilayer neural network compression techniques on the particles. In the TPC algorithm $N>K$ where $N$ is the number of particles and K is the number of topics. We have to provide a transform to fit $N$ into $K$ so it can be used from year to year. Using a neural network with an appropriately defined error function we could transform $N$ particles into $K$ particles with multiple features weighting the distribution.
+
+
 soft clustering
 new features
 more sophisticated similarity and distance functions
@@ -362,6 +401,11 @@ Doyle, G. and Elkan, C. Accounting for burstiness in topic models. In Internatio
 
 \bibitem{selim1984}
 Selim, S. Z. and Ismail, M. A. (1984). K-means-type algorithms: a generalized convergence theorem and characterization of local optimality. Pattern Analysis and Machine Intelligence, IEEE Transactions on, (1), 81-87.
+
+
+\bibitem{mallet}
+McCallum, A. K. (2002). Mallet: A machine learning for language toolkit.
+
 \end{thebibliography}
 
 
