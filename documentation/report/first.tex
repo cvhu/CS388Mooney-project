@@ -281,11 +281,25 @@ Now we have gone through all the necessary concepts we used, the intuition behin
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{rl}
+	\begin{tabular}{r|p{7.25cm}}
 		Step & Action\\
 		\hline
-		1 & Initialize $\mathbf{w}_{1:K}=$\\
-		2 & \\
+		\hline
+		1 & Initialize $\mathbf{w}_{1:N}=\beta^1_i + \mathbf{N}(0,\sigma(\beta^1_i))$ \\
+		 & // Randomly assign each particle the i-th topic from the first year $\beta^1_i$\\
+		 \hline
+		2 & For $y = 2 \cdots (yo - 1)$\\
+		 & // Iterate the following steps through each of the following years in the time sequence until reaching right before the predicting year $yo$\\
+		 \hline
+		3 & $\mathbf{c}=cluster(\mathbf{w}_{1:N}, K, dist, link)$\\
+		& // Get the cluster index $\mathbf{c}$ from the clustering algorithm with the designated distance function $dist$ and the linkage $link$\\
+		\hline
+		4 & For $k = 1 \cdots K$ \\
+		\hline
+		5 & $\mathbf{w}_k = \gamma \, \mathbf{w}_k + \beta^y_j + \mathbf{N}(0,\sigma(\beta^y_j))$\\
+		& // Iterate through each of the $K$ clusters to find the closest topics from the current year $\beta^y_j$, where $\mathbf{w}_k$ is defined as the particles assigned to cluster $k$. Apply $\gamma$, the discount rate, to the old weights and shift the new weights toward $\beta^y_j$ with a gaussian noise\\
+		\hline
+		6 & End the for loops for both Step 2 and 4\\
 	\end{tabular}
 	\caption{The TPC Algorithm}
 	\label{TPC_algorithm}
