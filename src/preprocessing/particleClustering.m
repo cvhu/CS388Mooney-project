@@ -5,11 +5,29 @@ all = dlmread('rr10.mat');
 K = 10;
 N = 100;
 Y = size(all,1)/K;
+runN(K,Y,all,0.25, 0.75, 'kmean','euclidean');
 % gamma(K,N,Y,all,0.5, 'kmeans');
 % alpha(K,N,Y,all,0.75, 'kmeans');
-kmeansRun(K,N,Y,all,0.25,0.75);
+% kmeansRun(K,N,Y,all,0.25,0.75);
 % HACRunDist(K,N,Y,all,0.1,0.75, 'single');
 % HACRunLink(K,N,Y,all,0.1,0.75, 'euclidean');
+
+
+function runN(K,Y,all, alpha, gamma, link, dist)
+ps = 100:300:1000;
+L = length(ps);
+dss = zeros(L+1,Y);
+dss(1,:) = baseline(all, K);
+for l = 1:L
+    dss(l+1,:) = run(all, K, ps(l), dist, link, alpha, gamma);
+end
+figure
+plot(dss(:,2:Y)');
+ylabel('Avg Error');
+xlabel('Year');
+title('Learning Curve of various N');
+legend('baseline', '100', '400', '700', '0.75', '1.0');
+
 
 function kmeansRun(K,N,Y,all, alpha, gamma)
 dists = {'sqEuclidean', 'cityblock', 'cosine', 'correlation'};
