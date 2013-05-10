@@ -342,11 +342,11 @@ The above are the intuitions behind the Thematic Particle Clustering algorithm. 
 The TCG was created out of necessity to gain intuition about the underlying data structure. TCG helped us formalize our ideas which led to the TPC method. TCG very quickly shows when large groups of topics appear. This structure gave us the intuition that topics could be word biased. Since topics with the most popular words for an year may be more important over time than just an random topics. TCG helped us gain an intuition for evaluating the TPC method by comparing how well a word biased error does with respect to an unbiased error.
 
 \subsubsection{Thematic Particle Clustering}
-We were successfully able to implement TPC. TPC was implemented twice with two clustering algorithms HAC and K-Means. We performed rigorous testing of each holding many variables constant and testing each of the methods we described in section 3.
+We were successfully able to implement TPC. TPC was implemented twice with two clustering algorithms HAC and K-Means. We performed rigorous testing against various parameter values and with respect to different clustering algorithms and distance functions described in section 3.
 
-Our TPC using HAC (TPC-HAC) evaluation had 4 components. First, we tested $\gamma$, to see how much weighting the words from the seen years mattered. Second, we tested TPC-HAC while varying $\alpha$, this allowed us to change the weighting of the Gaussian function that created the random $\mathbf{w}$ vectors. Third, we looked at the distance functions that form the errors between the years. Fourth, and finally, we looked at the linkage functions that TPC-HAC uses to cluster the $\mathbf{w}$ vectors.
+Our TPC using HAC (TPC-HAC) evaluation has 4 components. First, we tested $\gamma$, the discount rate parameter, to see how annealing the weights from older years influences the learning performance. Second, we tested TPC-HAC while varying the noise factor, $\alpha$, which allowed us to study effects of adding stochasticity in $\mathbf{w}$ vectors. Third, we compared our clustering algorithms with a collection of distance functions. Finally, we looked at how the linkage functions in HAC affect our results.
 
-Our evaluation of TPC using K-Means (TPC-KM) had 3 components. All of which were in a similar style to the TPC-HAC evaluation except since K-Means does not use linkage functions and so they were not evaluated.
+Our evaluation of TPC using K-Means (TPC-KM) had 3 components. All of which were in a similar style to the TPC-HAC evaluation, except for the linkage function comparison, which only applies to HAC methods.
 
 \subsection{Results}
 %Is your hypothesis supported? What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? How can the results be explained in terms of the underlying properties of the algorithm and/or the data. 
@@ -360,7 +360,7 @@ We make the assumption that every year a topic must go to a topic the next year.
 
 \subsubsection{Thematic Particle Clustering}
 
-The first test we performed with TPC-HAC was varying $\gamma$. In Fig. \ref{hac_gamma} we have a base line that is just an simple cosine error. We can immediately see that some values of gamma lower the errors that we are getting from year to year. From this point on we hold $\gamma$ at the optimal value we found.
+First, we compared TPC-HAC with various $\gamma$ values to see the effect of discount rate. In Fig.~\ref{hac_gamma} we have a baseline method that simply models each year's topics using only the ones from the previous year. We can immediately observe some improvements imposed by $\gamma=0.75,\;0.5$, and inferior performance led by $\gamma=1.0,\;0.0$ for no discount or learning at all. For the following experiments, we hold $\gamma=0.75$ as our optimal discount rate.
 
 \begin{figure}[h]
 	\center
@@ -369,7 +369,7 @@ The first test we performed with TPC-HAC was varying $\gamma$. In Fig. \ref{hac_
 	\label{hac_gamma}
 \end{figure}
 
-In our second test we looked at varying the $\alpha$ for TPC-HAC. In Fig. \ref{hac_alpha} we found that having an high alpha (more noise) and letting the clustering algorithm of HAC choose the best vector led to an optimal $\alpha$ of 1.
+Next, we compared the TPC-HAC learning curves against various stochasticity by tuning $\alpha$. In Fig.~\ref{hac_alpha}, it is shown that reduced stochasticity with smaller $\alpha$ actually yields better results, while varying $\alpha$ doesn't reshape the learning curve as dramatically as changing $\gamma$ in Fig.~\ref{hac_gamma}.
 
 \begin{figure}[h]
 	\center
@@ -378,7 +378,7 @@ In our second test we looked at varying the $\alpha$ for TPC-HAC. In Fig. \ref{h
 	\label{hac_alpha}
 \end{figure}
 
-Our third TPC-HAC test looked at using different error functions. As you can see from Fig. \ref{hac_dist} there was very little difference between using one over the other. This was done to make sure that we were unbiased with respect to the error function. 
+To understand how the learning performance is dominated by the choice of distance functions, we compared the TPC-HAC learning curves using various distance functions covered in section 3 side-by-side. As shown in Fig.~\ref{hac_dist}, very little differences could be observed, which assured our assumption that the distance function doesn't impose much bias against TPC-HAC.
 
 \begin{figure}[h]
 	\center
@@ -387,7 +387,7 @@ Our third TPC-HAC test looked at using different error functions. As you can see
 	\label{hac_dist}
 \end{figure}
 
-The final test that we performed for TPC-HAC was verifying the influence of linkage functions on HACs clustering. Looking at Fig. \ref{hac_link}, here again we find little change.
+We did another similar test with different linkage functions in HAC and observed even less variation, as shown in Fig.~\ref{hac_link}. This result implies uniform and convex shaping of how the particles are distributed in the vocabulary vector space.
 
 \begin{figure}[h]
 	\center
@@ -396,9 +396,9 @@ The final test that we performed for TPC-HAC was verifying the influence of link
 	\label{hac_link}
 \end{figure}
 
-These experiments show conclusively that TPC-HAC has promise and weighing vectors by word counts creates for much lower errors. We found that a 0.75 $\gamma$ and a 1.0 $\alpha$ are very important in  dropping the error term from year to year.   
+These experiments show conclusively that TPC-HAC has a promising potential in topic prediction, and that the idea of using particle to sample, cluster and hill-climb towards the optimal topic is a reasonable approach.
 
-Now we look at our second implementation of TPC, TPC-KM. We again start by testing $\gamma$. Looking at Fig. \ref{kmeans_gamma} we can see we have a similar optimal $\gamma$ as in TPC-HAC.
+Now we look at our second implementation of TPC using the K-means clustering algorithm, TPC-KM. We again started by testing $\gamma$. From Fig.~\ref{kmeans_gamma}, we can see a similar optimal $\gamma$ as in TPC-HAC, with little shared patterns.
 
 \begin{figure}[h]
 	\center
@@ -407,7 +407,9 @@ Now we look at our second implementation of TPC, TPC-KM. We again start by testi
 	\label{kmeans_gamma}
 \end{figure}
 
-The second test for TPC-KM looks for the optimal $\alpha$. Here we get an different optimal result, looking at Fig. \ref{kmeans_alpha} we see that an 0.25 $\alpha$ looks optimal.
+Fig.~\ref{kmeans_alpha} also yields a very similar pattern of learning curves as we study it's relationships with $\alpha$; we got a slightly smaller error rate with less stochasticity.
+%
+%The second test for TPC-KM looks for the optimal $\alpha$. Here we get an different optimal result, looking at Fig. \ref{kmeans_alpha} we see that an 0.25 $\alpha$ looks optimal.
 
 \begin{figure}[h]
 	\center
@@ -416,7 +418,7 @@ The second test for TPC-KM looks for the optimal $\alpha$. Here we get an differ
 	\label{kmeans_alpha}
 \end{figure}
 
-The third and final test that we performed on TPC-KM was looking at different error functions. In Fig. \ref{kmeans_dist} we can see all the error functions perform equally well except the "city block" error.
+Finally, we tested how different distance functions influence the behavior in the phase of the K-means clustering. By looking at Fig.~\ref{kmeans_dist}, we again observed little differences between distant functions, except for ``city block'', which is the same as the $L_1$ norm.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=.50\textwidth]{fig/kmeans_dist.png}
@@ -424,9 +426,8 @@ The third and final test that we performed on TPC-KM was looking at different er
 	\label{kmeans_dist}
 \end{figure}
 
-We also believe for TPC-KM we can conclusively say that we were able to beat the base line error (except in a few years) with a 0.25 $\alpha$ and a 0.75 $\gamma$.
 
-The average improment in error was similar for both TPC algorithms. The both had an 11\% to 12\% lower error versus the base line for the 31 year span we tested on.
+Both TPC-HAC and TPC-KM constantly outperformed the baseline method in almost every year in our patent data, with an average improvement of 11\% and 12\% respectively over 33 years.
 
 \subsection{Discussion}
 

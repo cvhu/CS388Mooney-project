@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAY 2013 02:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAY 2013 03:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -523,9 +523,10 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 367--368
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/hac_alpha.png, id=39, 561.09625pt x 420.57124pt>
+[6] <fig/hac_alpha.png, id=42, 561.09625pt x 420.57124pt>
 File: fig/hac_alpha.png Graphic file (type png)
- <use fig/hac_alpha.png>
+
+<use fig/hac_alpha.png>
 Package pdftex.def Info: fig/hac_alpha.png used on input line 376.
 (pdftex.def)             Requested size: 258.0pt x 193.3817pt.
 
@@ -533,13 +534,9 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 376--377
  [] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] <fig/hac_dist.png, id=43, 561.09625pt x 420.57124pt>
+<fig/hac_dist.png, id=43, 561.09625pt x 420.57124pt>
 File: fig/hac_dist.png Graphic file (type png)
-
-<use fig/hac_dist.png>
+ <use fig/hac_dist.png>
 Package pdftex.def Info: fig/hac_dist.png used on input line 385.
 (pdftex.def)             Requested size: 258.0pt x 193.3817pt.
 
@@ -581,10 +578,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: fig/kmeans_alpha.png Graphic file (type png)
 
 <use fig/kmeans_alpha.png>
-Package pdftex.def Info: fig/kmeans_alpha.png used on input line 414.
+Package pdftex.def Info: fig/kmeans_alpha.png used on input line 416.
 (pdftex.def)             Requested size: 258.0pt x 193.3817pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 414--415
+Overfull \hbox (6.0pt too wide) in paragraph at lines 416--417
  [] 
  []
 
@@ -595,28 +592,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: fig/kmeans_dist.png Graphic file (type png)
 
 <use fig/kmeans_dist.png>
-Package pdftex.def Info: fig/kmeans_dist.png used on input line 422.
+Package pdftex.def Info: fig/kmeans_dist.png used on input line 424.
 (pdftex.def)             Requested size: 258.0pt x 193.3817pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 422--423
+Overfull \hbox (6.0pt too wide) in paragraph at lines 424--425
  [] 
  []
 
+[7 <./fig/hac_gamma.png (PNG copy)> <./fig/hac_alpha.png (PNG copy)> <./fig/hac
+_dist.png (PNG copy)> <./fig/hac_link.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./fig/hac_gamma.png (PNG copy)> <./fig/hac_alpha.png (PNG copy)> <./fig/hac
-_dist.png (PNG copy)> <./fig/hac_link.png (PNG copy)>]
+[8 <./fig/kmeans_gamma.png (PNG copy)> <./fig/kmeans_alpha.png (PNG copy)> <./f
+ig/kmeans_dist.png (PNG copy)>]
 Missing character: There is no Ð in font ptmr7t!
- [8 <./fig/kmeans_gamma.png (PNG copy)> <./fig/kmeans_alpha.png (PNG copy)> <./
-fig/kmeans_dist.png (PNG copy)>] <fig/tcg.png, id=55, 1836.8625pt x 951.555pt>
+ <fig/tcg.png, id=55, 1836.8625pt x 951.555pt>
 File: fig/tcg.png Graphic file (type png)
- <use fig/tcg.png>
-Package pdftex.def Info: fig/tcg.png used on input line 532.
+
+<use fig/tcg.png>
+Package pdftex.def Info: fig/tcg.png used on input line 533.
 (pdftex.def)             Requested size: 670.80157pt x 347.49619pt.
 
 
-LaTeX Warning: Float too large for page by 16.80157pt on input line 535.
+LaTeX Warning: Float too large for page by 16.80157pt on input line 536.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -661,7 +660,7 @@ e/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on final.pdf (10 pages, 737785 bytes).
+Output written on final.pdf (10 pages, 739113 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream
