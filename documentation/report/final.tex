@@ -458,9 +458,12 @@ Finally, more sophisticated methods can be introduced when measuring the similar
 %Briefly summarize the important results and conclusions presented in the paper. What are the most important points illustrated by your work? How will your results improve future research and applications in the area? 
 \section{Conclusion}
 
+To study the hidden relations in a large archive of patent text data, we applied the topic modeling algorithm, LDA, to each time slice individually and built the Topic Convergence Graph to help us visualize topics trending and their inheritance relations. Furthermore, we introduced a topic prediction algorithm, Thematic Particle Clustering, which generates a number of sampling particles to capture information spillovers between years and uses their clustering patterns to forecast future topics. Compared with a baseline method, we were able to make a decent improvement of 11-12\% on average. Although there are many ways we can improve upon our method to provide a more reliable and accurate prediction, we believe our works opened a promising door for further research in the field and demonstrated the possibility of predicting topic trends in text data.
 
 
+\section{Acknowledgement}
 
+We are very grateful to the valuable feedback and suggestions given by Professor Mooney at the University of Texas at Austin. We would also like to thank Blei et al. for building up the ground works behind topic modeling, and McCallum et al. for the development of MALLET.
 
 %Be sure to include a standard, well-formated, comprehensive bibliography with citations from the text referring to previously published papers in the scientific literature that you utilized or are related to your work.
 \begin{thebibliography}{1}
@@ -524,7 +527,6 @@ McCallum, A. K. (2002). Mallet: A machine learning for language toolkit.
 Forney Jr, G. D. (1973). The viterbi algorithm. Proceedings of the IEEE, 61(3), 268-278.
 
 \end{thebibliography}
-
 
 \section{Appendix}
 \section{Appendix A}

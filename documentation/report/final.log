@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAY 2013 09:16
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAY 2013 09:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -605,15 +605,15 @@ _dist.png (PNG copy)> <./fig/hac_link.png (PNG copy)>]
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./fig/kmeans_gamma.png (PNG copy)> <./fig/kmeans_alpha.png (PNG copy)> <./f
-ig/kmeans_dist.png (PNG copy)>] <fig/tcg.png, id=55, 1836.8625pt x 951.555pt>
+ig/kmeans_dist.png (PNG copy)>] [9]
+<fig/tcg.png, id=58, 1836.8625pt x 951.555pt>
 File: fig/tcg.png Graphic file (type png)
-
-<use fig/tcg.png>
-Package pdftex.def Info: fig/tcg.png used on input line 533.
+ <use fig/tcg.png>
+Package pdftex.def Info: fig/tcg.png used on input line 535.
 (pdftex.def)             Requested size: 670.80157pt x 347.49619pt.
 
 
-LaTeX Warning: Float too large for page by 16.80157pt on input line 536.
+LaTeX Warning: Float too large for page by 16.80157pt on input line 538.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -629,7 +629,13 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9] [10 <./fig/tcg.png>] (./final.aux) )
+[10
+
+] [11 <./fig/tcg.png>] (./final.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 30 (\begingroup)
@@ -658,10 +664,10 @@ e/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on final.pdf (10 pages, 739762 bytes).
+Output written on final.pdf (11 pages, 741088 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
