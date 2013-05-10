@@ -1,0 +1,418 @@
+<?xml version='1.0' ?>
+<topics>
+  <topic id="0" alpha="0.5" totalTokens="20" titles="conical, shaped, adapted, body, machine, ">
+	<word weight="0.65" count="13">conical</word>
+	<word weight="0.2" count="4">shaped</word>
+	<word weight="0.05" count="1">adapted</word>
+	<word weight="0.05" count="1">body</word>
+	<word weight="0.05" count="1">machine</word>
+  </topic>
+  <topic id="1" alpha="0.5" totalTokens="23" titles="defined, blanket, connected, operator, members, ">
+	<word weight="0.5652173913043478" count="13">defined</word>
+	<word weight="0.21739130434782608" count="5">blanket</word>
+	<word weight="0.08695652173913043" count="2">connected</word>
+	<word weight="0.08695652173913043" count="2">operator</word>
+	<word weight="0.043478260869565216" count="1">members</word>
+  </topic>
+  <topic id="2" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="3" alpha="0.5" totalTokens="2" titles="disengaged, allowing, ">
+	<word weight="0.5" count="1">disengaged</word>
+	<word weight="0.5" count="1">allowing</word>
+  </topic>
+  <topic id="4" alpha="0.5" totalTokens="8" titles="sized, means, inserted, ">
+	<word weight="0.5" count="4">sized</word>
+	<word weight="0.375" count="3">means</word>
+	<word weight="0.125" count="1">inserted</word>
+  </topic>
+  <topic id="5" alpha="0.5" totalTokens="2" titles="machine, ">
+	<word weight="1.0" count="2">machine</word>
+  </topic>
+  <topic id="6" alpha="0.5" totalTokens="8" titles="orifices, bore, operatively, claim, ">
+	<word weight="0.625" count="5">orifices</word>
+	<word weight="0.125" count="1">bore</word>
+	<word weight="0.125" count="1">operatively</word>
+	<word weight="0.125" count="1">claim</word>
+  </topic>
+  <topic id="7" alpha="0.5" totalTokens="1" titles="slide, ">
+	<word weight="1.0" count="1">slide</word>
+  </topic>
+  <topic id="8" alpha="0.5" totalTokens="2" titles="engagement, ">
+	<word weight="1.0" count="2">engagement</word>
+  </topic>
+  <topic id="9" alpha="0.5" totalTokens="7" titles="sensor, hooks, thereon, shaped, ">
+	<word weight="0.5714285714285714" count="4">sensor</word>
+	<word weight="0.14285714285714285" count="1">hooks</word>
+	<word weight="0.14285714285714285" count="1">thereon</word>
+	<word weight="0.14285714285714285" count="1">shaped</word>
+  </topic>
+  <topic id="10" alpha="0.5" totalTokens="12" titles="signal, holding, switch, controllably, outer, ">
+	<word weight="0.5" count="6">signal</word>
+	<word weight="0.16666666666666666" count="2">holding</word>
+	<word weight="0.16666666666666666" count="2">switch</word>
+	<word weight="0.08333333333333333" count="1">controllably</word>
+	<word weight="0.08333333333333333" count="1">outer</word>
+  </topic>
+  <topic id="11" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="12" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="13" alpha="0.5" totalTokens="24" titles="interface, including, enable, ">
+	<word weight="0.9166666666666666" count="22">interface</word>
+	<word weight="0.041666666666666664" count="1">including</word>
+	<word weight="0.041666666666666664" count="1">enable</word>
+	<phrase weight="0.5" count="1">interface including</phrase>
+	<phrase weight="0.5" count="1">interface enable</phrase>
+  </topic>
+  <topic id="14" alpha="0.5" totalTokens="1" titles="hole, ">
+	<word weight="1.0" count="1">hole</word>
+  </topic>
+  <topic id="15" alpha="0.5" totalTokens="4" titles="thereof, area, ">
+	<word weight="0.75" count="3">thereof</word>
+	<word weight="0.25" count="1">area</word>
+  </topic>
+  <topic id="16" alpha="0.5" totalTokens="7" titles="surface, abutment, ">
+	<word weight="0.8571428571428571" count="6">surface</word>
+	<word weight="0.14285714285714285" count="1">abutment</word>
+  </topic>
+  <topic id="17" alpha="0.5" totalTokens="9" titles="attachment, slide, perpendicular, ">
+	<word weight="0.5555555555555556" count="5">attachment</word>
+	<word weight="0.2222222222222222" count="2">slide</word>
+	<word weight="0.2222222222222222" count="2">perpendicular</word>
+  </topic>
+  <topic id="18" alpha="0.5" totalTokens="6" titles="assembly, ">
+	<word weight="1.0" count="6">assembly</word>
+  </topic>
+  <topic id="19" alpha="0.5" totalTokens="11" titles="defined, ">
+	<word weight="1.0" count="11">defined</word>
+  </topic>
+  <topic id="20" alpha="0.5" totalTokens="2" titles="defined, ">
+	<word weight="1.0" count="2">defined</word>
+  </topic>
+  <topic id="21" alpha="0.5" totalTokens="21" titles="member, channels, ">
+	<word weight="0.7619047619047619" count="16">member</word>
+	<word weight="0.23809523809523808" count="5">channels</word>
+  </topic>
+  <topic id="22" alpha="0.5" totalTokens="9" titles="positioned, members, bias, engage, thereof, attachment, ">
+	<word weight="0.3333333333333333" count="3">positioned</word>
+	<word weight="0.2222222222222222" count="2">members</word>
+	<word weight="0.1111111111111111" count="1">bias</word>
+	<word weight="0.1111111111111111" count="1">engage</word>
+	<word weight="0.1111111111111111" count="1">thereof</word>
+	<word weight="0.1111111111111111" count="1">attachment</word>
+  </topic>
+  <topic id="23" alpha="0.5" totalTokens="13" titles="outer, move, block, orifice, ">
+	<word weight="0.6153846153846154" count="8">outer</word>
+	<word weight="0.23076923076923078" count="3">move</word>
+	<word weight="0.07692307692307693" count="1">block</word>
+	<word weight="0.07692307692307693" count="1">orifice</word>
+  </topic>
+  <topic id="24" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="25" alpha="0.5" totalTokens="1" titles="pin, ">
+	<word weight="1.0" count="1">pin</word>
+  </topic>
+  <topic id="26" alpha="0.5" totalTokens="2" titles="axis, ">
+	<word weight="1.0" count="2">axis</word>
+  </topic>
+  <topic id="27" alpha="0.5" totalTokens="9" titles="frustro, engage, blanket, pin, claims, ">
+	<word weight="0.5555555555555556" count="5">frustro</word>
+	<word weight="0.1111111111111111" count="1">engage</word>
+	<word weight="0.1111111111111111" count="1">blanket</word>
+	<word weight="0.1111111111111111" count="1">pin</word>
+	<word weight="0.1111111111111111" count="1">claims</word>
+  </topic>
+  <topic id="28" alpha="0.5" totalTokens="3" titles="actuated, formed, ">
+	<word weight="0.6666666666666666" count="2">actuated</word>
+	<word weight="0.3333333333333333" count="1">formed</word>
+  </topic>
+  <topic id="29" alpha="0.5" totalTokens="2" titles="outer, system, ">
+	<word weight="0.5" count="1">outer</word>
+	<word weight="0.5" count="1">system</word>
+  </topic>
+  <topic id="30" alpha="0.5" totalTokens="3" titles="defining, ">
+	<word weight="1.0" count="3">defining</word>
+  </topic>
+  <topic id="31" alpha="0.5" totalTokens="15" titles="include, body, claimed, ">
+	<word weight="0.7333333333333333" count="11">include</word>
+	<word weight="0.2" count="3">body</word>
+	<word weight="0.06666666666666667" count="1">claimed</word>
+  </topic>
+  <topic id="32" alpha="0.5" totalTokens="6" titles="locating, holding, slide, enable, ">
+	<word weight="0.5" count="3">locating</word>
+	<word weight="0.16666666666666666" count="1">holding</word>
+	<word weight="0.16666666666666666" count="1">slide</word>
+	<word weight="0.16666666666666666" count="1">enable</word>
+  </topic>
+  <topic id="33" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="34" alpha="0.5" totalTokens="8" titles="pin, outwardly, ">
+	<word weight="0.75" count="6">pin</word>
+	<word weight="0.25" count="2">outwardly</word>
+	<phrase weight="1.0" count="1">pin pin</phrase>
+  </topic>
+  <topic id="35" alpha="0.5" totalTokens="3" titles="bias, side, positional, ">
+	<word weight="0.3333333333333333" count="1">bias</word>
+	<word weight="0.3333333333333333" count="1">side</word>
+	<word weight="0.3333333333333333" count="1">positional</word>
+  </topic>
+  <topic id="36" alpha="0.5" totalTokens="2" titles="sensor, robot, ">
+	<word weight="0.5" count="1">sensor</word>
+	<word weight="0.5" count="1">robot</word>
+  </topic>
+  <topic id="37" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="38" alpha="0.5" totalTokens="4" titles="angle, pin, ">
+	<word weight="0.5" count="2">angle</word>
+	<word weight="0.5" count="2">pin</word>
+  </topic>
+  <topic id="39" alpha="0.5" totalTokens="6" titles="block, channels, accommodating, ">
+	<word weight="0.6666666666666666" count="4">block</word>
+	<word weight="0.16666666666666666" count="1">channels</word>
+	<word weight="0.16666666666666666" count="1">accommodating</word>
+  </topic>
+  <topic id="40" alpha="0.5" totalTokens="3" titles="moved, sensor, positioned, ">
+	<word weight="0.3333333333333333" count="1">moved</word>
+	<word weight="0.3333333333333333" count="1">sensor</word>
+	<word weight="0.3333333333333333" count="1">positioned</word>
+  </topic>
+  <topic id="41" alpha="0.5" totalTokens="29" titles="frustro, end, slide, sized, bottom, tapered, errors, ">
+	<word weight="0.6896551724137931" count="20">frustro</word>
+	<word weight="0.06896551724137931" count="2">end</word>
+	<word weight="0.06896551724137931" count="2">slide</word>
+	<word weight="0.06896551724137931" count="2">sized</word>
+	<word weight="0.034482758620689655" count="1">bottom</word>
+	<word weight="0.034482758620689655" count="1">tapered</word>
+	<word weight="0.034482758620689655" count="1">errors</word>
+  </topic>
+  <topic id="42" alpha="0.5" totalTokens="6" titles="portion, tooth, back, move, ">
+	<word weight="0.5" count="3">portion</word>
+	<word weight="0.16666666666666666" count="1">tooth</word>
+	<word weight="0.16666666666666666" count="1">back</word>
+	<word weight="0.16666666666666666" count="1">move</word>
+  </topic>
+  <topic id="43" alpha="0.5" totalTokens="7" titles="abutment, axial, inserted, includes, machine, ">
+	<word weight="0.42857142857142855" count="3">abutment</word>
+	<word weight="0.14285714285714285" count="1">axial</word>
+	<word weight="0.14285714285714285" count="1">inserted</word>
+	<word weight="0.14285714285714285" count="1">includes</word>
+	<word weight="0.14285714285714285" count="1">machine</word>
+  </topic>
+  <topic id="44" alpha="0.5" totalTokens="32" titles="attachment, portion, sized, teeth, pneumatic, ">
+	<word weight="0.5625" count="18">attachment</word>
+	<word weight="0.3125" count="10">portion</word>
+	<word weight="0.0625" count="2">sized</word>
+	<word weight="0.03125" count="1">teeth</word>
+	<word weight="0.03125" count="1">pneumatic</word>
+  </topic>
+  <topic id="45" alpha="0.5" totalTokens="39" titles="claim, body, operator, placement, ">
+	<word weight="0.4358974358974359" count="17">claim</word>
+	<word weight="0.3076923076923077" count="12">body</word>
+	<word weight="0.23076923076923078" count="9">operator</word>
+	<word weight="0.02564102564102564" count="1">placement</word>
+	<phrase weight="1.0" count="2">claim operator</phrase>
+  </topic>
+  <topic id="46" alpha="0.5" totalTokens="5" titles="slide, bottom, mating, ">
+	<word weight="0.6" count="3">slide</word>
+	<word weight="0.2" count="1">bottom</word>
+	<word weight="0.2" count="1">mating</word>
+  </topic>
+  <topic id="47" alpha="0.5" totalTokens="12" titles="cylindrical, smaller, held, extends, engagement, ">
+	<word weight="0.5" count="6">cylindrical</word>
+	<word weight="0.25" count="3">smaller</word>
+	<word weight="0.08333333333333333" count="1">held</word>
+	<word weight="0.08333333333333333" count="1">extends</word>
+	<word weight="0.08333333333333333" count="1">engagement</word>
+  </topic>
+  <topic id="48" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="49" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="50" alpha="0.5" totalTokens="5" titles="removable, includes, ">
+	<word weight="0.8" count="4">removable</word>
+	<word weight="0.2" count="1">includes</word>
+  </topic>
+  <topic id="51" alpha="0.5" totalTokens="17" titles="nipple, therethrough, signal, slider, capable, ">
+	<word weight="0.5882352941176471" count="10">nipple</word>
+	<word weight="0.17647058823529413" count="3">therethrough</word>
+	<word weight="0.11764705882352941" count="2">signal</word>
+	<word weight="0.058823529411764705" count="1">slider</word>
+	<word weight="0.058823529411764705" count="1">capable</word>
+  </topic>
+  <topic id="52" alpha="0.5" totalTokens="39" titles="conical, pin, ">
+	<word weight="0.9230769230769231" count="36">conical</word>
+	<word weight="0.07692307692307693" count="3">pin</word>
+  </topic>
+  <topic id="53" alpha="0.5" totalTokens="13" titles="device, alignment, ">
+	<word weight="0.9230769230769231" count="12">device</word>
+	<word weight="0.07692307692307693" count="1">alignment</word>
+  </topic>
+  <topic id="54" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="55" alpha="0.5" totalTokens="2" titles="engaged, bias, ">
+	<word weight="0.5" count="1">engaged</word>
+	<word weight="0.5" count="1">bias</word>
+  </topic>
+  <topic id="56" alpha="0.5" totalTokens="1" titles="disengaged, ">
+	<word weight="1.0" count="1">disengaged</word>
+  </topic>
+  <topic id="57" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="58" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="59" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="60" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="61" alpha="0.5" totalTokens="11" titles="cylindrical, adjacent, controllably, release, ">
+	<word weight="0.6363636363636364" count="7">cylindrical</word>
+	<word weight="0.18181818181818182" count="2">adjacent</word>
+	<word weight="0.09090909090909091" count="1">controllably</word>
+	<word weight="0.09090909090909091" count="1">release</word>
+  </topic>
+  <topic id="62" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="63" alpha="0.5" totalTokens="3" titles="spring, electrical, ">
+	<word weight="0.6666666666666666" count="2">spring</word>
+	<word weight="0.3333333333333333" count="1">electrical</word>
+  </topic>
+  <topic id="64" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="65" alpha="0.5" totalTokens="1" titles="bear, ">
+	<word weight="1.0" count="1">bear</word>
+  </topic>
+  <topic id="66" alpha="0.5" totalTokens="13" titles="members, axis, respect, operator, ">
+	<word weight="0.5384615384615384" count="7">members</word>
+	<word weight="0.23076923076923078" count="3">axis</word>
+	<word weight="0.15384615384615385" count="2">respect</word>
+	<word weight="0.07692307692307693" count="1">operator</word>
+  </topic>
+  <topic id="67" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="68" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="69" alpha="0.5" totalTokens="1" titles="pneumatic, ">
+	<word weight="1.0" count="1">pneumatic</word>
+  </topic>
+  <topic id="70" alpha="0.5" totalTokens="2" titles="area, ">
+	<word weight="1.0" count="2">area</word>
+  </topic>
+  <topic id="71" alpha="0.5" totalTokens="13" titles="slider, extend, thereto, formed, ">
+	<word weight="0.6923076923076923" count="9">slider</word>
+	<word weight="0.15384615384615385" count="2">extend</word>
+	<word weight="0.07692307692307693" count="1">thereto</word>
+	<word weight="0.07692307692307693" count="1">formed</word>
+  </topic>
+  <topic id="72" alpha="0.5" totalTokens="7" titles="includes, defining, channel, electrical, positioned, ">
+	<word weight="0.2857142857142857" count="2">includes</word>
+	<word weight="0.2857142857142857" count="2">defining</word>
+	<word weight="0.14285714285714285" count="1">channel</word>
+	<word weight="0.14285714285714285" count="1">electrical</word>
+	<word weight="0.14285714285714285" count="1">positioned</word>
+  </topic>
+  <topic id="73" alpha="0.5" totalTokens="3" titles="sensor, moved, ">
+	<word weight="0.6666666666666666" count="2">sensor</word>
+	<word weight="0.3333333333333333" count="1">moved</word>
+  </topic>
+  <topic id="74" alpha="0.5" totalTokens="3" titles="cylinders, attachments, ">
+	<word weight="0.6666666666666666" count="2">cylinders</word>
+	<word weight="0.3333333333333333" count="1">attachments</word>
+  </topic>
+  <topic id="75" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="76" alpha="0.5" totalTokens="4" titles="engage, mate, frustro, mechanical, ">
+	<word weight="0.25" count="1">engage</word>
+	<word weight="0.25" count="1">mate</word>
+	<word weight="0.25" count="1">frustro</word>
+	<word weight="0.25" count="1">mechanical</word>
+  </topic>
+  <topic id="77" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="78" alpha="0.5" totalTokens="2" titles="block, general, ">
+	<word weight="0.5" count="1">block</word>
+	<word weight="0.5" count="1">general</word>
+  </topic>
+  <topic id="79" alpha="0.5" totalTokens="7" titles="including, hook, hold, mating, ">
+	<word weight="0.42857142857142855" count="3">including</word>
+	<word weight="0.2857142857142857" count="2">hook</word>
+	<word weight="0.14285714285714285" count="1">hold</word>
+	<word weight="0.14285714285714285" count="1">mating</word>
+  </topic>
+  <topic id="80" alpha="0.5" totalTokens="15" titles="axis, attach, extending, ">
+	<word weight="0.6" count="9">axis</word>
+	<word weight="0.26666666666666666" count="4">attach</word>
+	<word weight="0.06666666666666667" count="1">extending</word>
+	<word weight="0.06666666666666667" count="1">end</word>
+  </topic>
+  <topic id="81" alpha="0.5" totalTokens="5" titles="mate, mechanically, ">
+	<word weight="0.6" count="3">mate</word>
+	<word weight="0.4" count="2">mechanically</word>
+  </topic>
+  <topic id="82" alpha="0.5" totalTokens="8" titles="includes, generally, orifice, position, ">
+	<word weight="0.5" count="4">includes</word>
+	<word weight="0.25" count="2">generally</word>
+	<word weight="0.125" count="1">orifice</word>
+	<word weight="0.125" count="1">position</word>
+  </topic>
+  <topic id="83" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="84" alpha="0.5" totalTokens="18" titles="means, contacted, member, ">
+	<word weight="0.8333333333333334" count="15">means</word>
+	<word weight="0.1111111111111111" count="2">contacted</word>
+	<word weight="0.05555555555555555" count="1">member</word>
+  </topic>
+  <topic id="85" alpha="0.5" totalTokens="7" titles="means, biased, ">
+	<word weight="0.8571428571428571" count="6">means</word>
+	<word weight="0.14285714285714285" count="1">biased</word>
+  </topic>
+  <topic id="86" alpha="0.5" totalTokens="26" titles="frustro, engagement, ">
+	<word weight="0.8846153846153846" count="23">frustro</word>
+	<word weight="0.11538461538461539" count="3">engagement</word>
+  </topic>
+  <topic id="87" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="88" alpha="0.5" totalTokens="2" titles="body, angular, ">
+	<word weight="0.5" count="1">body</word>
+	<word weight="0.5" count="1">angular</word>
+  </topic>
+  <topic id="89" alpha="0.5" totalTokens="4" titles="retaining, ">
+	<word weight="1.0" count="4">retaining</word>
+  </topic>
+  <topic id="90" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="91" alpha="0.5" totalTokens="2" titles="including, tools, ">
+	<word weight="0.5" count="1">including</word>
+	<word weight="0.5" count="1">tools</word>
+  </topic>
+  <topic id="92" alpha="0.5" totalTokens="3" titles="member, bear, ">
+	<word weight="0.6666666666666666" count="2">member</word>
+	<word weight="0.3333333333333333" count="1">bear</word>
+  </topic>
+  <topic id="93" alpha="0.5" totalTokens="3" titles="tool, outer, ">
+	<word weight="0.6666666666666666" count="2">tool</word>
+	<word weight="0.3333333333333333" count="1">outer</word>
+  </topic>
+  <topic id="94" alpha="0.5" totalTokens="1" titles="position, ">
+	<word weight="1.0" count="1">position</word>
+  </topic>
+  <topic id="95" alpha="0.5" totalTokens="6" titles="positioned, placement, ">
+	<word weight="0.5" count="3">positioned</word>
+	<word weight="0.3333333333333333" count="2">position</word>
+	<word weight="0.16666666666666666" count="1">placement</word>
+  </topic>
+  <topic id="96" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+  <topic id="97" alpha="0.5" totalTokens="44" titles="surface, pair, area, robot, ">
+	<word weight="0.9318181818181818" count="41">surface</word>
+	<word weight="0.022727272727272728" count="1">pair</word>
+	<word weight="0.022727272727272728" count="1">area</word>
+	<word weight="0.022727272727272728" count="1">robot</word>
+  </topic>
+  <topic id="98" alpha="0.5" totalTokens="4" titles="portion, surfaces, member, ">
+	<word weight="0.5" count="2">portion</word>
+	<word weight="0.25" count="1">surfaces</word>
+	<word weight="0.25" count="1">member</word>
+  </topic>
+  <topic id="99" alpha="0.5" totalTokens="0" titles="">
+  </topic>
+</topics>
