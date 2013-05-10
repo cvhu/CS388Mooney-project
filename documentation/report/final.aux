@@ -1,15 +1,14 @@
 \relax 
 \citation{mallet}
+\citation{lda2003}
 \citation{blei2011}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Background}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Probabilistic Topic Models}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Text from a patent document\relax }}{1}}
+\citation{lda2003}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Text from a patent document\relax }}{2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{sample_patent}{{1}{1}}
-\citation{lda2003}
-\citation{lda2003}
-\citation{bach2010}
+\newlabel{sample_patent}{{1}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Latent Dirichlet Allocation}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A sample topic proportion of a patent\relax }}{2}}
 \newlabel{topic_proportion}{{2}{2}}
@@ -17,6 +16,8 @@
 \newlabel{tm_notations}{{I}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces LDA graphical model. Nodes represent variables, while edges indicate the dependency relations. The shaded node is the only observed variable (document words), and all others are the hidden variables. The $D$ plate denotes the replicated variables product over $D$ documents, while the $N$ plate denotes replication over $N$ words in each document.\relax }}{2}}
 \newlabel{graphical_model}{{3}{2}}
+\citation{lda2003}
+\citation{bach2010}
 \citation{wallach2006}
 \citation{griffiths2005}
 \citation{blei2006}
@@ -49,31 +50,37 @@
 \newlabel{TPC_algorithm}{{II}{6}}
 \@writefile{toc}{\contentsline {section}{\numberline {IV}Experimental Evaluation}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Methodology}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A scatter plot showing patterns of the topics words over the years. The y-axis corresponds to the year-topics (10 topic/year X 33 years), while the x-axis show the 967 words appeared in the topic distributions.\relax }}{6}}
+\newlabel{spy}{{6}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A graph to show how new vocabularies are introduced over the years.\relax }}{6}}
+\newlabel{vocabs}{{7}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}1}Tree Convergence Graph}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}2}Thematic Particle Clustering}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Results}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}Tree Convergence Graph}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}Thematic Particle Clustering}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces HAC Learning curve versus $\gamma $\relax }}{7}}
-\newlabel{hac_gamma}{{6}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces HAC Learning curve versus $\alpha $\relax }}{7}}
-\newlabel{hac_alpha}{{7}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces HAC Learning curve versus distance function\relax }}{7}}
-\newlabel{hac_dist}{{8}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces HAC Learning curve versus linkage function\relax }}{7}}
-\newlabel{hac_link}{{9}{7}}
-\citation{viterbi}
-\citation{blei2006}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces K-Means Learning curve versus $\gamma $\relax }}{8}}
-\newlabel{kmeans_gamma}{{10}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces K-Means Learning curve versus $\alpha $\relax }}{8}}
-\newlabel{kmeans_alpha}{{11}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Results}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}Tree Convergence Graph}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}2}Thematic Particle Clustering}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces HAC Learning curve versus $\gamma $\relax }}{7}}
+\newlabel{hac_gamma}{{8}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces HAC Learning curve versus $\alpha $\relax }}{7}}
+\newlabel{hac_alpha}{{9}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces HAC Learning curve versus distance function\relax }}{8}}
+\newlabel{hac_dist}{{10}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces HAC Learning curve versus linkage function\relax }}{8}}
+\newlabel{hac_link}{{11}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces K-Means Learning curve versus $\gamma $\relax }}{8}}
+\newlabel{kmeans_gamma}{{12}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces K-Means Learning curve versus $\alpha $\relax }}{8}}
+\newlabel{kmeans_alpha}{{13}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Discussion}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}1}Tree Convergence Graph}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces K-Means Learning curve versus distance function\relax }}{8}}
-\newlabel{kmeans_dist}{{12}{8}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}2}Thematic Particle Clustering}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Related Work}{8}}
+\citation{viterbi}
+\citation{blei2006}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces K-Means Learning curve versus distance function\relax }}{9}}
+\newlabel{kmeans_dist}{{14}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}2}Thematic Particle Clustering}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Related Work}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Future Work}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{9}}
 \bibcite{blei2011}{1}
 \bibcite{lda2003}{2}
 \bibcite{bach2010}{3}
@@ -89,15 +96,13 @@
 \bibcite{li2006}{13}
 \bibcite{reisinger2010}{14}
 \bibcite{wang2009}{15}
-\@writefile{toc}{\contentsline {section}{\numberline {VI}Future Work}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {VIII}Acknowledgement}{9}}
-\@writefile{toc}{\contentsline {section}{References}{9}}
 \bibcite{doyle2009}{16}
 \bibcite{selim1984}{17}
 \bibcite{mallet}{18}
 \bibcite{viterbi}{19}
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Acknowledgement}{10}}
+\@writefile{toc}{\contentsline {section}{References}{10}}
 \@writefile{toc}{\contentsline {section}{\numberline {IX}Appendix}{10}}
 \@writefile{toc}{\contentsline {section}{\numberline {X}Appendix A}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces An example of a Topic Convergence Graph for 10 years of data\relax }}{11}}
-\newlabel{tcg}{{13}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces An example of a Topic Convergence Graph for 10 years of data\relax }}{11}}
+\newlabel{tcg}{{15}{11}}
