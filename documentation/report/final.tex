@@ -443,7 +443,7 @@ Based on our experimental results, the TPC algorithm has a promising potential i
 \section{Related Work}
 Our method for choosing the most probable path of topics builds on the ideas of the Viterbi Algorithm (VA)\cite{viterbi}. Our predictions for topics are made by finding the error between topics from year to year. In any two given years our algorithm will find the lowest error for every topic from one year to the next. With this information we can build a forward trellis structure from every starting topic.
 
-TODO MORE THINGS FOR TPC
+The dynamic topic models (DTM) developed by Blei et al. \cite{blei2006} builds a generative graphical model to study how the topics change over time, which could be very useful for trend prediction. However, DTM assumes a fixed set of topics throughout the entire time sequence, and it only samples how the proportions of the same set of topics change over time. Although we also assume that the number of topics is fixed over the years, our topic models were calculated by a conventional LDA individually for each year, which reflects a more direct perspective on the true topics formed by each time slice.
 
 %What are the major shortcomings of your current method? For each shortcoming, propose additions or enhancements that would help overcome it. 
 \section{Future Work}
@@ -452,12 +452,12 @@ Building on this work there are many paths that could lead additional research.
 First, our implementation of TPC biases particles with respect to word counts. There could be better features to try and bias results by, for example authors or document length. Finding a better set of features to bias words by could be done by creating an large set of features for each document and seeing which set of features are most correlated from year to year. Correlations could be found through tools like Weka. 
 
 Another way to modify TPC's could be through using multilayer neural network compression techniques on the particles. In the TPC algorithm $N>K$ where $N$ is the number of particles and K is the number of topics. We have to provide a transform to fit $N$ into $K$ so it can be used from year to year. Using a neural network with an appropriately defined error function we could transform $N$ particles into $K$ particles with multiple features weighting the distribution.
-ma 
-In addition to all these other avenues changing the base functions TPC uses . y have great resultsor instance TPC-HAC uses 2 different functions one for clustering and one for particle distance. An example of a interesting funclustering algorithm and distance function are ft clustering. A andllback–Leibler Divergence. Choosing the bise functionsases tha algand may give better results
+
+Finally, more sophisticated methods can be introduced when measuring the similarity between two topics. Techniques such as Kullback-Leibler divergence, information entropy gains and TF-IDF could be very useful directions to consider for future research and development. 
 
 %Briefly summarize the important results and conclusions presented in the paper. What are the most important points illustrated by your work? How will your results improve future research and applications in the area? 
 \section{Conclusion}
-TODO
+
 
 
 
