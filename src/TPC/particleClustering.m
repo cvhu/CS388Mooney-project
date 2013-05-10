@@ -5,12 +5,17 @@ all = dlmread('rr10.mat');
 K = 10;
 N = 100;
 Y = size(all,1)/K;
-runN(K,Y,all,0.25, 0.75, 'kmean','euclidean');
+% runN(K,Y,all,0.25, 0.75, 'kmeans','cosine');
 % gamma(K,N,Y,all,0.5, 'kmeans');
 % alpha(K,N,Y,all,0.75, 'kmeans');
-% kmeansRun(K,N,Y,all,0.25,0.75);
-% HACRunDist(K,N,Y,all,0.1,0.75, 'single');
-% HACRunLink(K,N,Y,all,0.1,0.75, 'euclidean');
+
+% kmeansRun(K,N,Y,all,0.25,0.75); 
+% 12.02
+
+HACRunDist(K,N,Y,all,0.1,0.75, 'single');
+% 11.00
+
+HACRunLink(K,N,Y,all,0.1,0.75, 'euclidean');
 
 
 function runN(K,Y,all, alpha, gamma, link, dist)
@@ -26,7 +31,7 @@ plot(dss(:,2:Y)');
 ylabel('Avg Error');
 xlabel('Year');
 title('Learning Curve of various N');
-legend('baseline', '100', '400', '700', '0.75', '1.0');
+legend('baseline', '100', '500', '1000', '0.75', '1.0');
 
 
 function kmeansRun(K,N,Y,all, alpha, gamma)
@@ -37,6 +42,7 @@ dss = zeros(L+1,Y);
 dss(1,:) = baseline(all, K);
 for l = 1:L
     dss(l+1,:) = run(all, K, N, dists{1,l}, 'kmeans', alpha, gamma);
+    display(sum(dss(1,:) - dss(l+1,:))/Y);
 end
 figure
 plot(dss(:,2:Y)');
@@ -44,6 +50,9 @@ ylabel('Avg Error');
 xlabel('Year');
 title('Learning Curve of K-Means');
 legend('baseline', 'sqEuclidean', 'cityblock', 'cosine', 'correlation');
+
+% figure
+% plot(dss(2:L,2:Y)' - dss(1,2:Y)');
 
 
 function HACRunLink(K,N,Y,all, alpha, gamma, dist)
@@ -56,6 +65,7 @@ dss = zeros(L+1,Y);
 dss(1,:) = baseline(all, K);
 for l = 1:L
     dss(l+1,:) = run(all, K, N, dist, links{1,l}, alpha, gamma);
+    display(sum(dss(1,:) - dss(l+1,:))/Y);
 end
 figure
 plot(dss(:,2:Y)');
@@ -116,7 +126,6 @@ title('Learning Curve of various \gamma');
 legend('baseline', '0.0', '0.25', '0.5', '0.75', '1.0');
 
 
-
 function ds = baseline(yearTopics, K)
 Y = size(yearTopics)/K;
 ds = zeros(1,Y);
@@ -128,6 +137,21 @@ for y = 2:Y
         pi = prev(k,:);
         mk = bestTopic(pi, curr);
         err = err + distance(pi, curr(mk,:));
+    end
+    ds(y) = err/K;
+end
+
+function ds = baselineKL(yearTopics, K)
+Y = size(yearTopics)/K;
+ds = zeros(1,Y);
+for y = 2:Y
+    prev = yearTopics(((y-2)*K+1):(y-1)*K, :);
+    curr = yearTopics(((y-1)*K+1):y*K, :);
+    err = 0.0;
+    for k = 1:K
+        pi = prev(k,:);
+        mk = bestTopic(pi, curr);
+        err = err + distanceKL(pi, curr(mk,:));
     end
     ds(y) = err/K;
 end
@@ -212,9 +236,16 @@ for k = 1:K
     Xout(k,:) = mean(Xin(C==k,:));
 end
 
-
-function d = distance(x, y)
+function d = distance(x,y)
 d = 1 - (x*y')/(norm(x,2)*norm(y,2));
+
+function d = distanceKL(x, y)
+d = 0.0;
+for i = 1:length(x)
+    if(x(i)*y(i)~=0)
+        d = d + log(x(i)/y(i))*x(i);
+    end
+end
 
 function X = sampleTopic(topic, alpha)
 sigma = alpha*std(topic);
