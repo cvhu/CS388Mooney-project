@@ -1,1 +1,14 @@
-Stuff
+This file list all readme. One for each component of our project.
+
+
+
+1) To pull patents from the US patent database see readme:
+
+2) To Crawl these patnets for mallet input files see readme:
+
+3) To run mallet on these files see readme:
+
+4) To run Thematic Particle clustering see readme:
+
+5) To run Tree Convergence Graph work see read me:
+CS388Mooney-project / src / TGC / readme
