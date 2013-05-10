@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2013 10:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAY 2013 22:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**first.tex
-(./first.tex
+**final.tex
+(./final.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
@@ -372,21 +372,21 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(./first.aux)
-\openout1 = `first.aux'.
+(./final.aux)
+\openout1 = `final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -453,21 +453,20 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-** WARNING: \thanks is locked out when in conference mode (line 33).
 <fig/pat007.png, id=1, 998.73125pt x 165.61874pt>
 File: fig/pat007.png Graphic file (type png)
  <use fig/pat007.png>
-Package pdftex.def Info: fig/pat007.png used on input line 59.
+Package pdftex.def Info: fig/pat007.png used on input line 55.
 (pdftex.def)             Requested size: 232.19843pt x 38.50342pt.
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./fig/pat007.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -476,36 +475,31 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 File: fig/pat8_topics.png Graphic file (type png)
 
 <use fig/pat8_topics.png>
-Package pdftex.def Info: fig/pat8_topics.png used on input line 76.
+Package pdftex.def Info: fig/pat8_topics.png used on input line 72.
 (pdftex.def)             Requested size: 129.0pt x 96.69084pt.
 
-Underfull \hbox (badness 1635) in paragraph at lines 88--89
+Underfull \hbox (badness 1635) in paragraph at lines 84--85
 []\OT1/ptm/m/n/10 Topic pro-por-tions for doc-u-ment d,
  []
 
 <fig/gm.png, id=12, 791.95876pt x 218.8175pt>
 File: fig/gm.png Graphic file (type png)
  <use fig/gm.png>
-Package pdftex.def Info: fig/gm.png used on input line 113.
+Package pdftex.def Info: fig/gm.png used on input line 109.
 (pdftex.def)             Requested size: 180.60315pt x 49.89958pt.
-
-<fig/topics.png, id=13, 565.11125pt x 638.385pt>
+ [2 <./fig/pat8_topics.png (PNG copy)> <./fig/gm.png>]
+<fig/topics.png, id=22, 565.11125pt x 638.385pt>
 File: fig/topics.png Graphic file (type png)
  <use fig/topics.png>
-Package pdftex.def Info: fig/topics.png used on input line 139.
+Package pdftex.def Info: fig/topics.png used on input line 135.
 (pdftex.def)             Requested size: 129.0pt x 145.72473pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./fig/pat8_topics.png (PNG copy)> <./fig/gm.png>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 176.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 174.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [3 <./fig/topics.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
@@ -513,13 +507,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
 File: fig/dendrogram.png Graphic file (type png)
 
 <use fig/dendrogram.png>
-Package pdftex.def Info: fig/dendrogram.png used on input line 257.
+Package pdftex.def Info: fig/dendrogram.png used on input line 255.
 (pdftex.def)             Requested size: 180.60315pt x 112.79051pt.
- [4 <./fig/dendrogram.png (PNG copy)>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
+[4]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./fig/dendrogram.png (PNG copy)>]
+<fig/hac_gamma.png, id=38, 561.09625pt x 420.57124pt>
+File: fig/hac_gamma.png Graphic file (type png)
+ <use fig/hac_gamma.png>
+Package pdftex.def Info: fig/hac_gamma.png used on input line 361.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 361--362
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/hac_alpha.png, id=39, 561.09625pt x 420.57124pt>
+File: fig/hac_alpha.png Graphic file (type png)
+ <use fig/hac_alpha.png>
+Package pdftex.def Info: fig/hac_alpha.png used on input line 370.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 370--371
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/hac_dist.png, id=40, 561.09625pt x 420.57124pt>
+File: fig/hac_dist.png Graphic file (type png)
+ <use fig/hac_dist.png>
+Package pdftex.def Info: fig/hac_dist.png used on input line 379.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 379--380
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/hac_link.png, id=41, 561.09625pt x 420.57124pt>
+File: fig/hac_link.png Graphic file (type png)
+ <use fig/hac_link.png>
+Package pdftex.def Info: fig/hac_link.png used on input line 388.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 388--389
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/kmeans_gamma.png, id=42, 561.09625pt x 420.57124pt>
+File: fig/kmeans_gamma.png Graphic file (type png)
+
+<use fig/kmeans_gamma.png>
+Package pdftex.def Info: fig/kmeans_gamma.png used on input line 399.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 399--400
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/kmeans_alpha.png, id=43, 561.09625pt x 420.57124pt>
+File: fig/kmeans_alpha.png Graphic file (type png)
+
+<use fig/kmeans_alpha.png>
+Package pdftex.def Info: fig/kmeans_alpha.png used on input line 408.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 408--409
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/kmeans_dist.png, id=44, 561.09625pt x 420.57124pt>
+File: fig/kmeans_dist.png Graphic file (type png)
+
+<use fig/kmeans_dist.png>
+Package pdftex.def Info: fig/kmeans_dist.png used on input line 417.
+(pdftex.def)             Requested size: 258.0pt x 193.3817pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 417--418
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./fig/hac_gamma.png (PNG copy)> <./fig/hac_alpha.png (PNG copy)>] [7 <./fig
+/hac_dist.png (PNG copy)> <./fig/hac_link.png (PNG copy)> <./fig/kmeans_gamma.p
+ng (PNG copy)> <./fig/kmeans_alpha.png (PNG copy)>]
+<fig/tcg.png, id=52, 1836.8625pt x 951.555pt>
+File: fig/tcg.png Graphic file (type png)
+ <use fig/tcg.png>
+Package pdftex.def Info: fig/tcg.png used on input line 529.
+(pdftex.def)             Requested size: 670.80157pt x 347.49619pt.
+
+
+LaTeX Warning: Float too large for page by 16.80157pt on input line 532.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -531,23 +638,19 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (./first.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+[8 <./fig/kmeans_dist.png (PNG copy)>] [9 <./fig/tcg.png>] (./final.aux) )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 34 (\begingroup)
+### semi simple group (level 1) entered at line 30 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6081 strings out of 493488
- 90082 string characters out of 3141326
- 179356 words of memory out of 3000000
- 9289 multiletter control sequences out of 15000+200000
+ 6130 strings out of 493488
+ 90979 string characters out of 3141326
+ 178428 words of memory out of 3000000
+ 9330 multiletter control sequences out of 15000+200000
  38333 words of font info for 77 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 44i,12n,42p,826b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,42p,815b,335s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -564,10 +667,10 @@ e/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/tex
 mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on first.pdf (6 pages, 320559 bytes).
+Output written on final.pdf (9 pages, 733737 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

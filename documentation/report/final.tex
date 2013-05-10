@@ -14,6 +14,8 @@
 \usepackage{algorithm2e}
 \usepackage{amssymb}
 
+
+
 \begin{document}
 
 \title{\large{CS388 NLP Project Report}\\ \huge{Text Mining for Hidden Relations and Trending}}
@@ -23,25 +25,22 @@
 \and
 \IEEEauthorblockN{Ali Unwala}
 \IEEEauthorblockA{aliunwala@gmail.com}
-
 }
-
-
 \maketitle
 \onehalfspace
 \begin{abstract}
-The main contribution of this paper has two folds. First, we formalized an illustration method to visualize topic trending on a bidirectional spanning tree, which gives a meaningful intuition to discover how hidden thematic structures in large archive of text documents change, merge and split over time. Second, we proposed an algorithm, Thematic Particle Clustering, that combines probabilistic sampling, clustering and gradient descent methods to predict upcoming topics based on a sequence of history topics. The effectiveness of our methods is demonstrated through a collection of 10,000 patent data in the field of robotics spanning over 30 years.
+The main contributions of this paper are two fold. First, we formalize an illustration method to visualize topic trending on a spanning tree, which gives a meaningful intuition to discover how hidden thematic structures in large archive of text documents change, merge and split over time. Second, we proposed an algorithm, Thematic Particle Clustering, that combines probabilistic sampling, clustering and gradient descent methods to predict upcoming topics based on a sequence of history topics. The effectiveness of our methods is demonstrated through a collection of 10,000 patents in the field of robotics spanning over 30 years.
 \end{abstract}
 
 %Motivate and abstractly describe the problem you are addressing and how you are addressing it. What is the problem? Why is it important? What is your basic approach? A short discussion of how it fits into related work in the area is also desirable. Summarize the basic results and conclusions that you will present. 
 \section{Introduction}
-In this paper we descibe a data visualizaion technique and and topic modeling method. We started by choosing to work with US Patent dataset. We parsed 10,000 patents using the words "robot" and "robotic" over 31 years. These patents were then passed to Mallet \cite{mallet} one year at a time. Mallet took in the patent data and returned the topic information for each year.
+In this paper we describe a data visualization technique and and topic modeling method. We started by choosing to work with US Patent data set. We parsed 10,000 patents using the words "robot" and "robotic" over 31 years. These patents were then passed to Mallet \cite{mallet} one year at a time. Mallet processed patent data and returned the topic information for each year.
 
-In this paper we have two contributions. The first contribution is visualizing topics as they changed over time. Topics intrinsically create an twisted structure over the course of time. To solve this we made an visualization technique for topics we call a Tree Convergence Graph (TCG). A TCG shows topics converging from year to year and new topics forming over large periods of time. Our visualization technique superimposes topics from year to year until they converge creating an easily parseable tree structure. We found this style of visualization novel and immensely useful in understanding topic relationships from year to year as they progressed. 
+In this paper we have two contributions. The first contribution is visualizing topics as they changed over time. Topics intrinsically create an twisted structure from year to year. To solve this we made an visualization technique for topics we call a Tree Convergence Graph (TCG). A TCG shows topics converging and new topics forming over large periods of time. Our visualization technique superimposes topics from year to year until they converge creating an easily parseable tree structure. We found this style of visualization novel and immensely useful in understanding topic relationships as they grew. 
 
-The second contribution of this paper was a new topic modeling method called Thematic Particle Clustering (TPC). TPC treats each set of words in a topic as a vector. This vector is replicated into particles which are biased by the words counts for that year. We then choose the most relevant particles for a year and then perform error analysis.   The intuition for this idea is that we are interested in the topics that have the highest word counts for a year and these topics will have lower error from year to year.
+The second contribution of this paper was a new topic modeling method called Thematic Particle Clustering (TPC). TPC treats each set of words in a topic as a vector. This vector is replicated into particles which are biased by the words counts for that year. We then choose the most relevant particles for a year and perform error analysis. The intuition for this idea is that we are more interested in the topics that have the highest word count for a year and these topics will have lower error from year to year.
 
-GIVE A OVERVIEW OF ALL SECTIONS
+In section 2 we give an background work done in topic modeling including dynamic topic models. Section 3 describes the algorithms for TCG and TPC. Section 4 gives an example of  TCG and gives a rigorous evaluation of TPC. Section 5 includes prior work our algorithms draw insight from. Finally section 6, describes some ways to take our work further.
 
 \section{Background}
 
@@ -52,21 +51,21 @@ Given a collection of text-based patent documents, one intuitive idea to find ou
 The main objective of topic modeling is to automatically discover the unobserved hidden structures--the topics, per-document topic distributions, and the per-document per-word topic assignments, while a collection of text documents is the only observable variables. 
 
 \begin{figure}[h]
-	\center	
+    \center    
 	\includegraphics[width=0.45\textwidth]{fig/pat007.png}
-	\caption{A sample patent document (partial)}
+	\caption{Text from a patent document}
 	\label{sample_patent}
 \end{figure}
 
-For example in Fig.~\ref{sample_patent}, we have annotated a selection of words, with topics distinguished by colors. For the orange topic, we get words like flange, surface and extending, which could be interpreted as the attachment of hardware components. Similarly, the blue and green topics could be translated into topics about installation and mounting respectively. By looking at the text, most human being with common comprehensibility could easily tell what a patent data like Fig.~\ref{sample_patent} is about, and accordingly highlight the relevant keywords that compose such topics. 
+For example in Fig.~\ref{sample_patent}, we have annotated a selection of words, with topics distinguished by colors. For the orange topic, we get words like flange, surface and extending, which could be interpreted as the attachment of hardware components. Similarly, the blue and green topics could be translated into topics about installation and mounting respectively. By looking at the text, human beings can infer what patent data in Fig.~\ref{sample_patent} is about, and accordingly highlight the relevant keywords that compose such topics. 
 
-Nonetheless, the efficiency and accuracy of human labors don't scale up easily when the size or complexity of these patent documents increases. The objective of probabilistic topic modeling is to automate this inference process and to provide hidden insights and meaningful intelligence of big data. If we are able to successfully construct a probable thematic structure from a large archive of text data for each time slice in a sequence, we could presumably infer how these topics inherit or inspire each other, and most excitingly, predict the most likely topics in the future.
+Nonetheless, the efficiency and accuracy of human labors does not scale when the size or complexity of these patent documents increases. The objective of probabilistic topic modeling is to automate this inference process and to provide hidden insights and meaningful intelligence of big data. If we are able to successfully construct a probable thematic structure from a large archive of text data for each time slice in a sequence, we could presumably infer how these topics inherit or inspire each other, and most excitingly, predict the most likely topics in the future.
 
 
 
 
 \subsection{Latent Dirichlet Allocation}
-Latent Dirichlet allocation, or LDA, is the simplest topic model \cite{lda2003} that assigns each word in the documents a distribution over a fixed number of topics. Instead of having a hard boundary between topic collections, LDA provides a distribution of topics per document, giving the likelihood of a mixed proportion of topic assignments. Namely, all text documents share the same set of topic collection but with different proportions to each topic. For instance in Fig.~\ref{topic_proportion}, although there are $K=100$ topics overall, only a few topics were actually activated.
+Latent Dirichlet allocation, or LDA, is the simplest topic model \cite{lda2003} that assigns each word in the documents a distribution over a fixed number of topics. Instead of having a hard boundary between topic collections, LDA provides a distribution of topics per document, giving the likelihood of a mixed proportion of topic assignments. Namely, all text documents share the same set of topic collection but with different proportions to each topic. For instance in Fig.~\ref{topic_proportion}, although there are $K=100$ topics overall, only a few topics were actually activated in a particular patent.
 
 \begin{figure}[h]
 	\center
@@ -97,14 +96,14 @@ $w_d,\; d = 1 \cdots D$& The observed words for document d, where $w_{d,n}$ is t
 %	\item [$z_d,\; d = 1 \cdots D$]: topic assignments for document d, where $z_{d,n}$ is the topic assignment for the n-th word in document d
 %	\item [$w_d,\; d = 1 \cdots D$]: observed words for document d, where $w_{d,n}$ is the n-th word in document d
 %\end{description}
-To build the generative probabilistic model, we compute the joint distribution and use it to estimate the posterior probability. With the notation specified in Table.~\ref{tm_notations}, the LDA generative process can be formalized as the following joint probability of both hidden and observed random variables:
+To build the generative probabilistic model, we compute the joint distribution and use it to estimate the posterior probability. With the notation specified in Table~\ref{tm_notations}, the LDA generative process can be formalized as the following joint probability of both hidden and observed random variables:
 
 \begin{align*}
 	&p(\beta_{1:K}, \theta_{1:D}, z_{1:D}, w_{1:D})\\
 	=& \prod_{i=1}^K p(\beta_i)\prod_{d=1}^D p(\theta_d) \left( \prod_{n=1}^N p(z_{d,n} | \theta_d) p(w_{d,n} | \beta_{1:K}, z_{d,n})\right)
 \end{align*}
 
-which can also be expressed as a graphical model:
+Which can also be expressed graphically as:
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.35\textwidth]{fig/gm.png}
@@ -112,7 +111,7 @@ which can also be expressed as a graphical model:
 	\label{graphical_model}
 \end{figure}
 
-Note that there are several conditional dependencies implied in the graphical models, which reflects the main principles of how LDA ``think'' the documents are generated:
+It is important to note that there are several conditional dependencies implied in the graphical models, which reflects the main principles of how LDA ``thinks'' the documents are generated:
 
 \begin{enumerate}
 \item Randomly pick a distribution $\theta_d$ over topics.
@@ -143,13 +142,13 @@ The computation of possible topic structures is often intractable and the poster
 
 
 \subsection{Limitations \& Potential Improvements}
-Although LDA provides a powerful perspective to browsing and interpreting the implicit topic structures in our patent corpus, there are a few limitations it imposes against further discoveries. An extensive amount of research has been focused on relaxing some of the assumptions made by LDA to make it more flexible and suitable for various adaptations in more sophisticated context. 
+Although LDA provides a powerful perspective to browsing and interpreting the implicit topic structures in our patent corpus, there are a few limitations it imposes against further discoveries. An extensive amount of research has been focused on relaxing some of the assumptions made by LDA to make it more flexible and suitable for more sophisticated information retrieval. 
 
-LDA is essentially a bag-of-words probabilistic model. Namely, it constructs a word-frequency vector for each document but disregards the word ordering and the neighboring context. Although this assumption looses the syntactic information and sometimes seems unrealistic when processing natural language, it is usually good enough when capturing the document semantics and simplifying hidden structural inferences. Nonetheless, for more sophisticated tasks such as language generation or writing style modeling, the bag-of-words assumption is apparently insufficient and needs to be relaxed. In these cases, there are variants of topic models that generate topic words conditioned on the previous word \cite{wallach2006}, or switches between LDA and hidden Markov models (HMM) \cite{griffiths2005}.
+LDA is essentially a bag-of-words probabilistic model. Namely, it constructs a word-frequency vector for each document but disregards the word ordering and the neighboring context. Although this assumption looses the syntactic information and sometimes seems unrealistic when processing natural language, it is usually good enough when capturing the document semantics and simplifying hidden structural inferences. Nonetheless, for more sophisticated tasks such as language generation or writing style modeling, the bag-of-words assumption is insufficient and needs to be relaxed. In these cases, there are variants of topic models that generate topic words conditioned on the previous word \cite{wallach2006}, or switches between LDA and hidden Markov models (HMM) \cite{griffiths2005}.
 
-The LDA graphical model in Fig.~\ref{graphical_model} is invariant to the ordering of our patent documents, which could be inappropriate if the hidden thematic structure is actually dependent on sequential information such as years published, which is typical in document collections spanning years, decades or centuries. To discover how the topics change over time, the dynamic topic model \cite{blei2006} treats topics as a sequence of distributions over words and tracks how they change over time.
+The LDA graphical model in Fig.~\ref{graphical_model} is invariant to the ordering of our patent documents. Which is an inappropriate assumption if the hidden thematic structure is actually dependent on sequential information such as years published, which is typically seen in document collections spanning years, decades or centuries. To discover how the topics change over time, the dynamic topic model \cite{blei2006} treats topics as a sequence of distributions over words and tracks how they change over time.
 
-In either LDA or more sophisticated dynamic topic models \cite{blei2006}, the number of topics $\beta_{1:K}$ is determined manually and assumed to be fixed. One elegant approach provided by the Bayesian nonparametric topic model \cite{teh2006} is to find a hierarchical tree of topics, in which new documents can now imply previously undiscovered topics.
+In either LDA or more sophisticated dynamic topic models \cite{blei2006}, the number of topics $\beta_{1:K}$ is determined manually and assumed to be fixed. One elegant approach provided by the Bayesian non-parametric topic model \cite{teh2006} is to find a hierarchical tree of topics, in which new documents can now imply previously undiscovered topics.
 
 To include additional attribute information associated with the documents such as authorships, titles, geolocation, citations and many others, an active branch of research has been performed to incorporate meta-data in topic models. The author-topic model \cite{rosen-zvi2004} associates author similarity based on their topic proportions, the relational topic model \cite{blei2010} assumes document links are dependent on their topic proportion distances, and more general purpose methods such as Dirichlet-multinomial regression models \cite{mimno2008} and supervised topic models \cite{blei2007}.
 
@@ -162,33 +161,35 @@ Many other extensions of LDA are available, including the correlated topic model
 
 
 \subsection{Task Definition}
-
+The task we set out for our self was to create an better 
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
-%\subsection{Maximum Path Branching Model}
 
 
-\subsection{Tree Convergence Graph}
+
+\subsection{Tree Convergence Graph Algorithm}
 Before we were able to parse the topic models we needed to be able to understand the data we were looking at. Our TCG algorithm followed the following steps 
+
+
 \begin{verbatim}
-    array paths;
-    foreach year:
-        foreach topic node:
-            paths = print out path 
-            thorough remaining years 
-            of current topic
-        end foreach topic node
-    end foreach year
-    
-    foreach path in paths:
-        path = merge topics with
-        same converged nodes
-    end foreach path in paths
-    
-    plot(paths)
+1      Initialize array named PATHS
+2      foreach YEAR:
+3      |    foreach TOPIC:
+4      |    |    PATHS = return path from  
+       |    |    current node to the end 
+       |    |    of years
+5      |    end 
+6      end 
+7     
+8      foreach PATH in PATHS:  
+9      |    PATH = merge PATH with
+10     |    other other PATHS 
+11     end foreach path in paths
+12    
+13     plot(paths)
 \end{verbatim}   
 
-\subsection{Thematic Particle Clustering}
+\subsection{Thematic Particle Clustering Algorithm}
 
 Built on top the results obtained from the LDA topic models, our Thematic Particle Clustering (TPC) algorithm aims to make topic predictions for the upcoming year based on what it has seen in the past. Our goal is to formalize a set of particles $\mathbf{w}_{1:N}$ inferred from the topics from previous years, cluster them and use the results to describe what we think the upcoming topics $\mathbf{\beta}_{1:K}$ will be. Before jumping into the details of TPC, let's go over some of the fundamental concepts and definitions we will use.
 
@@ -229,12 +230,12 @@ where
 \-\\
 
 \subsubsection{Clustering Algorithms}
-LDA is essentially pulling out the `principal components' from the text documents, reducing a large archive of data into just $K$ representative topics $\mathbf{\beta}_{1:K}$. Therefore, our assumption is that by grouping similar particles induced from past topics, we can observe the clustering patterns and make reasonable predictions on how the future topics will be like.
+LDA is essentially pulling out the `principal components' from the text documents, reducing a large archive of data into just $K$ representative topics $\mathbf{\beta}_{1:K}$. Therefore, our assumption is that by grouping similar particles induced from past topics, we can observe the clustering patterns and make reasonable predictions on how the future topics will act.
 
-Now we have a collection of well-defined distance functions, we can start looking at clustering methods to group our particles together accordingly, and here are a set of common clustering algorithms we will consider:
+Now we have a collection of well-defined distance functions, we can start looking at clustering methods to group our particles together accordingly, and here are a set of common clustering algorithms we consider:
 
 \-\\
-\textbf{K-Means:} As the name itself suggests, the K-Means clustering algorithm consists of K cluster centroids and moves these means iteratively towards the center of its closest neighbors, until they no longer change. Although K-Means has been proved to be guaranteed for convergence \cite{selim1984}, its clustering performance is often correlated to how the seeds are initialized at the beginning, and the optimal choice of $K$ is often not apparent (in our case, it is the same as the number of topics.)
+\textbf{K-Means:} As the name itself suggests, the K-Means clustering algorithm consists of K cluster centroids and moves these means iteratively towards the center of its closest neighbors, until they no longer change. Although K-Means has been proved to be guaranteed for convergence \cite{selim1984}, its clustering performance is often correlated to how the seeds are initialized, and the optimal choice of $K$ is often not apparent (in our case, $K$ is the same as the number of topics.)
 
 \begin{verbatim}
 1. Initialize the means by picking 
@@ -276,7 +277,7 @@ Although we have defined the distance functions in the previous section, we have
 	\end{equation*}
 \end{itemize}
 
- The behavior of HAC is often dominated by the chosen similarity function. While each variant has a different set of clustering patterns it is good at capturing, all of them have certain vulnerabilities. 
+ The behavior of HAC is often dominated by the chosen similarity function. While each variant has a different set of clustering patterns it is good at capturing, all of them have trade offs. 
 
 \subsubsection{Putting It Altogether}
 
@@ -299,8 +300,8 @@ Now we have gone through all the necessary concepts we used, the intuition behin
 		\hline
 		4 & For $k = 1 \cdots K$ \\
 		\hline
-		5 & $\mathbf{w}_k = \gamma \, \mathbf{w}_k + \beta^y_j + \mathbf{N}(0,\sigma(\beta^y_j))$\\
-		& // Iterate through each of the $K$ clusters to find the closest topics from the current year $\beta^y_j$, where $\mathbf{w}_k$ is defined as the particles assigned to cluster $k$. Apply $\gamma$, the discount rate, to the old weights and shift the new weights toward $\beta^y_j$ with a gaussian noise\\
+		5 & $\mathbf{w}_k = \gamma \, \mathbf{w}_k + \beta^y_j + \alpha\mathbf{N}(0,\sigma(\beta^y_j))$\\
+		& // Iterate through each of the $K$ clusters to find the closest topics from the current year $\beta^y_j$, where $\mathbf{w}_k$ is defined as the particles assigned to cluster $k$. Apply $\gamma$, the discount rate, to the old weights and shift the new weights toward $\beta^y_j$ with an $\alpha$ strong Gaussian noise\\
 		\hline
 		6 & End the for loops for both Step 2 and 4\\
 	\end{tabular}
@@ -329,45 +330,115 @@ Now we have gone through all the necessary concepts we used, the intuition behin
 %Present the quantitative results of your experiments. Graphical data presentation such as graphs and histograms are frequently better than tables. What are the basic differences revealed in the data. Are they statistically significant? 
 
 \subsubsection{Tree Convergence Graph}
-The TCG was created out of nessecity to gain intuition about the underlying data structure. TCG helped us formalize our ideas which led to TPC method. TCG very quicky shows when large groups of topics appear. This gave us the intuition that topics could be word biased. Since topics with the most popular words for an year may be more important over time than just an random topics.     
+The TCG was created out of necessity to gain intuition about the underlying data structure. TCG helped us formalize our ideas which led to TPC method. TCG very quickly shows when large groups of topics appear. This structure gave us the intuition that topics could be word biased. Since topics with the most popular words for an year may be more important over time than just an random topics.     
 
-add the baseline method (comparing bigram errors)
-
-
-\subsection{Results}
-%Is your hypothesis supported? What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? How can the results be explained in terms of the underlying properties of the algorithm and/or the data. 
-\subsubsection{Tree Convergence Graph}
-Here we present an example of a TCG that we used to gain intuition about the topic structure. As you can see below the X axis is the number of years and the Y axis is a listing of 10 different topics each year. New topics (unrelated with past topics in our dataset) show up as unconnected lines to years before. Converging topics all join and begin to follow the same line. In this way we are able to summarize 30 years of data in a single graph. 
+This graph structure lead to two other ideas. First we found an intuition for evaluating the TPC method by comparing how well a word biased error does with respect to an unbiased error. Second, we came found with another notion of distance between topic vectors, we call Topic N-grams (TNG). TNG looks at words in the topic N at a time and weights the grouping of the words higher than ungropued words. So with $N=2$ if 2 words appear in one topic and then again in an future topic they will be weighted higher than if both words were just seen separately.
 
 
 \subsubsection{Thematic Particle Clustering}
-%
-%\begin{figure}[ht]
-%%	\center
-%	\begin{minipage}[b]{0.5\linewidth}
-%		\includegraphics[width=\textwidth]{fig/original_ta_geo}
-%		\caption{The original technology area distributed over geolocation}
-%		\label{original_ta_geo}
-%	\end{minipage}
-%	\hspace{0.5cm}
-%	\begin{minipage}[b]{0.5\linewidth}
-%		\includegraphics[width=\textwidth]{fig/our_ta_geo}
-%		\caption{Our predicted technology area distributed over geolocation}
-%		\label{our_ta_geo}
-%	\end{minipage}
-%\end{figure}
+We were successfully able to implement TPC. TPC was implemented twice with two clustering algorithms HAC and K-Means. We performed rigorous testing of each holding many variables constant and testing each of the method we described in section 3.
 
+Our TPC using HAC (TPC-HAC) evaluation had 4 components. First, we tested $\gamma$, to see how much weighting the words from the seen years mattered. Second, we tested TPC-HAC while varying $\alpha$, this allowed us to change the weighting of the Gaussian function that created the random $\mathbf{w}$ vectors. Third, we looked at the distance functions that form the errors between the years. Fourth, and finally, we looked at the linkage functions that TPC-HAC uses to cluster the $\mathbf{w}$ vectors.
 
+Our evaluation of TPC using K-Means (TPC-KM)  had 3 components. All of which were in a similar style to the TPC-HAC evaluation except since K-Means does not use linkage functions and so they were not evaluated.
+
+\subsection{Results}
+%Is your hypothesis supported? What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? How can the results be explained in terms of the underlying properties of the algorithm and/or the data. 
+
+\subsubsection{Tree Convergence Graph}
+For readability, we  present an example of a TCG in the Appendix A. On the X axis we show 10 years of patents and on the Y axis we have 10 topics per year. Each line on the graph shows the most probable link between a set of patents between 2 years. It is important to notice the ``dangling lines" that start midway though the graph (for example the green line at the bottom in 1985). These ``dangling lines" represent new topics appearing. It is also important to note that once a group of topics have converged to an single topic they will never again diverge. 
+
+Fig. \ref{tcg} shows only 10 of the 31 years of data we pulled from 1982 to 1991. We let the graph continue without adding adding any new ``dangling lines" and  by 1998 you can see every topic from between 1982-1991 has converged to just two separate topics. Each time a line changes color in Fig. \ref{tcg} this represents a new topic usurping an older one.
+
+We make the assumption that every year a topic must go to a topic the next year. We believe this is a reasonable assumption for patents since inventions build on each other and would rarely skip a whole year before something new came out.
+
+\subsubsection{Thematic Particle Clustering}
+
+The first test we performed with TPC-HAC was varying $\gamma$. In Fig. \ref{hac_gamma} we have a base line that is just an simple cosine error. We can immediately see that some values of gamma lower the errors that we are getting from year to year. From this point on we hold $\gamma$ at the optimal value we found.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/hac_gamma.png}
+	\caption{HAC Learning curve versus $\gamma$}
+	\label{hac_gamma}
+\end{figure}
+
+In our second test we looked at varying the $\alpha$ for TPC-HAC. In Fig. \ref{hac_alpha} we found that having an high alpha (more noise) and letting the clustering algorithm of HAC choose the best vector led to an optimal $\alpha$ of 1.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/hac_alpha.png}
+	\caption{HAC Learning curve versus $\alpha$}
+	\label{hac_alpha}
+\end{figure}
+
+Our third TCP-HAC test looked at using different error functions. As you can see from Fig. \ref{hac_dist} there was very little difference between using one over the other. This was done to make sure that we were unbiased with respect to the error function. 
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/hac_dist.png}
+	\caption{HAC Learning curve versus distance function}
+	\label{hac_dist}
+\end{figure}
+
+The final test that we performed for TPC-HAC was verifying the influence of linkage functions on HACs clustering. Looking at Fig. \ref{hac_link}, here again we find little change.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/hac_link.png}
+	\caption{HAC Learning curve versus linkage function}
+	\label{hac_link}
+\end{figure}
+
+These experiments show conclusively that TPC-HAC has promise and weighing vectors by word counts creates for much lower errors. We found that a 0.75 $\gamma$ and a 1.0 $\alpha$ are very important in  dropping the error term from year to year.   
+
+Now we look at our second implementation of TCP, TCP-KM. We again start by testing $\gamma$. Looking at Fig. \ref{kmeans_gamma} we can see we have a similar optimal $\gamma$ as in TCP-HAC.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/kmeans_gamma.png}
+	\caption{K-Means Learning curve versus $\gamma$}
+	\label{kmeans_gamma}
+\end{figure}
+
+The second test for TCP-KM looks for the optimal $\alpha$. Here we get an different optimal result, looking at Fig. \ref{kmeans_alpha} we see that an 0.25 $\alpha$ looks optimal.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/kmeans_alpha.png}
+	\caption{K-Means Learning curve versus $\alpha$}
+	\label{kmeans_alpha}
+\end{figure}
+
+The third and final test that we performed on TCP-KM was looking at different error functions. In Fig. \ref{kmeans_dist} we can see all the error functions perform equally well except the "city block" error.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=.50\textwidth]{fig/kmeans_dist.png}
+	\caption{K-Means Learning curve versus distance function}
+	\label{kmeans_dist}
+\end{figure}
+
+We also believe for TCP-KM we can conclusively say that we were able to consistently beat the base line error (except in a few years) with a 0.25 $\alpha$ and a 0.75 $\gamma$.
+
+TODO !!!!!!!!!!!!!!!! ADD AND ERROR METRIC SAY WE WERE SOME PERCENT AWAY 
 
 \subsection{Discussion}
 
 \subsubsection{Tree Convergence Graph}
-TCGs are a great tool to visualize data but they are not without their tradeoffs. For example a TCG will not directly show you why two topics decided to merge. Nor does it tell you what words a topic is made up of. These issues could be added to the TCG graph but would make the data less parseable. Some other features like word counts for the entire year would just not make sense in the TCG graph. Regardless of some of these drawbacks we still believe visualizing data this way provides an important starting point for building intuition of the data.
+TCGs are a great tool to visualize data but have trade offs. For example a TCG will not directly show you why two topics decided to merge. Nor does it tell you what words a topic is made up of. Or how strongly the topics converged. These issues could be added to the TCG graph but would make the data less parseable. Some other features like word counts for the entire year would just not make sense in the TCG graph. Regardless of some of these drawbacks we still believe visualizing this data provided an important starting point for building intuition about the data.
+
+\subsubsection{Thematic Particle Clustering}
+From our data we think TPC methods hold great promise. Both TPC-HAC and TPC-KM performed well and seem to be dependent on how we chose $\alpha$ and $\gamma$. TPC did have problems though, between years 20 to 25 we actually see TPC do worse than the base line. This result we believe is a cause of bursts of new topics forming which means that biasing on previous words would do worse. Since our patent data was pulled from "robotic" literature it would make sense that we would see a spike in the early 1990's of new topics entering the field. This leads to an interesting idea. If we were to use TPC in years where fewer new topics appear and standard methods for when many new topics appear we may be able to smooth our errors further. 
 
 
 %Answer the following questions for each piece of related work that addresses the same or a similar problem. What is their problem and method? How is your problem and method different? Why is your problem and method better? 
+
 \section{Related Work}
-viterbi score
+Our method for choosing the most probable path of topics builds on the ideas of the Viterbi Algorithm (VA)\cite{viterbi}. Our predictions for topics are made by finding the error between topics from year to year. In any two given years our algorithm will find the lowest error for every topic from one year to the next. With this information we can build a forward trellis structure from every starting topic.
+
+TODO MORE THINGS FOR TPC
+
 %What are the major shortcomings of your current method? For each shortcoming, propose additions or enhancements that would help overcome it. 
 \section{Future Work}
 Building on this work there are many paths that could lead additional research.
@@ -376,17 +447,18 @@ First, our implementation of TPC biases particles with respect to word counts. T
 
 Another way to modify TPC's could be through using multilayer neural network compression techniques on the particles. In the TPC algorithm $N>K$ where $N$ is the number of particles and K is the number of topics. We have to provide a transform to fit $N$ into $K$ so it can be used from year to year. Using a neural network with an appropriately defined error function we could transform $N$ particles into $K$ particles with multiple features weighting the distribution.
 
-
-soft clustering
-new features
-more sophisticated similarity and distance functions
+TODO soft clustering
+TODO new features
+TODO more sophisticated similarity and distance functions
 
 %Briefly summarize the important results and conclusions presented in the paper. What are the most important points illustrated by your work? How will your results improve future research and applications in the area? 
 \section{Conclusion}
 
-%Be sure to include a standard, well-formated, comprehensive bibliography with citations from the text referring to previously published papers in the scientific literature that you utilized or are related to your work.
 
-\section{Acknowledgements}
+
+
+
+%Be sure to include a standard, well-formated, comprehensive bibliography with citations from the text referring to previously published papers in the scientific literature that you utilized or are related to your work.
 \begin{thebibliography}{1}
 
 \bibitem{blei2011}
@@ -444,7 +516,20 @@ Selim, S. Z. and Ismail, M. A. (1984). K-means-type algorithms: a generalized co
 \bibitem{mallet}
 McCallum, A. K. (2002). Mallet: A machine learning for language toolkit.
 
+\bibitem{viterbi}
+Forney Jr, G. D. (1973). The viterbi algorithm. Proceedings of the IEEE, 61(3), 268-278.
+
 \end{thebibliography}
+
+
+\section{Appendix}
+\section{Appendix A}
+\begin{figure*}[h]
+	\center
+	\includegraphics[width=1.3\textwidth, angle=270]{fig/tcg.png}
+	\caption{An example of a Topic Convergence Graph for 10 years of data}
+	\label{tcg}
+\end{figure*}
 
 
 
