@@ -1,0 +1,278 @@
+<?xml version='1.0' ?>
+<topics>
+  <topic id="0" alpha="5.0" totalTokens="73" titles="tape, body, movement, adhesive, surface, outer, method, application, tool, oriented">
+	<word weight="0.2191780821917808" count="16">tape</word>
+	<word weight="0.1095890410958904" count="8">body</word>
+	<word weight="0.0958904109589041" count="7">movement</word>
+	<word weight="0.0821917808219178" count="6">adhesive</word>
+	<word weight="0.0684931506849315" count="5">surface</word>
+	<word weight="0.0684931506849315" count="5">outer</word>
+	<word weight="0.0547945205479452" count="4">method</word>
+	<word weight="0.0410958904109589" count="3">application</word>
+	<word weight="0.0410958904109589" count="3">tool</word>
+	<word weight="0.0273972602739726" count="2">oriented</word>
+	<word weight="0.0273972602739726" count="2">holding</word>
+	<word weight="0.0273972602739726" count="2">spring</word>
+	<word weight="0.0136986301369863" count="1">selected</word>
+	<word weight="0.0136986301369863" count="1">drilling</word>
+	<word weight="0.0136986301369863" count="1">article</word>
+	<word weight="0.0136986301369863" count="1">arranging</word>
+	<word weight="0.0136986301369863" count="1">engaging</word>
+	<word weight="0.0136986301369863" count="1">issuing</word>
+	<word weight="0.0136986301369863" count="1">convey</word>
+	<phrase weight="0.3333333333333333" count="3">adhesive tape</phrase>
+	<phrase weight="0.1111111111111111" count="1">application adhesive tape</phrase>
+	<phrase weight="0.1111111111111111" count="1">tape engaging</phrase>
+	<phrase weight="0.1111111111111111" count="1">tape adhesive surface</phrase>
+	<phrase weight="0.1111111111111111" count="1">article adhesive</phrase>
+	<phrase weight="0.1111111111111111" count="1">body spring</phrase>
+	<phrase weight="0.1111111111111111" count="1">extending body</phrase>
+  </topic>
+  <topic id="1" alpha="5.0" totalTokens="100" titles="tube, pneumatic, pressure, length, comprising, members, end, jets, bundle, interior">
+	<word weight="0.25" count="25">tube</word>
+	<word weight="0.17" count="17">pneumatic</word>
+	<word weight="0.13" count="13">pressure</word>
+	<word weight="0.08" count="8">length</word>
+	<word weight="0.07" count="7">comprising</word>
+	<word weight="0.03" count="3">members</word>
+	<word weight="0.03" count="3">end</word>
+	<word weight="0.03" count="3">jets</word>
+	<word weight="0.03" count="3">bundle</word>
+	<word weight="0.03" count="3">interior</word>
+	<word weight="0.02" count="2">straddle</word>
+	<word weight="0.02" count="2">adjacent</word>
+	<word weight="0.01" count="1">dimensioned</word>
+	<word weight="0.01" count="1">form</word>
+	<word weight="0.01" count="1">axis</word>
+	<word weight="0.01" count="1">axially</word>
+	<word weight="0.01" count="1">reception</word>
+	<word weight="0.01" count="1">elongate</word>
+	<word weight="0.01" count="1">moving</word>
+	<phrase weight="0.38461538461538464" count="5">pneumatic pressure</phrase>
+	<phrase weight="0.07692307692307693" count="1">pneumatic pressure members</phrase>
+	<phrase weight="0.07692307692307693" count="1">end tube pneumatic</phrase>
+	<phrase weight="0.07692307692307693" count="1">tube straddle</phrase>
+	<phrase weight="0.07692307692307693" count="1">reception pressure</phrase>
+	<phrase weight="0.07692307692307693" count="1">interior tube</phrase>
+	<phrase weight="0.07692307692307693" count="1">form jets</phrase>
+	<phrase weight="0.07692307692307693" count="1">pneumatic jets</phrase>
+	<phrase weight="0.07692307692307693" count="1">tube elongate members</phrase>
+  </topic>
+  <topic id="2" alpha="5.0" totalTokens="56" titles="outer, means, bit, advance, cavities, disks, template, member, allowing, biased">
+	<word weight="0.19642857142857142" count="11">outer</word>
+	<word weight="0.14285714285714285" count="8">means</word>
+	<word weight="0.08928571428571429" count="5">bit</word>
+	<word weight="0.08928571428571429" count="5">advance</word>
+	<word weight="0.05357142857142857" count="3">cavities</word>
+	<word weight="0.05357142857142857" count="3">disks</word>
+	<word weight="0.05357142857142857" count="3">template</word>
+	<word weight="0.05357142857142857" count="3">member</word>
+	<word weight="0.03571428571428571" count="2">allowing</word>
+	<word weight="0.03571428571428571" count="2">biased</word>
+	<word weight="0.017857142857142856" count="1">aligning</word>
+	<word weight="0.017857142857142856" count="1">close</word>
+	<word weight="0.017857142857142856" count="1">retracted</word>
+	<word weight="0.017857142857142856" count="1">include</word>
+	<word weight="0.017857142857142856" count="1">initial</word>
+	<word weight="0.017857142857142856" count="1">indexing</word>
+	<word weight="0.017857142857142856" count="1">angularly</word>
+	<word weight="0.017857142857142856" count="1">moves</word>
+	<word weight="0.017857142857142856" count="1">discharging</word>
+	<phrase weight="0.16666666666666666" count="1">disks allowing</phrase>
+	<phrase weight="0.16666666666666666" count="1">means aligning</phrase>
+	<phrase weight="0.16666666666666666" count="1">close reception cavities</phrase>
+	<phrase weight="0.16666666666666666" count="1">bit retracted</phrase>
+	<phrase weight="0.16666666666666666" count="1">member outer</phrase>
+	<phrase weight="0.16666666666666666" count="1">template indexing</phrase>
+  </topic>
+  <topic id="3" alpha="5.0" totalTokens="66" titles="tool, side, aperture, probes, hollow, adapted, opposite, open, sliding, inwardly">
+	<word weight="0.10606060606060606" count="7">tool</word>
+	<word weight="0.09090909090909091" count="6">side</word>
+	<word weight="0.09090909090909091" count="6">aperture</word>
+	<word weight="0.07575757575757576" count="5">probes</word>
+	<word weight="0.07575757575757576" count="5">hollow</word>
+	<word weight="0.06060606060606061" count="4">adapted</word>
+	<word weight="0.045454545454545456" count="3">opposite</word>
+	<word weight="0.045454545454545456" count="3">open</word>
+	<word weight="0.030303030303030304" count="2">sliding</word>
+	<word weight="0.030303030303030304" count="2">inwardly</word>
+	<word weight="0.030303030303030304" count="2">providing</word>
+	<word weight="0.030303030303030304" count="2">advancing</word>
+	<word weight="0.030303030303030304" count="2">acting</word>
+	<word weight="0.030303030303030304" count="2">oppositely</word>
+	<word weight="0.030303030303030304" count="2">inlet</word>
+	<word weight="0.030303030303030304" count="2">bundles</word>
+	<word weight="0.015151515151515152" count="1">positions</word>
+	<word weight="0.015151515151515152" count="1">aforesaid</word>
+	<word weight="0.015151515151515152" count="1">resisting</word>
+	<phrase weight="0.18181818181818182" count="2">oppositely acting</phrase>
+	<phrase weight="0.18181818181818182" count="2">aperture side</phrase>
+	<phrase weight="0.09090909090909091" count="1">progressively resisting</phrase>
+	<phrase weight="0.09090909090909091" count="1">advancing probes side relative</phrase>
+	<phrase weight="0.09090909090909091" count="1">aperture aforesaid</phrase>
+	<phrase weight="0.09090909090909091" count="1">includes inlet</phrase>
+	<phrase weight="0.09090909090909091" count="1">inwardly probes</phrase>
+	<phrase weight="0.09090909090909091" count="1">advancing hollow probes side</phrase>
+	<phrase weight="0.09090909090909091" count="1">positions open</phrase>
+  </topic>
+  <topic id="4" alpha="5.0" totalTokens="88" titles="guide, sleeve, drill, secured, arm, compliance, mounted, outer, slidingly, section">
+	<word weight="0.23863636363636365" count="21">guide</word>
+	<word weight="0.11363636363636363" count="10">sleeve</word>
+	<word weight="0.10227272727272728" count="9">drill</word>
+	<word weight="0.056818181818181816" count="5">secured</word>
+	<word weight="0.056818181818181816" count="5">arm</word>
+	<word weight="0.045454545454545456" count="4">compliance</word>
+	<word weight="0.045454545454545456" count="4">mounted</word>
+	<word weight="0.045454545454545456" count="4">outer</word>
+	<word weight="0.022727272727272728" count="2">slidingly</word>
+	<word weight="0.022727272727272728" count="2">section</word>
+	<word weight="0.022727272727272728" count="2">cross</word>
+	<word weight="0.022727272727272728" count="2">radially</word>
+	<word weight="0.022727272727272728" count="2">mechanisms</word>
+	<word weight="0.022727272727272728" count="2">type</word>
+	<word weight="0.011363636363636364" count="1">angular</word>
+	<word weight="0.011363636363636364" count="1">selectively</word>
+	<word weight="0.011363636363636364" count="1">connection</word>
+	<word weight="0.011363636363636364" count="1">receive</word>
+	<word weight="0.011363636363636364" count="1">concave</word>
+	<phrase weight="0.17647058823529413" count="3">sleeve guide</phrase>
+	<phrase weight="0.11764705882352941" count="2">outer guide</phrase>
+	<phrase weight="0.11764705882352941" count="2">secured guide</phrase>
+	<phrase weight="0.058823529411764705" count="1">entire drill drill</phrase>
+	<phrase weight="0.058823529411764705" count="1">drill type</phrase>
+	<phrase weight="0.058823529411764705" count="1">type simultaneously</phrase>
+	<phrase weight="0.058823529411764705" count="1">cross section</phrase>
+	<phrase weight="0.058823529411764705" count="1">compliance guide</phrase>
+	<phrase weight="0.058823529411764705" count="1">receive drill</phrase>
+	<phrase weight="0.058823529411764705" count="1">concave cross section slidingly</phrase>
+	<phrase weight="0.058823529411764705" count="1">compliance mechanisms</phrase>
+	<phrase weight="0.058823529411764705" count="1">compliance mechanisms preferably</phrase>
+	<phrase weight="0.058823529411764705" count="1">holder compliance</phrase>
+  </topic>
+  <topic id="5" alpha="5.0" totalTokens="80" titles="member, carriage, holes, respect, support, plurality, annular, pins, amount, limited">
+	<word weight="0.1625" count="13">member</word>
+	<word weight="0.0875" count="7">carriage</word>
+	<word weight="0.075" count="6">holes</word>
+	<word weight="0.0625" count="5">respect</word>
+	<word weight="0.05" count="4">support</word>
+	<word weight="0.0375" count="3">plurality</word>
+	<word weight="0.0375" count="3">annular</word>
+	<word weight="0.0375" count="3">pins</word>
+	<word weight="0.0375" count="3">amount</word>
+	<word weight="0.0375" count="3">limited</word>
+	<word weight="0.0375" count="3">drilled</word>
+	<word weight="0.025" count="2">bearing</word>
+	<word weight="0.025" count="2">receiving</word>
+	<word weight="0.025" count="2">apparatus</word>
+	<word weight="0.025" count="2">resilient</word>
+	<word weight="0.025" count="2">feeding</word>
+	<word weight="0.0125" count="1">insertion</word>
+	<word weight="0.0125" count="1">convex</word>
+	<word weight="0.0125" count="1">rigidly</word>
+	<phrase weight="0.15384615384615385" count="2">member annular</phrase>
+	<phrase weight="0.15384615384615385" count="2">limited amount</phrase>
+	<phrase weight="0.07692307692307693" count="1">member plurality</phrase>
+	<phrase weight="0.07692307692307693" count="1">positioning holes drilled feeding</phrase>
+	<phrase weight="0.07692307692307693" count="1">holes drilled</phrase>
+	<phrase weight="0.07692307692307693" count="1">respect carriage pins</phrase>
+	<phrase weight="0.07692307692307693" count="1">member axial</phrase>
+	<phrase weight="0.07692307692307693" count="1">plurality resilient</phrase>
+	<phrase weight="0.07692307692307693" count="1">support enclosing</phrase>
+	<phrase weight="0.07692307692307693" count="1">respect carriage insertion</phrase>
+	<phrase weight="0.07692307692307693" count="1">respect carriage</phrase>
+  </topic>
+  <topic id="6" alpha="5.0" totalTokens="63" titles="claim, applying, end, jet, cylindrical, wires, lateral, apertures, generally, force">
+	<word weight="0.14285714285714285" count="9">claim</word>
+	<word weight="0.14285714285714285" count="9">applying</word>
+	<word weight="0.07936507936507936" count="5">end</word>
+	<word weight="0.06349206349206349" count="4">jet</word>
+	<word weight="0.06349206349206349" count="4">cylindrical</word>
+	<word weight="0.06349206349206349" count="4">wires</word>
+	<word weight="0.06349206349206349" count="4">lateral</word>
+	<word weight="0.047619047619047616" count="3">apertures</word>
+	<word weight="0.031746031746031744" count="2">generally</word>
+	<word weight="0.031746031746031744" count="2">force</word>
+	<word weight="0.031746031746031744" count="2">facing</word>
+	<word weight="0.031746031746031744" count="2">abreast</word>
+	<word weight="0.031746031746031744" count="2">line</word>
+	<word weight="0.031746031746031744" count="2">cables</word>
+	<word weight="0.015873015873015872" count="1">angle</word>
+	<word weight="0.015873015873015872" count="1">piston</word>
+	<word weight="0.015873015873015872" count="1">front</word>
+	<word weight="0.015873015873015872" count="1">longitudinal</word>
+	<word weight="0.015873015873015872" count="1">cable</word>
+	<phrase weight="0.25" count="1">generally cylindrical</phrase>
+	<phrase weight="0.25" count="1">issue lateral apertures</phrase>
+	<phrase weight="0.25" count="1">jet front</phrase>
+	<phrase weight="0.25" count="1">wires generally cylindrical</phrase>
+  </topic>
+  <topic id="7" alpha="5.0" totalTokens="81" titles="tubes, object, central, suction, mouth, probe, respective, applied, disposed, relative">
+	<word weight="0.14814814814814814" count="12">tubes</word>
+	<word weight="0.12345679012345678" count="10">object</word>
+	<word weight="0.09876543209876543" count="8">central</word>
+	<word weight="0.09876543209876543" count="8">suction</word>
+	<word weight="0.04938271604938271" count="4">mouth</word>
+	<word weight="0.04938271604938271" count="4">probe</word>
+	<word weight="0.04938271604938271" count="4">respective</word>
+	<word weight="0.04938271604938271" count="4">applied</word>
+	<word weight="0.04938271604938271" count="4">disposed</word>
+	<word weight="0.037037037037037035" count="3">relative</word>
+	<word weight="0.024691358024691357" count="2">directed</word>
+	<word weight="0.024691358024691357" count="2">comprises</word>
+	<word weight="0.024691358024691357" count="2">laterally</word>
+	<word weight="0.024691358024691357" count="2">port</word>
+	<word weight="0.024691358024691357" count="2">extend</word>
+	<word weight="0.024691358024691357" count="2">applying</word>
+	<word weight="0.012345679012345678" count="1">move</word>
+	<word weight="0.012345679012345678" count="1">high</word>
+	<word weight="0.012345679012345678" count="1">supplying</word>
+	<phrase weight="0.3333333333333333" count="3">suction central</phrase>
+	<phrase weight="0.1111111111111111" count="1">probe laterally directed</phrase>
+	<phrase weight="0.1111111111111111" count="1">tubes extend</phrase>
+	<phrase weight="0.1111111111111111" count="1">tubes relative</phrase>
+	<phrase weight="0.1111111111111111" count="1">relative mouth</phrase>
+	<phrase weight="0.1111111111111111" count="1">communication central</phrase>
+	<phrase weight="0.1111111111111111" count="1">tubes disposed</phrase>
+  </topic>
+  <topic id="8" alpha="5.0" totalTokens="33" titles="surface, frame, control, carrying, rotate, misaligned, insert, therewith, unit, simultaneously">
+	<word weight="0.21212121212121213" count="7">surface</word>
+	<word weight="0.12121212121212122" count="4">frame</word>
+	<word weight="0.12121212121212122" count="4">control</word>
+	<word weight="0.09090909090909091" count="3">carrying</word>
+	<word weight="0.06060606060606061" count="2">rotate</word>
+	<word weight="0.030303030303030304" count="1">misaligned</word>
+	<word weight="0.030303030303030304" count="1">insert</word>
+	<word weight="0.030303030303030304" count="1">therewith</word>
+	<word weight="0.030303030303030304" count="1">unit</word>
+	<word weight="0.030303030303030304" count="1">aligned</word>
+	<word weight="0.030303030303030304" count="1">simultaneously</word>
+	<word weight="0.030303030303030304" count="1">features</word>
+	<word weight="0.030303030303030304" count="1">arranged</word>
+	<word weight="0.030303030303030304" count="1">coupling</word>
+	<word weight="0.030303030303030304" count="1">ends</word>
+	<word weight="0.030303030303030304" count="1">provide</word>
+	<word weight="0.030303030303030304" count="1">hold</word>
+	<word weight="0.030303030303030304" count="1">robotic</word>
+	<phrase weight="1.0" count="1">carrying frame</phrase>
+  </topic>
+  <topic id="9" alpha="5.0" totalTokens="30" titles="hole, forwardly, workpiece, position, retain, parallel, power, linear, securing, substantially">
+	<word weight="0.16666666666666666" count="5">hole</word>
+	<word weight="0.13333333333333333" count="4">forwardly</word>
+	<word weight="0.1" count="3">workpiece</word>
+	<word weight="0.1" count="3">position</word>
+	<word weight="0.06666666666666667" count="2">retain</word>
+	<word weight="0.06666666666666667" count="2">parallel</word>
+	<word weight="0.06666666666666667" count="2">forward</word>
+	<word weight="0.03333333333333333" count="1">power</word>
+	<word weight="0.03333333333333333" count="1">linear</word>
+	<word weight="0.03333333333333333" count="1">securing</word>
+	<word weight="0.03333333333333333" count="1">substantially</word>
+	<word weight="0.03333333333333333" count="1">carried</word>
+	<word weight="0.03333333333333333" count="1">remote</word>
+	<word weight="0.03333333333333333" count="1">part</word>
+	<word weight="0.03333333333333333" count="1">releases</word>
+	<word weight="0.03333333333333333" count="1">valves</word>
+	<phrase weight="0.5" count="1">position workpiece</phrase>
+	<phrase weight="0.5" count="1">carried forward</phrase>
+  </topic>
+</topics>

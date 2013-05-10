@@ -1,0 +1,180 @@
+<?xml version='1.0' ?>
+<topics>
+  <topic id="0" alpha="5.0" totalTokens="60" titles="interface, includes, orifices, including, end, holding, cylinders, perpendicular, removable, thereon">
+	<word weight="0.36666666666666664" count="22">interface</word>
+	<word weight="0.13333333333333333" count="8">includes</word>
+	<word weight="0.08333333333333333" count="5">orifices</word>
+	<word weight="0.08333333333333333" count="5">including</word>
+	<word weight="0.05" count="3">end</word>
+	<word weight="0.05" count="3">holding</word>
+	<word weight="0.03333333333333333" count="2">cylinders</word>
+	<word weight="0.03333333333333333" count="2">perpendicular</word>
+	<word weight="0.03333333333333333" count="2">removable</word>
+	<word weight="0.016666666666666666" count="1">thereon</word>
+	<word weight="0.016666666666666666" count="1">channel</word>
+	<word weight="0.016666666666666666" count="1">surfaces</word>
+	<word weight="0.016666666666666666" count="1">extends</word>
+	<word weight="0.016666666666666666" count="1">pair</word>
+	<word weight="0.016666666666666666" count="1">alignment</word>
+	<word weight="0.016666666666666666" count="1">adapted</word>
+	<word weight="0.016666666666666666" count="1">positional</word>
+	<phrase weight="0.6666666666666666" count="2">interface including</phrase>
+	<phrase weight="0.3333333333333333" count="1">orifices interface</phrase>
+  </topic>
+  <topic id="1" alpha="5.0" totalTokens="96" titles="conical, pin, assembly, engagement, position, bias, therethrough, locating, extend, formed">
+	<word weight="0.5104166666666666" count="49">conical</word>
+	<word weight="0.13541666666666666" count="13">pin</word>
+	<word weight="0.0625" count="6">assembly</word>
+	<word weight="0.0625" count="6">engagement</word>
+	<word weight="0.041666666666666664" count="4">position</word>
+	<word weight="0.03125" count="3">bias</word>
+	<word weight="0.03125" count="3">therethrough</word>
+	<word weight="0.03125" count="3">locating</word>
+	<word weight="0.020833333333333332" count="2">extend</word>
+	<word weight="0.020833333333333332" count="2">formed</word>
+	<word weight="0.020833333333333332" count="2">mechanically</word>
+	<word weight="0.010416666666666666" count="1">bore</word>
+	<word weight="0.010416666666666666" count="1">operatively</word>
+	<word weight="0.010416666666666666" count="1">errors</word>
+	<phrase weight="0.4" count="2">position pin</phrase>
+	<phrase weight="0.4" count="2">position pin pin</phrase>
+	<phrase weight="0.2" count="1">bore therethrough</phrase>
+  </topic>
+  <topic id="2" alpha="5.0" totalTokens="89" titles="surface, claim, cylindrical, block, channels, attach, respect, outwardly, angle, actuated">
+	<word weight="0.38202247191011235" count="34">surface</word>
+	<word weight="0.1797752808988764" count="16">claim</word>
+	<word weight="0.14606741573033707" count="13">cylindrical</word>
+	<word weight="0.06741573033707865" count="6">block</word>
+	<word weight="0.056179775280898875" count="5">channels</word>
+	<word weight="0.033707865168539325" count="3">attach</word>
+	<word weight="0.02247191011235955" count="2">respect</word>
+	<word weight="0.02247191011235955" count="2">outwardly</word>
+	<word weight="0.02247191011235955" count="2">angle</word>
+	<word weight="0.02247191011235955" count="2">actuated</word>
+	<word weight="0.02247191011235955" count="2">removable</word>
+	<word weight="0.011235955056179775" count="1">hook</word>
+	<word weight="0.011235955056179775" count="1">sized</word>
+	<phrase weight="0.5" count="4">cylindrical surface</phrase>
+	<phrase weight="0.25" count="2">claim channels</phrase>
+	<phrase weight="0.125" count="1">channels respect</phrase>
+	<phrase weight="0.125" count="1">block cylindrical surface</phrase>
+  </topic>
+  <topic id="3" alpha="5.0" totalTokens="37" titles="slider, sensor, members, moved, contacted, placement, enable, robot, release, angular">
+	<word weight="0.2702702702702703" count="10">slider</word>
+	<word weight="0.21621621621621623" count="8">sensor</word>
+	<word weight="0.13513513513513514" count="5">members</word>
+	<word weight="0.05405405405405406" count="2">moved</word>
+	<word weight="0.05405405405405406" count="2">contacted</word>
+	<word weight="0.05405405405405406" count="2">placement</word>
+	<word weight="0.05405405405405406" count="2">enable</word>
+	<word weight="0.05405405405405406" count="2">robot</word>
+	<word weight="0.02702702702702703" count="1">release</word>
+	<word weight="0.02702702702702703" count="1">angular</word>
+	<word weight="0.02702702702702703" count="1">capable</word>
+	<word weight="0.02702702702702703" count="1">mechanical</word>
+	<phrase weight="1.0" count="5">slider members</phrase>
+  </topic>
+  <topic id="4" alpha="5.0" totalTokens="68" titles="means, member, surface, frustro, move, adjacent, inserted, electrical, back, general">
+	<word weight="0.35294117647058826" count="24">means</word>
+	<word weight="0.2647058823529412" count="18">member</word>
+	<word weight="0.11764705882352941" count="8">surface</word>
+	<word weight="0.07352941176470588" count="5">frustro</word>
+	<word weight="0.058823529411764705" count="4">move</word>
+	<word weight="0.029411764705882353" count="2">adjacent</word>
+	<word weight="0.029411764705882353" count="2">inserted</word>
+	<word weight="0.029411764705882353" count="2">electrical</word>
+	<word weight="0.014705882352941176" count="1">back</word>
+	<word weight="0.014705882352941176" count="1">general</word>
+	<word weight="0.014705882352941176" count="1">hold</word>
+	<phrase weight="0.4" count="2">member means move</phrase>
+	<phrase weight="0.4" count="2">member means</phrase>
+	<phrase weight="0.2" count="1">means hold</phrase>
+  </topic>
+  <topic id="5" alpha="5.0" totalTokens="90" titles="frustro, axis, outer, surface, pneumatic, controllably, orifice, mating, member, axial">
+	<word weight="0.4888888888888889" count="44">frustro</word>
+	<word weight="0.15555555555555556" count="14">axis</word>
+	<word weight="0.12222222222222222" count="11">outer</word>
+	<word weight="0.05555555555555555" count="5">surface</word>
+	<word weight="0.022222222222222223" count="2">pneumatic</word>
+	<word weight="0.022222222222222223" count="2">controllably</word>
+	<word weight="0.022222222222222223" count="2">orifice</word>
+	<word weight="0.022222222222222223" count="2">mating</word>
+	<word weight="0.022222222222222223" count="2">member</word>
+	<word weight="0.011111111111111112" count="1">axial</word>
+	<word weight="0.011111111111111112" count="1">engaged</word>
+	<word weight="0.011111111111111112" count="1">biased</word>
+	<word weight="0.011111111111111112" count="1">attach</word>
+	<word weight="0.011111111111111112" count="1">claimed</word>
+	<word weight="0.011111111111111112" count="1">system</word>
+	<phrase weight="0.75" count="9">outer frustro</phrase>
+	<phrase weight="0.16666666666666666" count="2">axis outer frustro</phrase>
+	<phrase weight="0.08333333333333333" count="1">surface axis</phrase>
+  </topic>
+  <topic id="6" alpha="5.0" totalTokens="65" titles="portion, nipple, signal, defining, retaining, thereof, mate, spring, generally, disengaged">
+	<word weight="0.23076923076923078" count="15">portion</word>
+	<word weight="0.15384615384615385" count="10">nipple</word>
+	<word weight="0.12307692307692308" count="8">signal</word>
+	<word weight="0.07692307692307693" count="5">defining</word>
+	<word weight="0.06153846153846154" count="4">retaining</word>
+	<word weight="0.06153846153846154" count="4">thereof</word>
+	<word weight="0.06153846153846154" count="4">mate</word>
+	<word weight="0.03076923076923077" count="2">spring</word>
+	<word weight="0.03076923076923077" count="2">generally</word>
+	<word weight="0.03076923076923077" count="2">disengaged</word>
+	<word weight="0.03076923076923077" count="2">tool</word>
+	<word weight="0.015384615384615385" count="1">held</word>
+	<word weight="0.015384615384615385" count="1">thereto</word>
+	<word weight="0.015384615384615385" count="1">teeth</word>
+	<word weight="0.015384615384615385" count="1">hole</word>
+	<word weight="0.015384615384615385" count="1">attachments</word>
+	<word weight="0.015384615384615385" count="1">tapered</word>
+	<word weight="0.015384615384615385" count="1">accommodating</word>
+	<phrase weight="0.5" count="2">portion disengaged</phrase>
+	<phrase weight="0.25" count="1">retaining teeth</phrase>
+	<phrase weight="0.25" count="1">tool tapered attachments</phrase>
+  </topic>
+  <topic id="7" alpha="5.0" totalTokens="45" titles="body, include, sized, area, machine, switch, ">
+	<word weight="0.37777777777777777" count="17">body</word>
+	<word weight="0.24444444444444444" count="11">include</word>
+	<word weight="0.15555555555555556" count="7">sized</word>
+	<word weight="0.08888888888888889" count="4">area</word>
+	<word weight="0.08888888888888889" count="4">machine</word>
+	<word weight="0.044444444444444446" count="2">switch</word>
+	<phrase weight="1.0" count="2">body machine</phrase>
+  </topic>
+  <topic id="8" alpha="5.0" totalTokens="79" titles="attachment, device, operator, positioned, shaped, abutment, engage, bottom, connected, claim">
+	<word weight="0.3037974683544304" count="24">attachment</word>
+	<word weight="0.1518987341772152" count="12">device</word>
+	<word weight="0.1518987341772152" count="12">operator</word>
+	<word weight="0.10126582278481013" count="8">positioned</word>
+	<word weight="0.06329113924050633" count="5">shaped</word>
+	<word weight="0.05063291139240506" count="4">abutment</word>
+	<word weight="0.0379746835443038" count="3">engage</word>
+	<word weight="0.02531645569620253" count="2">bottom</word>
+	<word weight="0.02531645569620253" count="2">connected</word>
+	<word weight="0.02531645569620253" count="2">claim</word>
+	<word weight="0.012658227848101266" count="1">hooks</word>
+	<word weight="0.012658227848101266" count="1">tooth</word>
+	<word weight="0.012658227848101266" count="1">extending</word>
+	<word weight="0.012658227848101266" count="1">tools</word>
+	<word weight="0.012658227848101266" count="1">allowing</word>
+	<phrase weight="0.6153846153846154" count="8">operator device</phrase>
+	<phrase weight="0.15384615384615385" count="2">attachment operator device</phrase>
+	<phrase weight="0.07692307692307693" count="1">operator device attachment</phrase>
+	<phrase weight="0.07692307692307693" count="1">positioned engage</phrase>
+	<phrase weight="0.07692307692307693" count="1">attachment tools</phrase>
+  </topic>
+  <topic id="9" alpha="5.0" totalTokens="55" titles="defined, slide, blanket, members, smaller, bear, side, hook, channels, claims">
+	<word weight="0.4727272727272727" count="26">defined</word>
+	<word weight="0.16363636363636364" count="9">slide</word>
+	<word weight="0.10909090909090909" count="6">blanket</word>
+	<word weight="0.09090909090909091" count="5">members</word>
+	<word weight="0.05454545454545454" count="3">smaller</word>
+	<word weight="0.03636363636363636" count="2">bear</word>
+	<word weight="0.01818181818181818" count="1">side</word>
+	<word weight="0.01818181818181818" count="1">hook</word>
+	<word weight="0.01818181818181818" count="1">channels</word>
+	<word weight="0.01818181818181818" count="1">claims</word>
+	<phrase weight="1.0" count="1">defined blanket</phrase>
+  </topic>
+</topics>

@@ -1,0 +1,413 @@
+<?xml version='1.0' ?>
+<topics>
+  <topic id="0" alpha="5.0" totalTokens="2259" titles="concave reflective, photosensitive elements, signals representative image, light angular arc function radius concave reflective, beam, rotatable, portion, collimated, object, impinging">
+	<word weight="0.08942009738822487" count="202">light</word>
+	<word weight="0.08853474988933156" count="200">beam</word>
+	<word weight="0.0566622399291722" count="128">reflective</word>
+	<word weight="0.04072598494909252" count="92">concave</word>
+	<word weight="0.03762726870296591" count="85">signals</word>
+	<word weight="0.035413899955732624" count="80">elements</word>
+	<word weight="0.03231518370960602" count="73">rotatable</word>
+	<word weight="0.03142983621071271" count="71">portion</word>
+	<word weight="0.03098716246126605" count="70">collimated</word>
+	<word weight="0.03010181496237273" count="68">object</word>
+	<word weight="0.029659141212926073" count="67">impinging</word>
+	<word weight="0.027003098716246128" count="61">angular</word>
+	<word weight="0.025232403718459494" count="57">arc</word>
+	<word weight="0.02434705621956618" count="55">representative</word>
+	<word weight="0.02390438247011952" count="54">photosensitive</word>
+	<word weight="0.021691013722886232" count="49">thereon</word>
+	<word weight="0.021691013722886232" count="49">width</word>
+	<word weight="0.02080566622399292" count="47">image</word>
+	<word weight="0.019477644975652943" count="44">motor</word>
+	<phrase weight="0.06088992974238876" count="26">concave reflective</phrase>
+	<phrase weight="0.05152224824355972" count="22">photosensitive elements</phrase>
+	<phrase weight="0.04918032786885246" count="21">signals representative image</phrase>
+	<phrase weight="0.04918032786885246" count="21">light angular arc function radius concave reflective</phrase>
+	<phrase weight="0.03981264637002342" count="17">reflective cylinder</phrase>
+	<phrase weight="0.03981264637002342" count="17">photosensitive elements elements producing signals representative light impinging thereon</phrase>
+	<phrase weight="0.03747072599531616" count="16">imaging part light beam illuminated portion object</phrase>
+	<phrase weight="0.02810304449648712" count="12">width collimated light beam impinging thereon ii illuminates portion object</phrase>
+	<phrase weight="0.0234192037470726" count="10">controlling angular width arc</phrase>
+	<phrase weight="0.02107728337236534" count="9">signals representative</phrase>
+	<phrase weight="0.02107728337236534" count="9">impinging beam collimated light concave reflective</phrase>
+	<phrase weight="0.01873536299765808" count="8">beam light</phrase>
+	<phrase weight="0.01873536299765808" count="8">collimated beam light</phrase>
+	<phrase weight="0.01639344262295082" count="7">beam directing mirror</phrase>
+	<phrase weight="0.01639344262295082" count="7">rotatable motor shaft concave reflective</phrase>
+	<phrase weight="0.01639344262295082" count="7">portion object</phrase>
+	<phrase weight="0.01639344262295082" count="7">directing beam collimated light concave reflective</phrase>
+	<phrase weight="0.01639344262295082" count="7">rotatable reflective cylinder</phrase>
+	<phrase weight="0.01639344262295082" count="7">signals apparatus image acquisition</phrase>
+	<phrase weight="0.01639344262295082" count="7">rotatable motor shaft directing beam collimated light</phrase>
+  </topic>
+  <topic id="1" alpha="5.0" totalTokens="325" titles="casting, method, sensor, provide, imaging, data, claimed, machining, relative, ranging">
+	<word weight="0.07384615384615385" count="24">casting</word>
+	<word weight="0.06769230769230769" count="22">method</word>
+	<word weight="0.06153846153846154" count="20">sensor</word>
+	<word weight="0.043076923076923075" count="14">provide</word>
+	<word weight="0.036923076923076927" count="12">imaging</word>
+	<word weight="0.03076923076923077" count="10">data</word>
+	<word weight="0.03076923076923077" count="10">claimed</word>
+	<word weight="0.024615384615384615" count="8">machining</word>
+	<word weight="0.024615384615384615" count="8">relative</word>
+	<word weight="0.021538461538461538" count="7">ranging</word>
+	<word weight="0.021538461538461538" count="7">comprising</word>
+	<word weight="0.018461538461538463" count="6">robotic</word>
+	<word weight="0.018461538461538463" count="6">number</word>
+	<word weight="0.018461538461538463" count="6">optical</word>
+	<word weight="0.018461538461538463" count="6">control</word>
+	<word weight="0.018461538461538463" count="6">electro</word>
+	<word weight="0.015384615384615385" count="5">dimension</word>
+	<word weight="0.015384615384615385" count="5">serial</word>
+	<word weight="0.015384615384615385" count="5">sensors</word>
+	<phrase weight="0.0425531914893617" count="2">provide relative</phrase>
+	<phrase weight="0.02127659574468085" count="1">method claimed claim comprising comparing</phrase>
+	<phrase weight="0.02127659574468085" count="1">triangulating ranging sensor imaging sensor</phrase>
+	<phrase weight="0.02127659574468085" count="1">maximum exceeded method claimed claim casting</phrase>
+	<phrase weight="0.02127659574468085" count="1">principally addressed inspection molds cores assure</phrase>
+	<phrase weight="0.02127659574468085" count="1">finish casting determined</phrase>
+	<phrase weight="0.02127659574468085" count="1">electro optical triangulation ranging sensor electro optical imaging sensor imaging sensor</phrase>
+	<phrase weight="0.02127659574468085" count="1">inspection finished castings extraneous material passages excessive</phrase>
+	<phrase weight="0.02127659574468085" count="1">programmably moveable sensors shown context embodiments</phrase>
+	<phrase weight="0.02127659574468085" count="1">photodetector matrix</phrase>
+	<phrase weight="0.02127659574468085" count="1">provide control</phrase>
+	<phrase weight="0.02127659574468085" count="1">opened dimension</phrase>
+	<phrase weight="0.02127659574468085" count="1">electro optical</phrase>
+	<phrase weight="0.02127659574468085" count="1">relates improvements foundry procedures process post process inspection electro optical sensor</phrase>
+	<phrase weight="0.02127659574468085" count="1">ranging sensor imaging sensor</phrase>
+	<phrase weight="0.02127659574468085" count="1">serial number electro optically inspecting casting</phrase>
+	<phrase weight="0.02127659574468085" count="1">castings method comprising</phrase>
+	<phrase weight="0.02127659574468085" count="1">background paint casting</phrase>
+	<phrase weight="0.02127659574468085" count="1">inspecting casting serial number automatically reading serial number machining station provide access casting data</phrase>
+	<phrase weight="0.02127659574468085" count="1">imaging sensor dimension casting</phrase>
+  </topic>
+  <topic id="2" alpha="5.0" totalTokens="322" titles="member, claim, invention, members, configured, pair, humanoid, simulate, includes, signal">
+	<word weight="0.08385093167701864" count="27">member</word>
+	<word weight="0.08074534161490683" count="26">claim</word>
+	<word weight="0.052795031055900624" count="17">invention</word>
+	<word weight="0.043478260869565216" count="14">members</word>
+	<word weight="0.031055900621118012" count="10">configured</word>
+	<word weight="0.031055900621118012" count="10">pair</word>
+	<word weight="0.027950310559006212" count="9">humanoid</word>
+	<word weight="0.024844720496894408" count="8">simulate</word>
+	<word weight="0.024844720496894408" count="8">includes</word>
+	<word weight="0.021739130434782608" count="7">signal</word>
+	<word weight="0.021739130434782608" count="7">outputs</word>
+	<word weight="0.021739130434782608" count="7">detectors</word>
+	<word weight="0.018633540372670808" count="6">toy</word>
+	<word weight="0.018633540372670808" count="6">permit</word>
+	<word weight="0.018633540372670808" count="6">resultant</word>
+	<word weight="0.015527950310559006" count="5">wing</word>
+	<word weight="0.015527950310559006" count="5">vehicles</word>
+	<word weight="0.015527950310559006" count="5">attached</word>
+	<word weight="0.015527950310559006" count="5">assembly</word>
+	<phrase weight="0.0425531914893617" count="2">body member invention claim</phrase>
+	<phrase weight="0.0425531914893617" count="2">humanoid form removable members reconfiguration separate toy vehicles</phrase>
+	<phrase weight="0.02127659574468085" count="1">head simulates rocket exhaust assembly</phrase>
+	<phrase weight="0.02127659574468085" count="1">equal sized detectors arranged pairs pair lenslet receive</phrase>
+	<phrase weight="0.02127659574468085" count="1">appendages member removably attached member configured simulate pair</phrase>
+	<phrase weight="0.02127659574468085" count="1">resultant signal indicative</phrase>
+	<phrase weight="0.02127659574468085" count="1">outputs detectors</phrase>
+	<phrase weight="0.02127659574468085" count="1">claim outputs detector pairs combined combined outputs</phrase>
+	<phrase weight="0.02127659574468085" count="1">interconnection member configured</phrase>
+	<phrase weight="0.02127659574468085" count="1">wing members</phrase>
+	<phrase weight="0.02127659574468085" count="1">members pivotally</phrase>
+	<phrase weight="0.02127659574468085" count="1">claim pairs detectors lenslet</phrase>
+	<phrase weight="0.02127659574468085" count="1">pairs detectors</phrase>
+	<phrase weight="0.02127659574468085" count="1">detector pairs compared</phrase>
+	<phrase weight="0.02127659574468085" count="1">invention claim body member pivotally</phrase>
+	<phrase weight="0.02127659574468085" count="1">invention exclusive</phrase>
+	<phrase weight="0.02127659574468085" count="1">simulating pair rocket engines toy assembly simulating</phrase>
+	<phrase weight="0.02127659574468085" count="1">claim toy assembly simulating</phrase>
+	<phrase weight="0.02127659574468085" count="1">firing projectile wing invention claim</phrase>
+	<phrase weight="0.02127659574468085" count="1">toy invention claim member includes pair</phrase>
+  </topic>
+  <topic id="3" alpha="5.0" totalTokens="535" titles="means, robot, movement, predetermined, including, articulated, event, pieces, memory, comprising">
+	<word weight="0.18504672897196262" count="99">means</word>
+	<word weight="0.15327102803738318" count="82">robot</word>
+	<word weight="0.04299065420560748" count="23">movement</word>
+	<word weight="0.03925233644859813" count="21">predetermined</word>
+	<word weight="0.028037383177570093" count="15">including</word>
+	<word weight="0.026168224299065422" count="14">articulated</word>
+	<word weight="0.024299065420560748" count="13">event</word>
+	<word weight="0.024299065420560748" count="13">pieces</word>
+	<word weight="0.024299065420560748" count="13">memory</word>
+	<word weight="0.024299065420560748" count="13">comprising</word>
+	<word weight="0.020560747663551402" count="11">processing</word>
+	<word weight="0.020560747663551402" count="11">mounted</word>
+	<word weight="0.020560747663551402" count="11">invention</word>
+	<word weight="0.016822429906542057" count="9">location</word>
+	<word weight="0.016822429906542057" count="9">producing</word>
+	<word weight="0.016822429906542057" count="9">improvement</word>
+	<word weight="0.014953271028037384" count="8">presence</word>
+	<word weight="0.011214953271028037" count="6">skill</word>
+	<word weight="0.011214953271028037" count="6">suggested</word>
+	<phrase weight="0.058823529411764705" count="3">manifestation physical movement robot</phrase>
+	<phrase weight="0.058823529411764705" count="3">existence predetermined event</phrase>
+	<phrase weight="0.058823529411764705" count="3">means plotted</phrase>
+	<phrase weight="0.0392156862745098" count="2">comprising multiple layer</phrase>
+	<phrase weight="0.0392156862745098" count="2">drive robot</phrase>
+	<phrase weight="0.0392156862745098" count="2">moved means</phrase>
+	<phrase weight="0.0392156862745098" count="2">suggested move</phrase>
+	<phrase weight="0.0392156862745098" count="2">incremental skill</phrase>
+	<phrase weight="0.0392156862745098" count="2">means means</phrase>
+	<phrase weight="0.0392156862745098" count="2">searching memory</phrase>
+	<phrase weight="0.0196078431372549" count="1">robot means</phrase>
+	<phrase weight="0.0196078431372549" count="1">articulated robot</phrase>
+	<phrase weight="0.0196078431372549" count="1">plurality spring biased</phrase>
+	<phrase weight="0.0196078431372549" count="1">pieces articulated radially moving robot</phrase>
+	<phrase weight="0.0196078431372549" count="1">stops approximately</phrase>
+	<phrase weight="0.0196078431372549" count="1">including means producing</phrase>
+	<phrase weight="0.0196078431372549" count="1">movement articulated</phrase>
+	<phrase weight="0.0196078431372549" count="1">locations include</phrase>
+	<phrase weight="0.0196078431372549" count="1">articulated portions means coordinating relative movement articulated</phrase>
+	<phrase weight="0.0196078431372549" count="1">operatively moving robot</phrase>
+  </topic>
+  <topic id="4" alpha="5.0" totalTokens="205" titles="position, element, space, claims, providing, light, movable, determine, intersection, plurality">
+	<word weight="0.08780487804878048" count="18">position</word>
+	<word weight="0.07804878048780488" count="16">element</word>
+	<word weight="0.06341463414634146" count="13">space</word>
+	<word weight="0.05853658536585366" count="12">claims</word>
+	<word weight="0.05365853658536585" count="11">providing</word>
+	<word weight="0.04878048780487805" count="10">light</word>
+	<word weight="0.03414634146341464" count="7">movable</word>
+	<word weight="0.03414634146341464" count="7">determine</word>
+	<word weight="0.02926829268292683" count="6">intersection</word>
+	<word weight="0.02926829268292683" count="6">plurality</word>
+	<word weight="0.024390243902439025" count="5">orientation</word>
+	<word weight="0.024390243902439025" count="5">determining</word>
+	<word weight="0.024390243902439025" count="5">steps</word>
+	<word weight="0.01951219512195122" count="4">extending</word>
+	<word weight="0.014634146341463415" count="3">projector</word>
+	<word weight="0.014634146341463415" count="3">reflectors</word>
+	<word weight="0.014634146341463415" count="3">color</word>
+	<word weight="0.014634146341463415" count="3">beams</word>
+	<word weight="0.014634146341463415" count="3">projectors</word>
+	<phrase weight="0.07692307692307693" count="2">sensing positional orientation</phrase>
+	<phrase weight="0.038461538461538464" count="1">position projected</phrase>
+	<phrase weight="0.038461538461538464" count="1">space calculating intersection lines space determine</phrase>
+	<phrase weight="0.038461538461538464" count="1">space calculating</phrase>
+	<phrase weight="0.038461538461538464" count="1">position orientation element platform space determining intersection</phrase>
+	<phrase weight="0.038461538461538464" count="1">reflected reflectors</phrase>
+	<phrase weight="0.038461538461538464" count="1">space comprising steps providing plurality colinear light sources element movable space providing</phrase>
+	<phrase weight="0.038461538461538464" count="1">comprising sealing</phrase>
+	<phrase weight="0.038461538461538464" count="1">projectors light</phrase>
+	<phrase weight="0.038461538461538464" count="1">light projectors positions</phrase>
+	<phrase weight="0.038461538461538464" count="1">beams reflectors plane projector</phrase>
+	<phrase weight="0.038461538461538464" count="1">time illumination determine</phrase>
+	<phrase weight="0.038461538461538464" count="1">recording light</phrase>
+	<phrase weight="0.038461538461538464" count="1">color determining position space reflector intersection camera</phrase>
+	<phrase weight="0.038461538461538464" count="1">sensing position orientation</phrase>
+	<phrase weight="0.038461538461538464" count="1">element extending</phrase>
+	<phrase weight="0.038461538461538464" count="1">steps providing plurality colinear color light reflectors element movable space</phrase>
+	<phrase weight="0.038461538461538464" count="1">cameras positions spaced element recording cameras images light sources identity</phrase>
+	<phrase weight="0.038461538461538464" count="1">sources element orientation position element space</phrase>
+	<phrase weight="0.038461538461538464" count="1">position light beams time</phrase>
+  </topic>
+  <topic id="5" alpha="5.0" totalTokens="856" titles="chess, arm, position, piece, member, game, board, computer, switch, releasing">
+	<word weight="0.11214953271028037" count="96">chess</word>
+	<word weight="0.07242990654205607" count="62">arm</word>
+	<word weight="0.05023364485981308" count="43">position</word>
+	<word weight="0.0455607476635514" count="39">piece</word>
+	<word weight="0.037383177570093455" count="32">member</word>
+	<word weight="0.03387850467289719" count="29">game</word>
+	<word weight="0.030373831775700934" count="26">board</word>
+	<word weight="0.026869158878504672" count="23">computer</word>
+	<word weight="0.02102803738317757" count="18">switch</word>
+	<word weight="0.02102803738317757" count="18">releasing</word>
+	<word weight="0.02102803738317757" count="18">grasping</word>
+	<word weight="0.01985981308411215" count="17">current</word>
+	<word weight="0.017523364485981307" count="15">driving</word>
+	<word weight="0.016355140186915886" count="14">desired</word>
+	<word weight="0.015186915887850467" count="13">unit</word>
+	<word weight="0.015186915887850467" count="13">circuit</word>
+	<word weight="0.015186915887850467" count="13">magnetic</word>
+	<word weight="0.012850467289719626" count="11">square</word>
+	<word weight="0.012850467289719626" count="11">movably</word>
+	<phrase weight="0.05263157894736842" count="9">arm movably</phrase>
+	<phrase weight="0.04093567251461988" count="7">adjacent chess board</phrase>
+	<phrase weight="0.029239766081871343" count="5">chess square ensure alignment coaction grasping releasing</phrase>
+	<phrase weight="0.029239766081871343" count="5">chess board</phrase>
+	<phrase weight="0.029239766081871343" count="5">determining current position</phrase>
+	<phrase weight="0.029239766081871343" count="5">arm grasping releasing chess piece</phrase>
+	<phrase weight="0.029239766081871343" count="5">chess piece</phrase>
+	<phrase weight="0.029239766081871343" count="5">chess piece magnetic</phrase>
+	<phrase weight="0.023391812865497075" count="4">computer controlled chess game housing member chess board chess</phrase>
+	<phrase weight="0.023391812865497075" count="4">actuating switch member spatially</phrase>
+	<phrase weight="0.023391812865497075" count="4">lowering raising</phrase>
+	<phrase weight="0.023391812865497075" count="4">switch member positioned beneath chess square</phrase>
+	<phrase weight="0.017543859649122806" count="3">playing chess game</phrase>
+	<phrase weight="0.017543859649122806" count="3">shortest path</phrase>
+	<phrase weight="0.017543859649122806" count="3">emotional response</phrase>
+	<phrase weight="0.017543859649122806" count="3">arm accordance desired implementation chess game</phrase>
+	<phrase weight="0.011695906432748537" count="2">determining desired final position</phrase>
+	<phrase weight="0.011695906432748537" count="2">arm current position start position chess piece</phrase>
+	<phrase weight="0.011695906432748537" count="2">desired final position</phrase>
+	<phrase weight="0.011695906432748537" count="2">grasping releasing</phrase>
+  </topic>
+  <topic id="6" alpha="5.0" totalTokens="569" titles="arms, workhead, end, location, support, connected, structure, remote, driving, hingedly">
+	<word weight="0.0632688927943761" count="36">arms</word>
+	<word weight="0.054481546572934976" count="31">arm</word>
+	<word weight="0.04745166959578207" count="27">workhead</word>
+	<word weight="0.04745166959578207" count="27">end</word>
+	<word weight="0.0421792618629174" count="24">location</word>
+	<word weight="0.03866432337434095" count="22">support</word>
+	<word weight="0.03690685413005272" count="21">connected</word>
+	<word weight="0.029876977152899824" count="17">structure</word>
+	<word weight="0.02460456942003515" count="14">remote</word>
+	<word weight="0.0210896309314587" count="12">driving</word>
+	<word weight="0.0210896309314587" count="12">hingedly</word>
+	<word weight="0.019332161687170474" count="11">portions</word>
+	<word weight="0.019332161687170474" count="11">manipulator</word>
+	<word weight="0.01757469244288225" count="10">spaced</word>
+	<word weight="0.01757469244288225" count="10">proximate</word>
+	<word weight="0.01757469244288225" count="10">part</word>
+	<word weight="0.01757469244288225" count="10">portion</word>
+	<word weight="0.015817223198594025" count="9">carried</word>
+	<word weight="0.015817223198594025" count="9">locations</word>
+	<phrase weight="0.04878048780487805" count="2">axes arms location adjacent workhead connected arms proximate end portions carried gimbaled relation support structure spaced locations thereat defining points triangle</phrase>
+	<phrase weight="0.04878048780487805" count="2">driving arm axially independently move workhead locations driving</phrase>
+	<phrase weight="0.04878048780487805" count="2">rotating threaded</phrase>
+	<phrase weight="0.04878048780487805" count="2">exteriorly threaded</phrase>
+	<phrase weight="0.024390243902439025" count="1">proximate end portion rigid length sense part arm hingedly connected part forces derived payload weight movement subject arms primarily compression tension fourth arm arm character arms support drive</phrase>
+	<phrase weight="0.024390243902439025" count="1">attitude positioning workhead independently locational positioning effected arms manipulator</phrase>
+	<phrase weight="0.024390243902439025" count="1">move arm axially rotation arm manipulator</phrase>
+	<phrase weight="0.024390243902439025" count="1">move arm axially rotation arm threaded end portions</phrase>
+	<phrase weight="0.024390243902439025" count="1">attitude positioning location positioning effected arms robotic manipulator automatically positioning workhead</phrase>
+	<phrase weight="0.024390243902439025" count="1">deriving arm axially independently move workhead locations driving</phrase>
+	<phrase weight="0.024390243902439025" count="1">support structure arms remote end portions hingedly connected single location close point</phrase>
+	<phrase weight="0.024390243902439025" count="1">carried support structure fixed location support structure arm substantially straight remote end</phrase>
+	<phrase weight="0.024390243902439025" count="1">carried workhead</phrase>
+	<phrase weight="0.024390243902439025" count="1">normal axes</phrase>
+	<phrase weight="0.024390243902439025" count="1">carried support structure fixed location support structure arm substantially straight remote end portion proximate end portion rigid length sense part arm hingedly connected part forces derived payload weight movement subject arms primarily compression tension additional arm character arms support drive</phrase>
+	<phrase weight="0.024390243902439025" count="1">axial movement fourth arms effects swiveling workhead</phrase>
+	<phrase weight="0.024390243902439025" count="1">carried support structure fixed location support structure arm substantially straight remote end portion proximate end portion rigid length sense part arm hingedly connected part forces derived payload weight movement subject arms primarily compression tension proximate end portion arm</phrase>
+	<phrase weight="0.024390243902439025" count="1">minimize weight arm</phrase>
+	<phrase weight="0.024390243902439025" count="1">connection locations workhead</phrase>
+	<phrase weight="0.024390243902439025" count="1">arms remote ends fourth arms hingedly connected workhead locations spaced spaced connection location arms workhead</phrase>
+  </topic>
+  <topic id="7" alpha="5.0" totalTokens="889" titles="produce conical, means, surface, array, hollow, comprising, respect, axis, workpiece, image">
+	<word weight="0.22722159730033745" count="202">means</word>
+	<word weight="0.11361079865016872" count="101">surface</word>
+	<word weight="0.10123734533183353" count="90">array</word>
+	<word weight="0.08211473565804274" count="73">conical</word>
+	<word weight="0.07424071991001124" count="66">produce</word>
+	<word weight="0.049493813273340834" count="44">hollow</word>
+	<word weight="0.04161979752530934" count="37">comprising</word>
+	<word weight="0.03937007874015748" count="35">respect</word>
+	<word weight="0.031496062992125984" count="28">axis</word>
+	<word weight="0.030371203599550055" count="27">workpiece</word>
+	<word weight="0.023622047244094488" count="21">image</word>
+	<word weight="0.019122609673790775" count="17">responsive</word>
+	<word weight="0.01799775028121485" count="16">method</word>
+	<word weight="0.015748031496062992" count="14">claim</word>
+	<word weight="0.010123734533183352" count="9">robot</word>
+	<word weight="0.008998875140607425" count="8">passes</word>
+	<word weight="0.008998875140607425" count="8">selected</word>
+	<word weight="0.008998875140607425" count="8">related</word>
+	<word weight="0.008998875140607425" count="8">transversely</word>
+	<phrase weight="0.31521739130434784" count="29">produce conical</phrase>
+	<phrase weight="0.16304347826086957" count="15">array means</phrase>
+	<phrase weight="0.07608695652173914" count="7">means hollow</phrase>
+	<phrase weight="0.06521739130434782" count="6">respect workpiece</phrase>
+	<phrase weight="0.05434782608695652" count="5">means responsive</phrase>
+	<phrase weight="0.05434782608695652" count="5">axis selected positional relationship respect</phrase>
+	<phrase weight="0.03260869565217391" count="3">claim comprising</phrase>
+	<phrase weight="0.03260869565217391" count="3">rotation hollow</phrase>
+	<phrase weight="0.021739130434782608" count="2">secure letters patent</phrase>
+	<phrase weight="0.021739130434782608" count="2">obtain identification information</phrase>
+	<phrase weight="0.021739130434782608" count="2">workpiece image</phrase>
+	<phrase weight="0.021739130434782608" count="2">radiation hollow conical</phrase>
+	<phrase weight="0.010869565217391304" count="1">means means</phrase>
+	<phrase weight="0.010869565217391304" count="1">states method</phrase>
+	<phrase weight="0.010869565217391304" count="1">means rotating</phrase>
+	<phrase weight="0.010869565217391304" count="1">cylinder means</phrase>
+	<phrase weight="0.010869565217391304" count="1">robot means</phrase>
+	<phrase weight="0.010869565217391304" count="1">intensity produce</phrase>
+	<phrase weight="0.010869565217391304" count="1">array method claim</phrase>
+	<phrase weight="0.010869565217391304" count="1">radiation transmitted</phrase>
+  </topic>
+  <topic id="8" alpha="5.0" totalTokens="397" titles="slip, contact, ring, connector, members, electrically, cable, claim, surfaces, conductive">
+	<word weight="0.07304785894206549" count="29">slip</word>
+	<word weight="0.05289672544080604" count="21">contact</word>
+	<word weight="0.05289672544080604" count="21">ring</word>
+	<word weight="0.037783375314861464" count="15">connector</word>
+	<word weight="0.03526448362720403" count="14">members</word>
+	<word weight="0.030226700251889168" count="12">electrically</word>
+	<word weight="0.030226700251889168" count="12">cable</word>
+	<word weight="0.027707808564231738" count="11">claim</word>
+	<word weight="0.022670025188916875" count="9">surfaces</word>
+	<word weight="0.022670025188916875" count="9">conductive</word>
+	<word weight="0.020151133501259445" count="8">member</word>
+	<word weight="0.020151133501259445" count="8">mounted</word>
+	<word weight="0.020151133501259445" count="8">rings</word>
+	<word weight="0.020151133501259445" count="8">welding</word>
+	<word weight="0.017632241813602016" count="7">piston</word>
+	<word weight="0.017632241813602016" count="7">connecting</word>
+	<word weight="0.015113350125944584" count="6">fourth</word>
+	<word weight="0.015113350125944584" count="6">wiping</word>
+	<word weight="0.015113350125944584" count="6">gun</word>
+	<phrase weight="0.03508771929824561" count="2">depression conically projecting contact</phrase>
+	<phrase weight="0.03508771929824561" count="2">slip ring</phrase>
+	<phrase weight="0.017543859649122806" count="1">fourth outer electrically conductive slip ring members</phrase>
+	<phrase weight="0.017543859649122806" count="1">current cable present</phrase>
+	<phrase weight="0.017543859649122806" count="1">lugs connecting external</phrase>
+	<phrase weight="0.017543859649122806" count="1">lugs welding cable mounted major</phrase>
+	<phrase weight="0.017543859649122806" count="1">outer slip ring members spring</phrase>
+	<phrase weight="0.017543859649122806" count="1">connecting cylinder bore</phrase>
+	<phrase weight="0.017543859649122806" count="1">members slip rings mounted</phrase>
+	<phrase weight="0.017543859649122806" count="1">electrically connecting welding cable outer periphery slip ring members</phrase>
+	<phrase weight="0.017543859649122806" count="1">movement shaft slip ring members</phrase>
+	<phrase weight="0.017543859649122806" count="1">shaft electrically conductive slip ring member conically projecting contact</phrase>
+	<phrase weight="0.017543859649122806" count="1">selectively compressing slip ring members mutually locked engagement current supplied spot welding gun cable connector claim fourth slip rings concentrically mounted conduit water pass remove heat connector connector claim actuator</phrase>
+	<phrase weight="0.017543859649122806" count="1">wiping engagement</phrase>
+	<phrase weight="0.017543859649122806" count="1">nests fourth outer electrically conductive slip ring member contact</phrase>
+	<phrase weight="0.017543859649122806" count="1">electrically conductive slip ring member insulated slip ring member slip ring member conically projecting contact</phrase>
+	<phrase weight="0.017543859649122806" count="1">finds utility rotary joint cable connector pneumatically operated spot welding gun</phrase>
+	<phrase weight="0.017543859649122806" count="1">slip rings shape cone contact</phrase>
+	<phrase weight="0.017543859649122806" count="1">projections slip rings</phrase>
+	<phrase weight="0.017543859649122806" count="1">adapted pass</phrase>
+  </topic>
+  <topic id="9" alpha="5.0" totalTokens="337" titles="tank, portion, fluid, hydraulic, sealed, device, comprises, claim, air, pressure">
+	<word weight="0.0771513353115727" count="26">tank</word>
+	<word weight="0.05341246290801187" count="18">portion</word>
+	<word weight="0.05341246290801187" count="18">fluid</word>
+	<word weight="0.04451038575667656" count="15">hydraulic</word>
+	<word weight="0.04154302670623145" count="14">sealed</word>
+	<word weight="0.03560830860534125" count="12">device</word>
+	<word weight="0.032640949554896145" count="11">comprises</word>
+	<word weight="0.032640949554896145" count="11">claim</word>
+	<word weight="0.02967359050445104" count="10">air</word>
+	<word weight="0.02967359050445104" count="10">pressure</word>
+	<word weight="0.026706231454005934" count="9">flexible</word>
+	<word weight="0.026706231454005934" count="9">apparatus</word>
+	<word weight="0.020771513353115726" count="7">exposed</word>
+	<word weight="0.020771513353115726" count="7">thereof</word>
+	<word weight="0.017804154302670624" count="6">bellows</word>
+	<word weight="0.017804154302670624" count="6">vacuum</word>
+	<word weight="0.01483679525222552" count="5">atmospheric</word>
+	<word weight="0.01483679525222552" count="5">circulating</word>
+	<word weight="0.01483679525222552" count="5">expandable</word>
+	<phrase weight="0.022727272727272728" count="1">adjust volume evacuated</phrase>
+	<phrase weight="0.022727272727272728" count="1">tank fluid level removing impurities fluid preferred embodiment flexible</phrase>
+	<phrase weight="0.022727272727272728" count="1">pressurized air</phrase>
+	<phrase weight="0.022727272727272728" count="1">comprises bellows lower</phrase>
+	<phrase weight="0.022727272727272728" count="1">regulated air supply</phrase>
+	<phrase weight="0.022727272727272728" count="1">therethrough remove</phrase>
+	<phrase weight="0.022727272727272728" count="1">vacuum level sealed tank portion remove gaseous impurities fluid circulating therethrough</phrase>
+	<phrase weight="0.022727272727272728" count="1">sealed tank portion interior bellows communicating atmospheric air</phrase>
+	<phrase weight="0.022727272727272728" count="1">sealed compartment tank adjusting fluid pressure apparatus claim expandable</phrase>
+	<phrase weight="0.022727272727272728" count="1">continuously creating vacuum sealed tank portion</phrase>
+	<phrase weight="0.022727272727272728" count="1">sealed portion thereof interior bellows communicating atmospheric air apparatus claim comprises adjustable expandable</phrase>
+	<phrase weight="0.022727272727272728" count="1">manner fluid inlet outlet</phrase>
+	<phrase weight="0.022727272727272728" count="1">sealed compartment upper</phrase>
+	<phrase weight="0.022727272727272728" count="1">hydraulic fluid regularly circulating recirculating hydraulic system including sump tank</phrase>
+	<phrase weight="0.022727272727272728" count="1">apparatus claim expandable</phrase>
+	<phrase weight="0.022727272727272728" count="1">claim including</phrase>
+	<phrase weight="0.022727272727272728" count="1">adjust volume sealed tank portion due pressure differential opposite</phrase>
+	<phrase weight="0.022727272727272728" count="1">inlet outlet fluid</phrase>
+	<phrase weight="0.022727272727272728" count="1">hydraulic device</phrase>
+	<phrase weight="0.022727272727272728" count="1">remove gaseous impurities hydraulic fluid regularly circulating hydraulic devices sump tank interior exposed atmospheric air</phrase>
+  </topic>
+</topics>
